@@ -17,6 +17,8 @@ Waukesha Chess Club website
 - recent (past events)
 - who's the current club champ
 - club history / past club champs
+- games played by wcc members
+
 
 links
 - USCF
