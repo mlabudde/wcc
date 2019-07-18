@@ -3,6 +3,17 @@ table.main {
   width: 100%;
 }
 
+.siteTitle {	
+	margin-top: 15px;
+	margin-bottom: 25px;
+
+	font-family: "Palatino";
+	font-style: italic;
+	font-size: 36pt;
+	color: black;
+	text-align: center;
+}
+
 #swccLogo {
 	display: inline-block;
 	margin-top: 5px;
