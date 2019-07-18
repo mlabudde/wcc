@@ -9,7 +9,7 @@ Waukesha Chess Club website
 - why
 - what
 
-- Affiliate ID
+- Affiliate ID: A5008948
 - wcc organizers
 - players
 - General Club Information
