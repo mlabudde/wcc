@@ -1,7 +1,7 @@
 # wcc
 Waukesha Chess Club website
 
-# Site Content
+# General Site Content
 
 - who
 - when
@@ -20,11 +20,24 @@ Waukesha Chess Club website
 - games played by wcc members
 
 
-links
+## links
 - USCF
 - other local clubs
 - top club players
 - top Wis players
+- wcc blog
+- personal blogs (e.g. Ben Corcoran, Chris Wainscott, etc)
+
+
+# Menu Items
+
+- home (index.html)
+- about (about.html)
+- schedule (schedule.html)
+- printable schedule (schedule.pdf)
+- recent tournaments (recent_tournaments.html)
+- club history (history.html)
+- games (games_list.html)
 
 
 # Site Management
