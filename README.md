@@ -1,7 +1,6 @@
-# wcc
-Waukesha Chess Club website
+# Waukesha Chess Club website
 
-# General Site Content
+## General Site Content
 
 - who
 - when
@@ -20,7 +19,7 @@ Waukesha Chess Club website
 - games played by wcc members
 
 
-## links
+#### links
 - USCF
 - other local clubs
 - top club players
@@ -29,7 +28,7 @@ Waukesha Chess Club website
 - personal blogs (e.g. Ben Corcoran, Chris Wainscott, etc)
 
 
-# Menu Items
+## Menu Items
 
 - home (index.html)
 - about (about.html)
@@ -40,7 +39,7 @@ Waukesha Chess Club website
 - games (games_list.html)
 
 
-# Site Management
+## Site Management
 - who owns and manages the domain?
 - where is the site hosted?
 - source code management (e.g. create GitHub project)
