@@ -119,13 +119,19 @@ body {
 	text-align: left;
 	vertical-align: top;
 	padding: 2px;
-	width: 220px;
+	min-width: 160px;
+	max-width: 160px;
 }
 
 .colRight {
 	text-align: left;
 	vertical-align: top;
 	padding: 2px;
+	width: 90%;
+
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
 }
 
 .colSoon {
@@ -156,6 +162,12 @@ body {
 h4 {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+#contentFrame {
+	border-style: none;
+	height: 800px;
+	width: 100%;
 }
 
 #games {
