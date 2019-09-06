@@ -59,8 +59,24 @@ body {
 }
 
 .wccMenuItem {
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.wccMenuItemFirst {
+	margin-left: 2px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.wccMenuItemLast {
+	margin-left: 20px;
+	margin-right: 2px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0;
