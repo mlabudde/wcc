@@ -1,9 +1,111 @@
 /* Style Definitions */
-table.main {
-  width: 100%;
+body {
+	background-color: #1E1A53;
+	color: white;
+	font-size: 32pt;
 }
 
-.siteTitle {	
+#main-container {
+	min-width: 1024px;
+}
+
+/* the first of the three main DIVs */
+#divHeader {
+	margin-top: 12px;
+	text-align: center;
+	width: 100%;
+	/*padding: 2px;*/
+}
+
+#divMenu {
+	min-width: 1024px;
+}
+
+/* the second of the three main DIVs */
+#divContent {
+}
+
+/* the third of the three main DIVs */
+#divFooter {
+	margin: 5px 5px 5px 5px;
+}
+
+.pageTitle {
+	color: darkgreen;
+	font-size: 32pt;
+}
+
+.menuLine {
+	width: 98%;
+	align: center;
+	size: 2px;
+	color: white;
+	padding: 0;
+}
+
+.menuLineTop {
+	margin-top: 5px;
+	margin-bottom: -14px;
+}
+
+.menuLineBottom {
+	margin-top: -4px;
+	margin-bottom: 5px;
+}
+
+.wccTitle {
+	font-size: 48pt;
+	font-family: stencil;
+}
+
+.wccMenuItem {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+/* style used on all links */
+.wccLink {
+	color: white;
+	/*text-decoration: underline;*/
+}
+
+.wccMenuLink {
+	color: white;
+	text-decoration: none;
+	font-size: 12pt;
+}
+
+.wccExternalLink {
+	color: white;
+	text-decoration: underline;
+	font-size: 32pt;
+	font-family: stencil;
+}
+
+
+
+#footerLeft {
+	float: left;
+	text-align: center;
+}
+#footerRight {
+	float: right;
+	text-align: center;
+}
+
+.footerLabel {
+	color: darkgreen;
+	font-size: 18pt;
+}
+.footerValue {
+	color: white;
+	font-size: 18pt;
+}
+
+.siteTitle {
 	margin-top: 15px;
 	margin-bottom: 25px;
 
@@ -44,37 +146,9 @@ img.external {
 	height: 9px;
 }
 
-body {
 /*	font-family: "Arial"; */
 /*	font-family: "Helvetica"; */
-	font-family: "Times New Roman";
-	font-size: 11pt;
-	color: black;
-}
-
-#main-container {
-	min-width: 1024px;
-}
-
-/* the first of the three main DIVs */
-#divMenu {
-	margin-top: -22px;
-	padding: 2px;
-	font-size: 11pt;
-}
-
-/* the second of the three main DIVs */
-#divContent {
-}
-
-/* the third of the three main DIVs */
-#divFooter {
-	border-style: solid;
-	border-color: blue;
-	border-width: 1px;
-	padding: 5px;
-	margin: 5px 5px 5px 5px;
-}
+/*	font-family: "Times New Roman";*/
 
 /* the 'home' page loads devContent with the following two DIVs */
 #divWelcome {
@@ -153,10 +227,6 @@ body {
 	margin-bottom: 2px;
 }
 
-/* style used on all links */
-.swccLink {
-	text-decoration: underline;
-}
 
 /* styles the section headers within the menu */
 h4 {
