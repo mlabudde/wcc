@@ -23,6 +23,7 @@ body {
 
 /* the second of the three main DIVs */
 #divContent {
+	text-align: center;
 }
 
 /* the third of the three main DIVs */
@@ -30,9 +31,10 @@ body {
 	margin: 5px 5px 5px 5px;
 }
 
-.pageTitle {
+#pageTitle {
 	color: darkgreen;
 	font-size: 32pt;
+	margin: auto;
 }
 
 .menuLine {
@@ -45,12 +47,12 @@ body {
 
 .menuLineTop {
 	margin-top: 5px;
-	margin-bottom: -14px;
+	margin-bottom: -17px;
 }
 
 .menuLineBottom {
 	margin-top: -4px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 .wccTitle {
@@ -130,14 +132,6 @@ body {
 	font-size: 36pt;
 	color: black;
 	text-align: center;
-}
-
-#swccLogo {
-	display: inline-block;
-	margin-top: 5px;
-	margin-bottom: 25px;
-	height: 267;
-	width: 208;
 }
 
 #swccMap {
@@ -270,6 +264,11 @@ h4 {
 	font-weight: bold;
 }
 
+/* text colors */
+.black {
+	color: black;
+}
+
 .blue {
 	color: blue;
 }
@@ -290,6 +289,32 @@ h4 {
 	color: #6633CC;
 }
 
+.indianred {
+	color: indianred;
+}
+.coral {
+	color: coral;
+}
+.gold {
+	color: gold;
+}
+.darkgreen {
+	color: darkgreen;
+}
+.maroon {
+	color: maroon;
+}
+.navy {
+	color: navy;
+}
+.indigo {
+	color: indigo;
+}
+.violet {
+	color: violet;
+}
+
+
 .underline {
 	text-decoration: underline;
 }
@@ -298,9 +323,29 @@ h4 {
 	font-size: 8pt;
 }
 
-/*td {
-	border-style: solid;
-	border-color: red;
-	border-width: 1px;
+/* background colors */
+.backgroundWhite {
+	background-color: white;
 }
-*/
+
+table.borders {
+	/*border-style: solid;*/
+	/*border-color: black;*/
+	/*border-width: 1px;*/
+	width: 100%;
+}
+
+table.borders th, table.borders td {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	margin: 0;
+}
+
+#divSchedule {
+	margin: auto;
+	max-width: 768px;
+	min-width: 768px;
+	text-align: center;
+	padding: 15px;
+}

@@ -1,30 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta http-equiv=Content-Type content="text/html" charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/wcc.css">
-<script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'>
-//<!-- empty -->
-</script>
-
-<script type='text/javascript' language='javascript'>
-	function doSomething() {
-		// $("#divMenu").load("menu.html", true);
-	}
-</script>
-	
-<title>Waukesha Chess Club About Page</title>
+    <meta http-equiv=Content-Type content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/wcc.css"/>
+    <script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'>
+        <!-- yes, this comment is here on purpose -->
+    </script>
 </head>
 
-<body id='body-container' link="#0066FF" vlink="#6633CC">
+<body>
+<div id="main-container">
 
-<h4>This page is called: schedule.html</h4>
+    <div id="divHeader">
+        <span class="wccTitle">WAUKESHA CHESS CLUB</span>
+        <div id="divMenu">
+            <hr class="menuLine menuLineTop"/>
+            <span class="wccMenuItemFirst"><a class="wccMenuLink" href="index.html">Home</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="waukmem.html">Waukesha Memorial</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="schedule.html">Schedule</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="boardmembers.html">Board Members</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="results.html">Past Tournaments/Champions</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="games.html">Games</a></span>
+            <span class="wccMenuItemLast"><a class="wccMenuLink" href="links.html">Links</a></span>
+            <hr class="menuLine menuLineBottom"/>
+        </div>
+    </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="divContent">
+        <div id="divSchedule" class="backgroundWhite">
+            <div id="pageTitle"><span>SCHEDULE</span><br/></div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <table class="borders">
+            <tr><th align="left" class="bold black">Date</th><th align="left" class="bold black">Event</th></tr>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <tr><td class="indianred">Aug 28</td><td class="indianred">Late Summer Swiss * Round 1 * G/100;d5 * EF: $5 * 2 Sections: Open/Reserve</td></tr>
+            <tr><td class="indianred">Sep 04</td><td class="indianred">Late Summer Swiss * Round 2 * G/100;d5 </td></tr>
+            <tr><td class="indianred">Sep 11</td><td class="indianred">Late Summer Swiss * Round 3 * G/100;d5 </td></tr>
+            <tr><td class="indianred">Sep 18</td><td class="indianred">Late Summer Swiss * Round 4 * G/100;d5 </td></tr>
 
+            <tr><td class="coral">Sep 25</td><td class="coral">Fall Swiss * Round 1 * G/100;d5 * EF: $5 * 2 Sections: Open/Reserve</td></tr>
+            <tr><td class="coral">Oct 02</td><td class="coral">Fall Swiss * Round 2 * G/100;d5 </td></tr>
+            <tr><td class="coral">Oct 09</td><td class="coral">Fall Swiss * Round 3 * G/100;d5 </td></tr>
+            <tr><td class="coral">Oct 16</td><td class="coral">Fall Swiss * Round 4 * G/100;d5 </td></tr>
+            <tr><td class="coral">Oct 23</td><td class="coral">Fall Swiss * Round 5 * G/100;d5 </td></tr>
+
+            <tr><td class="darkgreen">Oct 30</td><td class="darkgreen">Ernest Rozkalns Memorial Speed Tournament * Many Rounds * G/5 * EF: $1 * 2 Sections: Open/Reserve</td></tr>
+
+            <tr><td class="navy">Nov 06</td><td class="navy">Late Fall Swiss * Round 1 * G/100;d5 * EF: $5 * 2 Sections: Open/Reserve</td></tr>
+            <tr><td class="navy">Nov 13</td><td class="navy">Late Fall Swiss * Round 2 * G/100;d5 </td></tr>
+            <tr><td class="navy">Nov 20</td><td class="navy">Late Fall Swiss * Round 3 * G/100;d5 </td></tr>
+            <tr><td class="maroon">Nov 27</td><td class="maroon">Thanksgiving Eve Quick Tournament * Rounds ? * G/25;d4 (if enough interest)</td></tr>
+            <tr><td class="navy">Dec 04</td><td class="navy">Late Fall Swiss * Round 4 * G/100;d5 </td></tr>
+
+            <tr><td class="violet">Dec 11</td><td class="violet">Early Winter Swiss * Round 1 * G/100;d5 * EF: $5 * 2 Sections: Open/Reserve</td></tr>
+            <tr><td class="violet">Dec 18</td><td class="violet">Early Winter Swiss * Round 2 * G/100;d5 </td></tr>
+            <tr><td class="red">Dec 25</td><td class="red">Merry Christmas! (club will not meet)</td></tr>
+            <tr><td class="red">Jan 01</td><td class="red">Happy New Year! (club will not meet)</td></tr>
+            <tr><td class="violet">Jan 08</td><td class="violet">Early Winter Swiss * Round 3 * G/100;d5 </td></tr>
+            <tr><td class="violet">Jan 15</td><td class="violet">Early Winter Swiss * Round 4 * G/100;d5 </td></tr>
+            <tr><td class="violet">Jan 22</td><td class="violet">Early Winter Swiss * Round 5 * G/100;d5 </td></tr>
+        </table>
+        </div>
+    </div>
+
+    <br/>
+
+    <div id="divFooter">
+        <div id="footerLeft">
+            <span class="footerLabel">Club Champion</span><br/>
+            <span class="footerValue">Aaron Krause</span>
+        </div>
+        <div id="footerRight">
+            <span class="footerLabel">Waukesha Memorial Champion</span><br/>
+            <span class="footerValue">Four-Way Tie</span>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
