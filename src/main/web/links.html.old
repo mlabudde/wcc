@@ -5,18 +5,15 @@
 <table border="0" width="100%">
 <tr style="font-size:48pt; font-family:stencil"><td colspan="6" align="center">WAUKESHA CHESS CLUB</td></tr>
 <tr>
-<td align="center"><a href="index.html" style="color:#CCFFCC">Home</a></td>
+<td align="center"><a href="index.html" style="color:#FFFFCC">Home</a></td>
 <td align="center"><a href="waukmem.html" style="color:#CCFFCC">Waukesha Memorial</a></td>
 <td align="center"><a href="clubschedule.html" style="color:#FFFFCC">Schedule</a></td>
 <td align="center"><a href="boardmembers.html" style="color:#CCFFCC">Board Members</a></td>
 <td align="center"><a href="results.html" style="color:#FFFFCC">Past Tournaments/Champions</a></td>
-<td align="center"><a href="links.html" style="color:#FFFFCC">Links</a></td>
+<td align="center"><a href="games.html" style="color:#CCFFCC">Past Games Notation</a></td>
 </tr>
-</table>
-<table border="2" width="100%">
-<tr><td colspan="2">GAMES</td><td>DATE</td><td>TOURNAMENT</td><td>RESULT</td><td>NOTATION</td></tr>
-<tr><td colspan="2">Jane Doe (W) vs. John Smith (B)</td><td>January 7th 2019</td><td>Early Winter Swiss</td><td>1-0</td>
-<td></td></tr>
+<tr style="font-size:32pt; font-family:stencil"><td colspan="2"></td><td colspan="2" align="center" style="color:red"><u>OTHER LINKS</u></td><td colspan="2"></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 
 </body>
