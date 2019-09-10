@@ -314,6 +314,43 @@ h4 {
 	color: violet;
 }
 
+.winter {
+	color: firebrick;
+}
+.clubChampionship {
+	color: coral;
+}
+.waukeshaMemorial {
+	color: gold;
+}
+.speed {
+	color: darkgreen;
+}
+.spring {
+	color: maroon;
+}
+.earlySummer {
+	color: navy;
+}
+.summer {
+	color: indigo;
+}
+.earlyFall {
+	color: violet;
+}
+.fall {
+	color: firebrick;
+}
+.lateFall {
+	color: coral;
+}
+.earlyWinter {
+	color: chocolate;
+}
+.closed {
+	color: red;
+}
+
 
 .underline {
 	text-decoration: underline;
@@ -344,8 +381,8 @@ table.borders th, table.borders td {
 
 #divSchedule {
 	margin: auto;
-	max-width: 768px;
-	min-width: 768px;
+	max-width: 900px;
+	min-width: 900px;
 	text-align: center;
 	padding: 15px;
 }
