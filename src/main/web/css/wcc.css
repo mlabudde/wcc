@@ -1,240 +1,258 @@
 /* Style Definitions */
 body {
-	background-color: #1E1A53;
-	color: white;
-	font-size: 32pt;
+    background-color: #1E1A53;
+    color: white;
+    font-size: 32pt;
 }
 
 #main-container {
-	min-width: 1024px;
+    min-width: 1024px;
 }
 
 /* the first of the three main DIVs */
 #divHeader {
-	margin-top: 12px;
-	text-align: center;
-	width: 100%;
-	/*padding: 2px;*/
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
+    /*padding: 2px;*/
 }
 
 #divMenu {
-	min-width: 1024px;
+    min-width: 1024px;
 }
 
 /* the second of the three main DIVs */
 #divContent {
-	text-align: center;
+    max-width: 1024px;
+    min-width: 1024px;
+    text-align: center;
 }
 
 /* the third of the three main DIVs */
 #divFooter {
-	margin: 5px 5px 5px 5px;
+    margin: 15px 5px 5px 5px;
 }
 
 #pageTitle {
-	color: darkgreen;
-	font-size: 32pt;
-	margin: auto;
+    color: darkgreen;
+    font-size: 32pt;
+    margin: auto;
 }
 
 .menuLine {
-	width: 98%;
-	align: center;
-	size: 2px;
-	color: white;
-	padding: 0;
+    width: 98%;
+    align: center;
+    size: 2px;
+    color: white;
+    padding: 0;
 }
 
 .menuLineTop {
-	margin-top: 5px;
-	margin-bottom: -14px;
+    margin-top: 5px;
+    margin-bottom: -14px;
 }
 
 .menuLineBottom {
-	margin-top: -4px;
-	margin-bottom: 15px;
+    margin-top: -4px;
+    margin-bottom: 15px;
 }
 
 .wccTitle {
-	font-size: 48pt;
-	font-family: stencil;
+    font-size: 48pt;
+    font-family: stencil;
 }
 
 .wccMenuItem {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 
 .wccMenuItemFirst {
-	margin-left: 2px;
-	margin-right: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0;
+    margin-left: 2px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 
 .wccMenuItemLast {
-	margin-left: 20px;
-	margin-right: 2px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 
 /* style used on all links */
 .wccLink {
-	color: white;
-	/*text-decoration: underline;*/
+    color: white;
+    /*text-decoration: underline;*/
 }
 
 .wccMenuLink {
-	color: white;
-	text-decoration: none;
-	font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
 }
 
 .wccExternalLink {
-	color: white;
-	text-decoration: underline;
-	font-size: 32pt;
-	font-family: stencil;
+    color: white;
+    text-decoration: underline;
+    font-size: 32pt;
+    font-family: stencil;
 }
 
+.left {
+    text-align: left;
+}
 
+.floatLeft {
+    float: left;
+    text-align: left;
+}
+.floatRight {
+    float: right;
+    text-align: left;
+}
+
+.unorderedList {
+    margin-bottom: -2px;
+    margin-top: -2px;
+}
 
 #footerLeft {
-	float: left;
-	text-align: center;
+    float: left;
+    text-align: center;
 }
 #footerRight {
-	float: right;
-	text-align: center;
+    float: right;
+    text-align: center;
 }
 
 .footerLabel {
-	color: darkgreen;
-	font-size: 18pt;
+    color: darkgreen;
+    font-size: 18pt;
 }
 .footerValue {
-	color: white;
-	font-size: 18pt;
+    color: white;
+    font-size: 18pt;
 }
 
 .siteTitle {
-	margin-top: 15px;
-	margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 
-	font-family: "Palatino";
-	font-style: italic;
-	font-size: 36pt;
-	color: black;
-	text-align: center;
+    font-family: "Palatino";
+    font-style: italic;
+    font-size: 36pt;
+    color: black;
+    text-align: center;
 }
 
 #swccMap {
-/*	display: inline-block;*/
-/*	float: right;*/
-/*	margin-top: -193px;*/
-/*	margin-bottom: -150px;*/
-/*	border-style: dotted;
-	border-color: red;
-	border-size: 1px;*/
-/*	position: fixed;
-	left: 800px;
-	top: 35px;
+/*    display: inline-block;*/
+/*    float: right;*/
+/*    margin-top: -193px;*/
+/*    margin-bottom: -150px;*/
+/*    border-style: dotted;
+    border-color: red;
+    border-size: 1px;*/
+/*    position: fixed;
+    left: 800px;
+    top: 35px;
 */
-	height: 153px;
-	width: 300px;
+    height: 153px;
+    width: 300px;
 }
 
 img.external {
-	display: inline-block;
-	width: 9px;
-	height: 9px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
 }
 
-/*	font-family: "Arial"; */
-/*	font-family: "Helvetica"; */
-/*	font-family: "Times New Roman";*/
+/*    font-family: "Arial"; */
+/*    font-family: "Helvetica"; */
+/*    font-family: "Times New Roman";*/
 
 /* the 'home' page loads devContent with the following two DIVs */
 #divWelcome {
-	border-style: solid;
-	border-color: blue;
-	border-width: 1px;
-	padding: 5px;
-	margin: 5px 5px 25px 5px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px 5px 25px 5px;
 }
 
 #divComingSoon {
-	border-style: solid;
-	border-color: green;
-	border-width: 1px;
-	padding: 5px;
-	margin: 5px 5px 25px 5px;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px 5px 25px 5px;
 }
 
-/* these two styles are used for positioning within devWelcome */
+/* these two styles are used for positioning within divWelcome */
 .welcomeLeft {
-	padding: 2px;
-	width: 100%;
+    padding: 2px;
+    width: 100%;
 }
 
 .welcomeRight {
-	text-align: right;
-	vertical-align: top;
-	padding: 2px;
-	width: 100px;
+    text-align: right;
+    vertical-align: top;
+    padding: 2px;
+    width: 100px;
 }
 
 /* styles the info text below the map image */
 .mapInfo {
-	font-size: 9pt;
-	display: inline-block;
-	margin-top: 1px;
-	margin-right: 13px;
+    font-size: 9pt;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 13px;
 }
 
 /* primary layout mechanism - two columns */
 .colLeft {
-	text-align: left;
-	vertical-align: top;
-	padding: 2px;
-	min-width: 160px;
-	max-width: 160px;
+    text-align: left;
+    vertical-align: top;
+    padding: 2px;
+    min-width: 160px;
+    max-width: 160px;
 }
 
 .colRight {
-	text-align: left;
-	vertical-align: top;
-	padding: 2px;
-	width: 90%;
+    text-align: left;
+    vertical-align: top;
+    padding: 2px;
+    width: 90%;
 
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 .colSoon {
-	text-align: left;
-	vertical-align: top;
-	padding: 20px;
-	width: 50%;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+    width: 50%;
 }
 
 .sectionHeading {
     font-size: 18pt;
-	color: blue;
+    color: blue;
     font-weight: bold;
-	background-color: #CCFFCC;
-	/*background-color: #FFCCFF;*/
-	text-align: center;
-	min-width: 790px;
-	margin-top: -25px;
-	margin-bottom: 2px;
+    background-color: #CCFFCC;
+    /*background-color: #FFCCFF;*/
+    text-align: center;
+    min-width: 790px;
+    margin-top: -25px;
+    margin-bottom: 2px;
 }
 
 
@@ -245,144 +263,139 @@ h4 {
 }
 
 #contentFrame {
-	border-style: none;
-	height: 800px;
-	width: 100%;
+    border-style: none;
+    height: 800px;
+    width: 100%;
 }
 
 #games {
-	height: 700px;
-	width: 800px;
+    height: 700px;
+    width: 800px;
 }
 
 #clubcam {
-	height: 526px;
-	width: 700px;
+    height: 526px;
+    width: 700px;
 }
 
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 /* text colors */
 .black {
-	color: black;
+    color: black;
 }
 
 .blue {
-	color: blue;
+    color: blue;
 }
 
 .green {
-	color: #006600;
+    color: #006600;
 }
 
 .lightGreen {
-	color: #00B050;
+    color: #00B050;
 }
 
 .red {
-	color: red;
+    color: red;
 }
 
 .purple {
-	color: #6633CC;
-}
-
-.indianred {
-	color: indianred;
-}
-.coral {
-	color: coral;
-}
-.gold {
-	color: gold;
-}
-.darkgreen {
-	color: darkgreen;
-}
-.maroon {
-	color: maroon;
-}
-.navy {
-	color: navy;
-}
-.indigo {
-	color: indigo;
-}
-.violet {
-	color: violet;
+    color: #6633CC;
 }
 
 .winter {
-	color: firebrick;
+    color: firebrick;
 }
 .clubChampionship {
-	color: coral;
+    color: coral;
 }
 .waukeshaMemorial {
-	color: gold;
+    color: gold;
 }
 .speed {
-	color: darkgreen;
+    color: darkgreen;
 }
 .spring {
-	color: maroon;
+    color: maroon;
 }
 .earlySummer {
-	color: navy;
+    color: navy;
 }
 .summer {
-	color: indigo;
+    color: indigo;
 }
 .earlyFall {
-	color: violet;
+    color: violet;
 }
 .fall {
-	color: firebrick;
+    color: firebrick;
 }
 .lateFall {
-	color: coral;
+    color: coral;
 }
 .earlyWinter {
-	color: chocolate;
+    color: chocolate;
 }
 .closed {
-	color: red;
+    color: red;
 }
 
 
 .underline {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .author {
-	font-size: 8pt;
+    font-size: 8pt;
 }
 
 /* background colors */
 .backgroundWhite {
-	background-color: white;
+    background-color: white;
 }
 
 table.borders {
-	/*border-style: solid;*/
-	/*border-color: black;*/
-	/*border-width: 1px;*/
-	width: 100%;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    /*border-width: 1px;*/
+    width: 100%;
 }
 
 table.borders th, table.borders td {
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	margin: 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 0;
 }
 
 #divSchedule {
-	margin: auto;
-	max-width: 900px;
-	min-width: 900px;
-	text-align: center;
-	padding: 15px;
+    margin: auto;
+    max-width: 900px;
+    min-width: 900px;
+    text-align: center;
+    padding: 15px;
+}
+
+#eaglesPhoto {
+    max-height: 294px;
+    min-height: 294px;
+    max-width: 605px;
+    min-width: 605px;    
+}
+
+#gmap {
+    max-height: 325px;
+    min-height: 325px;
+    max-width: 430px;
+    min-width: 430px;    
+}
+
+.caption {
+    color: white;
+    font-size: 11pt;
+    margin-top: 3px;
 }

@@ -1,39 +1,103 @@
 <html>
 <head>
-<meta name="keywords" content="waukesha chess club, waukesha chess, milwaukee chess club, milwaukee chess, southeastern wisconsin chess, wisconsin chess, wisconsin rated chess,
-wisconin chess club, milwaukee chess tournaments" />
-<meta name="description" content="Play rated tournament games weekly on Wednesday at this chess club located just West of Milwaukee. Non-rated games available. Separate Junior section for each tournament." />
+    <meta http-equiv=Content-Type content="text/html" charset="utf-8">
+    <meta name="keywords" content="waukesha chess club, waukesha chess, milwaukee chess club, milwaukee chess, southeastern wisconsin chess, wisconsin chess, wisconsin rated chess, wisconin chess club, milwaukee chess tournaments" />
+    <meta name="description" content="Play rated tournament games weekly on Wednesday at this chess club located just West of Milwaukee. Non-rated games available. Separate Junior section for each tournament." />
+    <link rel="stylesheet" type="text/css" href="css/wcc.css"/>
+    <script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'>
+        <!-- yes, this comment is here on purpose -->
+    </script>
+    <script type='text/javascript' language='javascript'>
+		var mapLink =  "https://www.google.com/maps/place/Eagles+Post+453/@43.0234211,-88.2575115,17z/data=!3m1!4b1!4m5!3m4!1s0x8805af487d0e3eb3:0x5fca8ed0f163f288!8m2!3d43.0234211!4d-88.2553228";
+		
+        function openMap() {
+        	window.open(mapLink, "_blank");
+        }
+    </script>
 </head>
-<body style="background-color:#1E1A53; color:white; font-size:32pt">
-<table border="0" frame="below" width="100%">
-<tr style="font-size:24pt; color:#CCCC99"><td align="left" colspan="2">Club Champion: Aaron Krause</td><td colspan="2"></td>
-<td align="left" colspan="2">Waukesha Memorial Champion: 4-way Tie</td></tr>
-<tr style="font-size:48pt; font-family:stencil"><td colspan="6" align="center">WAUKESHA CHESS CLUB</td></tr>
-<tr><td align="center"><a href="waukmem.html" style="color:#CCFFCC">Waukesha Memorial</a></td>
-<td align="center"><a href="schedule.html" style="color:#FFFFCC">Schedule</a></td>
-<td align="center"><a href="boardmembers.html" style="color:#CCFFCC">Board Members</a></td>
-<td align="center"><a href="results.html" style="color:#FFFFCC">Past Tournaments/Champions</a></td>
-<td align="center"><a href="games.html" style="color:#CCFFCC">Past Games Notation</a></td>
-<td align="center"><a href="links.html" style="color:#FFFFCC">Links</a></td></tr>
-<tr><td colspan="4" align="center"><img src="brew.jpg" width="1000" height="500"/><td colspan="2" align="center">
-<a href="https://www.google.com/maps/place/Eagles+Post+453/@43.0234211,-88.2575115,17z/data=!3m1!4b1!4m5!3m4!1s0x8805af487d0e3eb3:0x5fca8ed0f163f288!8m2!3d43.0234211!4d-88.2553228" style="color:CCFFFF; font-size:24pt">Google Maps</a></br>
-<img src="Mapy.png" /></td></tr>
-<tr style="color:#CCCC99"><td colspan="2" align="center"><u>NEXT TOURNAMENT</u></br>Wednesday September 25th
-</br>Fall Swiss</br>5 round Swiss * G/100 * EF:$5</td>
-<td align="center"><u>ADDRESS</u></br>F.O.E #453 Building * Rear Entrance</br>709 N Grandview Blvd</br>Waukesha, WI 53188</td>
-<td align="center"><u>DATE & TIME INFO</u></br> Wednesday nights</br>Doors Open at 6:00pm</br>Games begin at 7:00pm</td>
-<td colspan="2" align="center"><u>MEMBERSHIP INFO</u></br>$75 per Adult for one year * $125 for two Adults from the same family for one year
-</br>$30 per Junior for one year * $50 for multiple Junior members from same family per year
-</br>Pay per visit * $3 per Adult * $1 per Junior</br></td></tr>
-<tr style="font-size:24pt; color:#CCFFCC"><td colspan="6" align="center" style="border-style:solid; border-color:red">Current Tournament: Late Summer Swiss * Aug 28th-Sept 18th * 4 Round Swiss * G/100 D/5</td></tr>
-<tr style="font-size:32pt"><td colspan="6" align="center">Current Round Pairings and Crosstable</tr>
-<tr style="font-size:12pt"><td colspan="6" align="center">(current round pairings subject to change)</td></tr>
-<tr style="font-size:24pt"><td colspan="3" align="center"><a href="pairingso.pdf" style="color:#CCFFCC">Round 2 Open</a></td>
-<td colspan="3" align="center"><a href="pairingsr.pdf" style="color:#FFCCFF">Round 2 Reserve</a></td></tr>
-<tr style="font-size:24pt"><td colspan="3" align="center"><a href="crosstableo.pdf" style="color:#CCFFCC">Open Section Crosstable</a></td>
-<td colspan="3" align="center"><a href="crosstabler.pdf" style="color:#FFCCFF">Reserve Section Crosstable</a></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
 
+<body>
+<div id="main-container">
+
+    <div id="divHeader">
+        <span class="wccTitle">WAUKESHA CHESS CLUB</span>
+        <div id="divMenu">
+            <hr class="menuLine menuLineTop"/>
+            <span class="wccMenuItemFirst"><a class="wccMenuLink" href="index.html">Home</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="waukmem.html">Waukesha Memorial</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="schedule.html">Schedule</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="boardmembers.html">Board Members</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="past_tournaments.html">Past Tournaments/Champions</a></span>
+            <span class="wccMenuItem"><a class="wccMenuLink" href="games.html">Games</a></span>
+            <span class="wccMenuItemLast"><a class="wccMenuLink" href="links.html">Links</a></span>
+            <hr class="menuLine menuLineBottom"/>
+        </div>
+    </div>
+
+    <div id="divContent">
+
+    <table border="0" frame="below" width="100%">
+    <tr style="color:#CCCC99; vertical-align:top">
+    <td align="center" width="30%">
+		<u>ADDRESS</u>
+		<br/>F.O.E #453 Building
+        <br/>Rear / South Entrance
+        <br/>709 N Grandview Blvd
+        <br/>Waukesha, WI 53188
+    </td>
+    <td align="center" width="30%">
+		<u>DATE & TIME</u>
+        <br/>Wednesday nights
+        <br/>Doors Open at 6:00pm
+        <br/>Games begin at 7:00pm
+    </td>
+    <td align="left" width="40%">
+        <u>MEMBERSHIP</u>
+        <div>
+        <b>Annual dues</b>
+		<ul class="unorderedList">
+			<li>$75 per Adult</li>
+			<li>$125 for two Adults from the same family</li>
+			<li>$30 per Junior</li>
+			<li>$50 for multiple Junior members from same family</li>
+		</ul>
+        </div>
+		<div>
+        <b>Pay per visit</b> (if not paying annually)
+		<ul class="unorderedList">
+			<li>$3 per Adult</li>
+			<li>$1 per Junior</li>
+		</ul>
+        </div>
+    </td></tr>
+    </table>
+
+    <table border="0" frame="below" width="100%">
+    <tr style="color:#CCCC99; vertical-align:top">
+        <td align="center"><img id="eaglesPhoto" src="brew.jpg">
+            <div class="caption">Use this entrance for club activities.</div>
+        </td>
+        <td align="center">
+            <a class="wccMenuLink" href="#" onclick="javascript:openMap();"><img id="gmap" src="images/map-out.png"/></a>
+            <div class="caption">
+            <a class="wccMenuLink caption" href="#" onclick="javascript:openMap();">
+				Click here or on the map to open in Google Maps...</a>
+			</div>
+        </td>
+    </tr>
+    </table>
+    </div>
+    <div id="divFooter">
+        <div id="footerLeft">
+            <span class="footerLabel">Club Champion</span><br/>
+            <span class="footerValue">Aaron Krause</span>
+        </div>
+        <div id="footerRight">
+            <span class="footerLabel">Waukesha Memorial Champions</span><br/>
+            <span class="footerValue">Four-Way Tie</span>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
