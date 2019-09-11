@@ -1,0 +1,13 @@
+[Event "Early Winter Swiss"]
+[Site "Waukesha Chess Club"]
+[Date "2019.01.07"]
+[Round "2"]
+[White "Jane Doe"]
+[Black "John Smith"]
+[Result "1-0"]
+[BlackElo "960"]
+[ECO "C23"]
+[EventDate "2019.01.07"]
+[WhiteElo "1800"]
+
+1.e4 e5 2.Bc4 Nc6 3.Qh5 Nf6 4.Qxf7# 1-0
