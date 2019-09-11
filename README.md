@@ -45,3 +45,23 @@
 - source code management (e.g. create GitHub project)
 - how best to utilize blogspot.com?
 
+## To Do items
+
+- 'Waukesha Memorial' page -
+	- smaller font for next tournament
+	- most recent need not be special/different than others (maybe color?)
+	- list all in table with three columns
+		- Year, Champion(s), Crosstable Link	
+- 'Past Tournaments/Champions' page -
+	- separate into two pages
+		 a) Past Tournaments
+		 	- we could list them
+			- or, we could link to the USCF site (single link)
+			- or, we could embed the USCF page into the WCC site (on this page)
+			- other thoughts/options?
+		 b) Club Champions
+		 	- two columns: Year, Champion(s)
+- ‘Games’ page - 
+	- try to populate this with a few games
+	- investigate what tools/sites others use to publish games to the web
+- Other thoughts?
