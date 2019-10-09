@@ -26,6 +26,7 @@ body {
     max-width: 1024px;
     min-width: 1024px;
     text-align: center;
+    align: center;
 }
 
 /* the third of the three main DIVs */
@@ -37,6 +38,7 @@ body {
     color: darkgreen;
     font-size: 32pt;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .menuLine {
@@ -379,6 +381,28 @@ table.borders th, table.borders td {
     border-color: black;
     border-width: 1px;
     margin: 0;
+}
+
+table.champs {
+	align: center;
+    width: 100%;
+}
+table.champs th, table.champs td {
+    text-align: left;
+}
+
+table.wccPast {
+	/* align: center; */
+	margin-left: 140px;
+    width: 80%;
+}
+table.wccPast th, table.wccPast td {
+    text-align: left;
+}
+
+table.wccPast td.year {
+    font-size: 16pt;
+    text-align: left;
 }
 
 #divSchedule {
