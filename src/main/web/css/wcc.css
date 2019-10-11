@@ -41,6 +41,13 @@ body {
     margin-bottom: 20px;
 }
 
+#divSubtitle {
+    color: #FFFFCC;
+    font-size: 18pt;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .menuLine {
     width: 98%;
     align: center;
@@ -381,6 +388,19 @@ table.borders th, table.borders td {
     border-color: black;
     border-width: 1px;
     margin: 0;
+}
+
+table.waukMemorial {
+	align: center;
+	margin-left: 102px;
+    width: 80%;
+}
+
+table.waukMemorial th, table.waukMemorial td {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    text-align: center;
 }
 
 table.champs {
