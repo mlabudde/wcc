@@ -3,6 +3,7 @@ body {
     background-color: #1E1A53;
     color: white;
     font-size: 32pt;
+    text-align: center;
 }
 
 #main-container {
@@ -23,7 +24,7 @@ body {
 
 /* the second of the three main DIVs */
 #divContent {
-    max-width: 1024px;
+/*    max-width: 1024px;*/
     min-width: 1024px;
     text-align: center;
     align: center;
@@ -48,6 +49,11 @@ body {
     margin-bottom: 20px;
 }
 
+#homeTopTable, #homeMidTable {
+	width: 100%;
+	max-width: 1024px;
+} 
+ 
 .menuLine {
     width: 98%;
     align: center;
@@ -451,4 +457,10 @@ table.wccPast td.year {
     color: white;
     font-size: 11pt;
     margin-top: 3px;
+}
+
+.borders {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
