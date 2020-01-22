@@ -328,23 +328,23 @@ h4 {
     color: #6633CC;
 }
 
-.winter {
-    color: firebrick;
-}
 .clubChampionship {
     color: coral;
 }
 .waukeshaMemorial {
-    color: gold;
+    color: black;
 }
 .action {
-    color: maroon;
+    color: teal;
 }
 .speed {
     color: darkgreen;
 }
-.spring {
-    color: maroon;
+.earlySpring {
+    color: firebrick;
+}
+.lateSpring {
+    color: coral;
 }
 .earlySummer {
     color: navy;
@@ -363,6 +363,12 @@ h4 {
 }
 .earlyWinter {
     color: chocolate;
+}
+.winter {
+    color: firebrick;
+}
+.lateWinter {
+    color: navy;
 }
 .closed {
     color: red;
