@@ -49,6 +49,16 @@ body {
     margin-bottom: 20px;
 }
 
+#tblCovid {
+    background-color: white;
+    color: darkred;
+    font-size: 18pt;
+    margin: 15px 15px 15px 225px;
+    max-width: 1024px;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+}
+
 #homeTopTable, #homeMidTable {
 	width: 100%;
 	max-width: 1024px;
