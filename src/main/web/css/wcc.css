@@ -53,13 +53,15 @@ body {
     background-color: white;
     color: darkred;
     font-size: 18pt;
-    margin: 15px 15px 15px 225px;
-    max-width: 1024px;
-    padding: 20px 20px 10px 20px;
-    width: 100%;
+    /*margin-top: 50px;*/
+    /*margin-right: 50px;*/
+    margin-bottom: 25px;
+    margin-left: 15px;
+    /*15px 15px 225px;*/
+    padding: 20px 20px 0px 20px;
 }
 
-#homeTopTable, #homeMidTable {
+#homeTopTable, #homeMidTable, #tblCovid {
 	width: 100%;
 	max-width: 1024px;
 } 
