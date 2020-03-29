@@ -42,6 +42,19 @@ body {
     margin-bottom: 20px;
 }
 
+#onlineNotice {
+    color: black;
+    font-size: 12pt;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+	border-style: groove;
+	border-color: black;
+	border-size: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 #divSubtitle {
     color: #FFFFCC;
     font-size: 18pt;
