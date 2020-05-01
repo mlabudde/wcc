@@ -113,9 +113,12 @@ body {
 .wccMenuImage {
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 0px;
+    margin-top:0px;
     margin-bottom: 0px;
     padding: 0;
+}
+.wccMenuLinkImage {
+    margin-bottom: -3px;
 }
 
 .wccMenuItemFirst {
