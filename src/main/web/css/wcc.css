@@ -42,7 +42,7 @@ body {
     margin-bottom: 20px;
 }
 
-#onlineNotice {
+.onlineNotice {
     color: black;
     font-size: 12pt;
     margin: auto;
