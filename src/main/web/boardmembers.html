@@ -5,6 +5,16 @@
     <script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'>
         <!-- yes, this comment is here on purpose -->
     </script>
+    <script type='text/javascript' language='javascript'>
+        function toggleMeetingNotes() {
+            if ($("#btnotes").text() === "view") {
+                $("#btnotes").html("hide");
+            } else {
+                $("#btnotes").html("view");
+            }
+            $("#divMeetingNotes").toggle();
+        }
+    </script>
 </head>
 
 <body>
@@ -33,9 +43,15 @@
 		<tr style="font-size:30pt"><td colspan="6" align="center">VICE PRESIDENT:<br/>Matthew Roeder<br/><br/></td></tr>
 		<tr style="font-size:30pt"><td colspan="6" align="center">SECRETARY:<br/>Aaron Krause<br/><br/></td></tr>
 		<tr style="font-size:30pt"><td colspan="6" align="center">TREASURER (and CLUB GRILLMASTER):<br/>Kevin Klandrud</td></tr>
-		<tr style="font-size:30pt"><td colspan="6" align="center"></td></tr>
-		<tr style="font-size:30pt"><td colspan="6" align="center"></td></tr>
-		</table>
+		<tr style="font-size:30pt"><td colspan="6" align="center"><br/></td></tr>
+        <tr style="font-size:30pt"><td colspan="6" align="center">Board Meeting Minutes/Notes<br/></td></tr>
+        </table>
+        <p class="meetingNotes">
+            May 17, 2020 WCC Board Meeting <button id="btnotes" onclick="toggleMeetingNotes();">view</button>
+        </p>
+        <div id="divMeetingNotes">
+            <iframe id="iframeMeetingNotes" src="downloads/WCC_Board_Meeting_Notes_5-17-2020.pdf"></iframe>
+        </div>
     </div>
 
     <div id="divFooter">

@@ -42,6 +42,24 @@ body {
     margin-bottom: 20px;
 }
 
+.meetingNotes {
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+}
+
+#divMeetingNotes {
+    display: none;
+    margin-top: 25px;
+    min-height: 33%;
+    min-width: 90%;
+}
+
+#iframeMeetingNotes {
+    height: 98%;
+    width: 98%;
+}
+
 .onlineNotice {
     color: black;
     font-size: 12pt;
