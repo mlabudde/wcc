@@ -95,7 +95,21 @@ body {
 #homeTopTable, #homeMidTable, #tblCovid {
 	width: 100%;
 	max-width: 1024px;
-} 
+}
+
+#tblCovid h1 {
+    margin-bottom: 3px;
+}
+
+#tblCovid h3 {
+    color: black;
+    margin-bottom: -6px;
+}
+
+span.covidPrecautions {
+    color: black;
+    font-size: 11pt;
+}
  
 .menuLine {
     width: 98%;
