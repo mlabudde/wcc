@@ -111,6 +111,11 @@ span.covidPrecautions {
     font-size: 11pt;
 }
  
+li.normal {
+    color: black;
+    font-size: 11pt;
+}
+ 
 .menuLine {
     width: 98%;
     align: center;
