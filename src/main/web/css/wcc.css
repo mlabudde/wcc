@@ -29,6 +29,13 @@ body {
     text-align: center;
     align: center;
 }
+.content {
+    max-width: 1024px;
+    min-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 /* the third of the three main DIVs */
 #divFooter {
@@ -40,6 +47,13 @@ body {
     font-size: 32pt;
     margin: auto;
     margin-bottom: 20px;
+}
+
+.pgTitle {
+    color: darkgreen;
+    font-size: 32pt;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .meetingNotes {
@@ -461,17 +475,26 @@ h4 {
     background-color: white;
 }
 
-table.borders {
-    /*border-style: solid;*/
-    /*border-color: black;*/
-    /*border-width: 1px;*/
-    width: 100%;
+table.noborders {
+    border-style: none;
+	margin-left: 22%;
+	margin-right: auto;
 }
 
-table.borders th, table.borders td {
+table.borders {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.borders th, table.borders td {
+	border-collapse: collapse; 
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+	font-family: 'times new roman';
     margin: 0;
 }
 
@@ -510,7 +533,7 @@ table.wccPast td.year {
     text-align: left;
 }
 
-#divSchedule {
+#divSchedule, .dvSchedule {
     margin: auto;
     max-width: 900px;
     min-width: 900px;
