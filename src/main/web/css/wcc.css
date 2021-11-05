@@ -477,8 +477,6 @@ h4 {
 
 table.noborders {
     border-style: none;
-	margin-left: 22%;
-	margin-right: auto;
 }
 
 table.borders {
@@ -565,4 +563,9 @@ table.wccPast td.year {
     border-style: solid;
     border-color: white;
     border-width: 1px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
