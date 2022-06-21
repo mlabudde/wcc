@@ -31,34 +31,35 @@ class Player:
         length = len(elements)
         idx = length - 1
         for i in range(numRounds):
-            self.rounds.insert(0, elements[idx - i])
+            rnd = self.fixRound(elements[idx - i])
+            self.rounds.insert(0, rnd)
         
-        self.ratePost = elements[length - 6]
-        self.ratePre = elements[length - 7]
-        self.state = elements[length - 8]
+        self.ratePost = elements[length - numRounds - 1]
+        self.ratePre = elements[length - numRounds - 2]
+        self.state = elements[length - numRounds - 3]
         
         self.id = elements[0]
         self.rank = elements[1]
         
-        if length == 11:
+        if length == (6 + numRounds):
             self.name = elements[2] + " " + elements[3]
-        elif length == 12:
+        elif length == (7 + numRounds):
             self.name = elements[2] + " " + elements[3]
             self.state = elements[4]
-        elif length == 13: 
+        elif length == (8 + numRounds):
             self.name = elements[2] + " " + elements[3] + " " + elements[4]
             self.state = elements[5]
-        elif length < 11:
+        elif length < (6 + numRounds):
             print("ERROR - less than 11 elements in array!\n\n")
-        else:
+        elif length > (8 + numRounds):
             print("ERROR - more than 13 elements in array!\n\n")
         self.name = self.massageName()
             
 
-    def fixRound(self, round):
-        rnd = round.replace("-", "")
-        if len(rnd) == 2 and rnd[-1] == '0':
-            rnd = rnd[:-1]
+    def fixRound(self, aRound):
+        rnd = aRound.replace("-", "")
+        if len(rnd) == 2 and rnd[1] == '0':
+            rnd = rnd[0]
         return rnd
         
     def printHtml(self):
@@ -71,6 +72,5 @@ class Player:
         print("\t<td>" + self.ratePre + "</td>")
         print("\t<td>" + self.ratePost + "</td>")
         for r in self.rounds:
-            round = self.fixRound(r)
-            print("\t<td>" + round + "</td>")
+            print("\t<td>" + r + "</td>")
         print("</tr>")
