@@ -1,0 +1,152 @@
+Section 1 - OPEN
+Asst. TD 		MATTHEW W ROEDER  (12622916)
+Section Date(s) 		2022-05-25 thru 2022-06-15
+Processed 		Received: 2022-06-15   Entered: 2022-06-14   Rated: 2022-06-16
+Stats 		4 Rounds,  23 Players;  K Factor: F  Rating Sys: R  Tnmt Type: S
+Time Control: G/100;d5
+Show floating point ratings from this event
+
+-----------------------------------------------------------------------
+ * Click on a Pairing Number to see the Player's Opponents.
+ * Click on a Player's Name for more information about the Player.
+Crosstable data is shown in score group/rating order, which is not the same as the tiebreak order used at the event.
+Crosstables are not intended to show the distribution of trophies or prize monies.  (See Frequent Questions)
+Crosstable data is shown as reported to the USCF by the Tournament Director.  
+Please contact the TD to report any crosstable errors.
+Note:  The information below the "Total Pts" score shows the highest norm earned in this event.
+For more information on norms, see The USCF Title System.
+-----------------------------------------------------------------------
+ Pair | Player Name                     |Total|Round|Round|Round|Round| 
+ Num  | USCF ID / Rtg (Pre->Post)       | Pts |  1  |  2  |  3  |  4  | 
+-----------------------------------------------------------------------
+    1 | DAVID E HANSEN                  |3.5  |H    |W  21|W  12|W   5|
+   WI | 12854458 / R: 1510   ->1683     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    2 | MIKE LA BUDDE                   |3.0  |L   9|W  16|W   6|W   7|
+   WI | 12391010 / R: 1945   ->1943     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    3 | MATTHEW W ROEDER                |3.0  |H    |D  10|W  19|W   9|
+   WI | 12622916 / R: 1758   ->1764     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    4 | JOHN JACK CREED                 |3.0  |W  15|W   9|L   7|W  11|
+   WI | 12442084 / R: 1762   ->1762     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    5 | WILLIAM P WILLIAMS              |2.5  |W  18|D   7|W  13|L   1|
+   WI | 10310547 / R: 2200   ->2200     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    6 | AARON  PAUL KRAUSE              |2.5  |H    |W  11|L   2|W  13|
+   WI | 12422831 / R: 1951   ->1942     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    7 | JAMES JAY COONS                 |2.5  |W  14|D   5|W   4|L   2|
+   WI | 12551569 / R: 1776   ->1800     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    8 | JOHN DE MASTRI                  |2.5  |W  22|H    |U    |W  14|
+   WI | 12580948 / R: 1684   ->1696     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    9 | SEAN D D'SOUZA                  |2.0  |W   2|L   4|W  18|L   3|
+   WI | 15204031 / R: 1529   ->1582     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   10 | MR. JOHN ALBERT HEGELMEYER      |2.0  |H    |D   3|U    |W  18|
+   WI | 12787626 / R: 1523   ->1560     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   11 | OISHIK MONDAL                   |2.0  |W  20|L   6|W  21|L   4|
+   WI | 30205017 / R: 1246   ->1308     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   12 | CLARK MCCUTCHIN                 |1.5  |W  19|D  13|L   1|U    |
+   WI | 12539124 / R: 1900   ->1900     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   13 | ELIE GENDLOFF                   |1.5  |W  23|D  12|L   5|L   6|
+   MO | 12493180 / R: 1629   ->1642     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   14 | KEVIN KLANDRUD                  |1.5  |L   7|W  15|H    |L   8|
+   WI | 15938368 / R: 1515   ->1511     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   15 | JOHN BECKWITH                   |1.5  |L   4|L  14|W  16|H    |
+   WI | 15734951 / R: 1388   ->1384     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   16 | KEVINDU KINAL PERERA            |1.5  |H    |L   2|L  15|W  22|
+   WI | 16869825 / R: 1263   ->1267     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   17 | RAKESH KOHIRKAR                 |1.0  |U    |U    |U    |W  19|
+   WI | 30617972 / R: Unrated->1878P1   |     |     |     |     |     |
+-----------------------------------------------------------------------
+   18 | IVAN K TRAYANOV                 |1.0  |L   5|W  23|L   9|L  10|
+   WI | 15567296 / R: 1614   ->1582     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   19 | JAMES W NICKELL                 |1.0  |L  12|W  20|L   3|L  17|
+   WI | 11300855 / R: 1501   ->1500     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   20 | DAN FREY                        |1.0  |L  11|L  19|B    |U    |
+   WI | 30456341 / R:  992P12-> 981P14  |     |     |     |     |     |
+-----------------------------------------------------------------------
+   21 | ROBIN J GROCHOWSKI              |0.5  |H    |L   1|L  11|U    |
+   WI | 11164412 / R: 1654   ->1603     |     |     |     |     |     |
+-----------------------------------------------------------------------
+   22 | MIKE GUNDLACH                   |0.5  |L   8|H    |U    |L  16|
+   WI | 30499807 / R: 1267P7 ->1217P9   |     |     |     |     |     |
+-----------------------------------------------------------------------
+   23 | MR. GERALD WASMUND              |0.0  |L  13|L  18|U    |U    |
+   WI | 30336845 / R: 1473P14->1442P16  |     |     |     |     |     |
+-----------------------------------------------------------------------
+Note:  Performances satisfying the requirements for norms are now being shown for events in the *Total Pts* column.
+It may take a week for a recently rated event to have norms computed for it.
+Show floating point ratings from this event
+To receive an email when an event you played in is rated, update your email preferences here.
+
+Section 2 - RESERVE
+Section Date(s) 		2022-05-25 thru 2022-06-15
+Processed 		Received: 2022-06-15   Entered: 2022-06-14   Rated: 2022-06-16
+Stats 		4 Rounds,  11 Players;  K Factor: F  Rating Sys: R  Tnmt Type: S
+Time Control: G/100;d5
+Show floating point ratings from this event
+
+-----------------------------------------------------------------------
+ * Click on a Pairing Number to see the Player's Opponents.
+ * Click on a Player's Name for more information about the Player.
+Crosstable data is shown in score group/rating order, which is not the same as the tiebreak order used at the event.
+Crosstables are not intended to show the distribution of trophies or prize monies.  (See Frequent Questions)
+Crosstable data is shown as reported to the USCF by the Tournament Director.  
+Please contact the TD to report any crosstable errors.
+Note:  The information below the "Total Pts" score shows the highest norm earned in this event.
+For more information on norms, see The USCF Title System.
+-----------------------------------------------------------------------
+ Pair | Player Name                     |Total|Round|Round|Round|Round| 
+ Num  | USCF ID / Rtg (Pre->Post)       | Pts |  1  |  2  |  3  |  4  | 
+-----------------------------------------------------------------------
+    1 | PATRICK EDWARD  KLINKNER        |3.0  |W   8|L   5|W   3|W   2|
+   WI | 30289677 / R:  927P24-> 921     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    2 | MR. CHARLES N LANDEY            |3.0  |W   9|W   6|W   5|L   1|
+   WI | 12531107 / R:  887   -> 883     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    3 | RALPH F KLASS                   |3.0  |W   4|W   8|L   1|W   5|
+   WI | 14366034 / R:  581   -> 721     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    4 | PURVI MENON                     |2.5  |L   3|W  11|W   6|H    |
+   WI | 17280562 / R:  698   -> 693     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    5 | JAMES E MADING                  |2.0  |W  11|W   1|L   2|L   3|
+   WI | 12780703 / R:  608   -> 632     |     |     |     |     |     |
+-----------------------------------------------------------------------
+    6 | DEVYANSHU MOHAPATRA             |2.0  |W  10|L   2|L   4|W   8|
+      | 30263431 / R:  592P21-> 582P25  |     |     |     |     |     |
+-----------------------------------------------------------------------
+    7 | RAKESH KOHIRKAR                 |1.0  |U    |U    |W  10|U    |
+   WI | 30617972 / R: 1878P1 ->1878P2   |     |     |     |     |     |
+-----------------------------------------------------------------------
+    8 | MR. VEDA ANISH KAKUMANU  JR.    |1.0  |L   1|L   3|W  11|L   6|
+   WI | 30466766 / R:  492P13-> 458P17  |     |     |     |     |     |
+-----------------------------------------------------------------------
+    9 | GRANT DAVIDSON                  |1.0  |L   2|W  10|U    |U    |
+   WI | 30325572 / R:  413P19-> 421P21  |     |     |     |     |     |
+-----------------------------------------------------------------------
+   10 | MR. THOMAS ANTON BOROWSKI       |1.0  |L   6|L   9|L   7|W  11|
+   WI | 30471236 / R:  106P11-> 126P15  |     |     |     |     |     |
+-----------------------------------------------------------------------
+   11 | JASWANTH AKKINA                 |0.0  |L   5|L   4|L   8|L  10|
+   WI | 30298526 / R:  107P12-> 108P16  |     |     |     |     |     |
+-----------------------------------------------------------------------
+Note:  Performances satisfying the requirements for norms are now being shown for events in the *Total Pts* column.
+It may take a week for a recently rated event to have norms computed for it.
+Show floating point ratings from this event
+To receive an email when an event you played in is rated, update your email preferences here.
