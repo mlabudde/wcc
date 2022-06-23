@@ -21,10 +21,31 @@ def splitLine(line):
         elements = list(filter(None, line.split(" ")))
     return elements
 
+#          1         2         3         4         5         6         7
+#012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+#30289677    1 KLINKNER, PATRICK WI  927/24  921*   W---7 L---5 W---3 W---2 W---2 3.0
+#
+
+def splitFixedLine(line, aNumRounds):
+    elements = list()
+    if (line):
+        elements.append(line[0:9].strip())
+        elements.append(line[9:13].strip())
+        elements.append(line[14:31].strip())
+        elements.append(line[32:34].strip())
+        elements.append(line[35:43].strip())
+        elements.append(line[43:51].strip())
+
+        for i in range(aNumRounds):
+            start = 51 + (6 * i)
+            end = start + 6
+            elements.append(line[start:end].strip())
+
+    return elements
 
 def printTableHeader():
     print("<html><head>")
-    print("<link rel='stylesheet' type='text/css' href='http://www.waukeshachessclub.com/css/wcc.css' />")    
+    print("<link rel='stylesheet' type='text/css' href='http://www.waukeshachessclub.com/css/wcc.css' />")
     print("</head>")
     print("<body>")
     print("<table class='wccCrosstable'>")
@@ -37,7 +58,7 @@ def printTableHeader():
     print("\t<th>Pre</th>")
     print("\t<th>Post</th>")
 
-    for i in range(numRounds):
+    for i in range(numRounds - 1):
         print("\t<th>R " + str(i + 1) + "</th>")
     print("\t<th>Total</th>")
     print("</tr>")
@@ -54,7 +75,7 @@ def printPageClose():
 with open(inputFilename) as fin:
     printTableHeader()
     for line in fin:
-        elements = splitLine(line.strip())
+        elements = splitFixedLine(line.strip(), numRounds)
         player = createPlayer(elements, numRounds)
         player.printHtml()
 

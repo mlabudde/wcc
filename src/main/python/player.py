@@ -40,19 +40,22 @@ class Player:
         
         self.id = elements[0]
         self.rank = elements[1]
-        
-        if length == (6 + numRounds):
-            self.name = elements[2] + " " + elements[3]
-        elif length == (7 + numRounds):
-            self.name = elements[2] + " " + elements[3]
-            self.state = elements[4]
-        elif length == (8 + numRounds):
-            self.name = elements[2] + " " + elements[3] + " " + elements[4]
-            self.state = elements[5]
-        elif length < (6 + numRounds):
-            print("ERROR - less than 11 elements in array!\n\n")
-        elif length > (8 + numRounds):
-            print("ERROR - more than 13 elements in array!\n\n")
+        self.name = elements[2]
+        self.state = elements[3]
+
+        # if length == (6 + numRounds):
+        #     self.name = elements[2] + " " + elements[3]
+        # elif length == (7 + numRounds):
+        #     self.name = elements[2] + " " + elements[3]
+        #     self.state = elements[4]
+        # elif length == (8 + numRounds):
+        #     self.name = elements[2] + " " + elements[3] + " " + elements[4]
+        #     self.state = elements[5]
+        # elif length < (6 + numRounds):
+        #     print("ERROR - less than 11 elements in array!\n\n")
+        # elif length > (8 + numRounds):
+        #     print("ERROR - more than 13 elements in array!\n\n")
+
         self.name = self.massageName()
             
 
