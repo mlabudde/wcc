@@ -569,3 +569,133 @@ table.wccPast td.year {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*
+** CSS used by our blog site.
+ */
+.wccCenter {
+    text-align: center;
+}
+.wccBorders {
+    border: 1px solid black;
+}
+.wccNoborders {
+    border: none;
+}
+.wccPairings {
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 5px;
+    width: 600px;"
+}
+table.wccPairings tr {
+/*    height: 21px;*/
+}
+table.wccPairings td {
+    color: black;
+    border: 1px solid black;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+/*    height: 21px;*/
+    padding: 1px 1px 1px 4px;
+    text-decoration: none;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+table.wccPairings td.center {
+    text-align: center;
+}
+table.wccPairings th {
+    background-color: #ccbb99;
+    border: 1px solid black;
+}
+.wccPostHeader {
+    color: #cc3300;
+	font-size: 14pt;
+	margin-bottom: 5px;
+	margin-top: -13px;
+}
+.wccSection {
+    color: black;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.wccCrosstable {
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 5px;
+    width: 700px;"
+}
+table.wccCrosstable tr {
+    height: 25px;
+}
+table.wccCrosstable td {
+    color: black;
+    border: 1px solid black;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2px 2px 2px 4px;
+    text-decoration: none;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+table.wccCrosstable th {
+    background-color: #ccbb99;
+    border: 1px solid black;
+}
+
+/* text colors */
+.wccGrey {
+    color: #777777;
+}
+.wccKhaki {
+    color: #c0a154;
+}
+.wccRed {
+    color: #cc3300;
+}
+.wccLightBlack {
+    color: #333333;
+}
+.wccTan {
+    color: #ccbb99;
+}
+.wccFirebrick {
+    color: #993322;
+}
+.wccBlack {
+    color: #000000;
+}
+.wccWhite {
+    color: #ffffff;
+}
+
+/* background colors */
+.wccGreyBG {
+    background-color: #777777;
+}
+.wccKhakiBG {
+    background-color: #c0a154;
+}
+.wccRedBG {
+    background-color: #cc3300;
+}
+.wccLightBlackBG {
+    background-color: #333333;
+}
+.wccTanBG {
+    background-color: #ccbb99;
+}
+.wccFirebrickBG {
+    background-color: #993322;
+}
+.wccBlackBG {
+    background-color: #000000;
+}
+.wccWhiteBG {
+    background-color: #ffffff;
+}
