@@ -47,6 +47,13 @@
 
 ## To Do items
 
+- create a template for Crosstables
+	- 4, 5, and 6 rounds!
+
+- What we're reading - add two more books!
+
+- extract crosstables from USCF site and convert them to WCC blog site format
+
 - 'Waukesha Memorial' page -
 	- smaller font for next tournament
 	- most recent need not be special/different than others (maybe color?)
