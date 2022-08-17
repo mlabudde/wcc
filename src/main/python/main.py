@@ -47,7 +47,7 @@ def printTableHeader():
     print("<html><head>")
     print("<link rel='stylesheet' type='text/css' href='http://www.waukeshachessclub.com/css/wcc.css' />")
     print("</head>")
-    print("<body>")
+    print("<body style='background-color:white; color:black; font-size:12pt;'>")
     print("<table class='wccCrosstable'>")
     print("<thead>")
     print("<tr>")
