@@ -7,6 +7,7 @@ body {
 }
 
 #main-container {
+    max-width: 1042px;
     min-width: 1024px;
 }
 
@@ -29,6 +30,27 @@ body {
     text-align: center;
     align: center;
 }
+
+#divLinks {
+    align: left;
+    max-width: 1024px;
+    min-width: 1024px;
+    text-align: left;
+}
+
+.tableLinks {
+    font-size: 18pt;
+    padding-left: 25px;
+}
+.tableLinks tr {
+    line-height: 42px;
+    vertical-align: top;
+}
+
+#divLinks .tableLinks {
+    text-align: left;
+}
+
 .content {
     max-width: 1024px;
     min-width: 1024px;
@@ -59,7 +81,8 @@ body {
 .meetingNotes {
     color: white;
     font-size: 12pt;
-    text-align: center;
+    padding-left: 48px;
+    text-align: left;
 }
 
 #divMeetingNotes {
@@ -191,7 +214,11 @@ li.normal {
 /* style used on all links */
 .wccLink {
     color: white;
-    /*text-decoration: underline;*/
+    text-decoration: underline;
+}
+.wccLink a:visited {
+    color: white;
+    text-decoration: underline;
 }
 
 .wccGameLink {
