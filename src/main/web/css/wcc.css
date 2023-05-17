@@ -28,11 +28,11 @@ body {
 /*  max-width: 1024px;*/
   min-width: 1024px;
   text-align: center;
-  align: center;
+  /*align: center;*/
 }
 
 #divLinks {
-  align: left;
+  /*align: left;*/
   max-width: 1024px;
   min-width: 1024px;
   text-align: left;
@@ -105,7 +105,7 @@ body {
   margin-top: 20px;
   border-style: groove;
   border-color: black;
-  border-size: 1px;
+  border-width: 1px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -126,7 +126,7 @@ body {
   margin-bottom: 25px;
   margin-left: 15px;
   /*15px 15px 225px;*/
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0 20px;
 }
 
 #homeTopTable, #homeMidTable, #tblCovid {
@@ -155,7 +155,7 @@ li.normal {
  
 .menuLine {
   width: 98%;
-  align: center;
+  /*align: center;*/
   size: 2px;
   color: white;
   padding: 0;
@@ -173,22 +173,16 @@ li.normal {
 
 .wccTitle {
   font-size: 48pt;
-  font-family: stencil;
+  font-family: "stencil";
 }
 
 .wccMenuItem {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 20px 0 20px;
   padding: 0;
 }
 
 .wccMenuImage {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top:0px;
-  margin-bottom: 0px;
+  margin: 0 0 0 0 ;
   padding: 0;
 }
 .wccMenuLinkImage {
@@ -196,18 +190,12 @@ li.normal {
 }
 
 .wccMenuItemFirst {
-  margin-left: 2px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 20px 0 2px;
   padding: 0;
 }
 
 .wccMenuItemLast {
-  margin-left: 20px;
-  margin-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 2px 0 20px;
   padding: 0;
 }
 
@@ -237,7 +225,7 @@ li.normal {
   color: white;
   text-decoration: underline;
   font-size: 32pt;
-  font-family: stencil;
+  font-family: "stencil";
 }
 
 .left {
@@ -294,7 +282,7 @@ li.normal {
 /*  margin-bottom: -150px;*/
 /*  border-style: dotted;
   border-color: red;
-  border-size: 1px;*/
+  border-width: 1px;*/
 /*  position: fixed;
   left: 800px;
   top: 35px;
@@ -519,12 +507,12 @@ table.borders th, table.borders td {
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  font-family: 'times new roman';
+  font-family: "Times New Roman";
   margin: 0;
 }
 
 table.waukMemorial {
-  align: center;
+  /*align: center;*/
   margin-left: 102px;
   width: 80%;
 }
@@ -537,7 +525,7 @@ table.waukMemorial th, table.waukMemorial td {
 }
 
 table.champs {
-  align: center;
+  /*align: center;*/
   width: 100%;
 }
 table.champs th, table.champs td {
