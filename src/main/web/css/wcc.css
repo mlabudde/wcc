@@ -1,393 +1,393 @@
-/* Style Definitions */
+/* Waukesha Chess Club Style Definitions */
 body {
-    background-color: #1E1A53;
-    color: white;
-    font-size: 32pt;
-    text-align: center;
+  background-color: #1E1A53;
+  color: white;
+  font-size: 32pt;
+  text-align: center;
 }
 
 #main-container {
-    max-width: 1042px;
-    min-width: 1024px;
+  max-width: 1042px;
+  min-width: 1024px;
 }
 
 /* the first of the three main DIVs */
 #divHeader {
-    margin-top: 12px;
-    text-align: center;
-    width: 100%;
-    /*padding: 2px;*/
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+  /*padding: 2px;*/
 }
 
 #divMenu {
-    min-width: 1024px;
+  min-width: 1024px;
 }
 
 /* the second of the three main DIVs */
 #divContent {
-/*    max-width: 1024px;*/
-    min-width: 1024px;
-    text-align: center;
-    align: center;
+/*  max-width: 1024px;*/
+  min-width: 1024px;
+  text-align: center;
+  align: center;
 }
 
 #divLinks {
-    align: left;
-    max-width: 1024px;
-    min-width: 1024px;
-    text-align: left;
+  align: left;
+  max-width: 1024px;
+  min-width: 1024px;
+  text-align: left;
 }
 
 .tableLinks {
-    font-size: 18pt;
-    padding-left: 25px;
+  font-size: 18pt;
+  padding-left: 25px;
 }
 .tableLinks tr {
-    line-height: 42px;
-    vertical-align: top;
+  line-height: 42px;
+  vertical-align: top;
 }
 
 #divLinks .tableLinks {
-    text-align: left;
+  text-align: left;
 }
 
 .content {
-    max-width: 1024px;
-    min-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  max-width: 1024px;
+  min-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* the third of the three main DIVs */
 #divFooter {
-    margin: 15px 5px 5px 5px;
+  margin: 15px 5px 5px 5px;
 }
 
 #pageTitle {
-    color: darkgreen;
-    font-size: 32pt;
-    margin: auto;
-    margin-bottom: 20px;
+  color: darkgreen;
+  font-size: 32pt;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .pgTitle {
-    color: darkgreen;
-    font-size: 32pt;
-    margin: auto;
-    margin-bottom: 10px;
+  color: darkgreen;
+  font-size: 32pt;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .meetingNotes {
-    color: white;
-    font-size: 12pt;
-    padding-left: 48px;
-    text-align: left;
+  color: white;
+  font-size: 12pt;
+  padding-left: 48px;
+  text-align: left;
 }
 
 #divMeetingNotes {
-    display: none;
-    margin-top: 25px;
-    min-height: 33%;
-    min-width: 90%;
+  display: none;
+  margin-top: 25px;
+  min-height: 33%;
+  min-width: 90%;
 }
 
 #iframeMeetingNotes {
-    height: 98%;
-    width: 98%;
+  height: 98%;
+  width: 98%;
 }
 
 .onlineNotice {
-    color: black;
-    font-size: 12pt;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-	border-style: groove;
-	border-color: black;
-	border-size: 1px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+  color: black;
+  font-size: 12pt;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-style: groove;
+  border-color: black;
+  border-size: 1px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #divSubtitle {
-    color: #FFFFCC;
-    font-size: 18pt;
-    margin: auto;
-    margin-bottom: 20px;
+  color: #FFFFCC;
+  font-size: 18pt;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 #tblCovid {
-    background-color: white;
-    color: darkred;
-    font-size: 11.5pt;
-    /*margin-top: 50px;*/
-    /*margin-right: 50px;*/
-    margin-bottom: 25px;
-    margin-left: 15px;
-    /*15px 15px 225px;*/
-    padding: 20px 20px 0px 20px;
+  background-color: white;
+  color: darkred;
+  font-size: 11.5pt;
+  /*margin-top: 50px;*/
+  /*margin-right: 50px;*/
+  margin-bottom: 25px;
+  margin-left: 15px;
+  /*15px 15px 225px;*/
+  padding: 20px 20px 0px 20px;
 }
 
 #homeTopTable, #homeMidTable, #tblCovid {
-	width: 100%;
-	max-width: 1024px;
+  width: 100%;
+  max-width: 1024px;
 }
 
 #tblCovid h1 {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 #tblCovid h3 {
-    color: black;
-    margin-bottom: -6px;
+  color: black;
+  margin-bottom: -6px;
 }
 
 span.covidPrecautions {
-    color: black;
-    font-size: 11pt;
+  color: black;
+  font-size: 11pt;
 }
  
 li.normal {
-    color: black;
-    font-size: 11pt;
+  color: black;
+  font-size: 11pt;
 }
  
 .menuLine {
-    width: 98%;
-    align: center;
-    size: 2px;
-    color: white;
-    padding: 0;
+  width: 98%;
+  align: center;
+  size: 2px;
+  color: white;
+  padding: 0;
 }
 
 .menuLineTop {
-    margin-top: 5px;
-    margin-bottom: -14px;
+  margin-top: 5px;
+  margin-bottom: -14px;
 }
 
 .menuLineBottom {
-    margin-top: -4px;
-    margin-bottom: 15px;
+  margin-top: -4px;
+  margin-bottom: 15px;
 }
 
 .wccTitle {
-    font-size: 48pt;
-    font-family: stencil;
+  font-size: 48pt;
+  font-family: stencil;
 }
 
 .wccMenuItem {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 
 .wccMenuImage {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top:0px;
-    margin-bottom: 0px;
-    padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 .wccMenuLinkImage {
-    margin-bottom: -3px;
+  margin-bottom: -3px;
 }
 
 .wccMenuItemFirst {
-    margin-left: 2px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
+  margin-left: 2px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 
 .wccMenuItemLast {
-    margin-left: 20px;
-    margin-right: 2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
+  margin-left: 20px;
+  margin-right: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 
 /* style used on all links */
 .wccLink {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 .wccLink a:visited {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .wccGameLink {
-    color: white;
-    /*text-decoration: none;*/
-    font-size: 12pt;
+  color: white;
+  /*text-decoration: none;*/
+  font-size: 12pt;
 }
 
 .wccMenuLink {
-    color: white;
-    text-decoration: none;
-    font-size: 12pt;
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
 }
 
 .wccExternalLink {
-    color: white;
-    text-decoration: underline;
-    font-size: 32pt;
-    font-family: stencil;
+  color: white;
+  text-decoration: underline;
+  font-size: 32pt;
+  font-family: stencil;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .floatLeft {
-    float: left;
-    text-align: left;
+  float: left;
+  text-align: left;
 }
 .floatRight {
-    float: right;
-    text-align: left;
+  float: right;
+  text-align: left;
 }
 
 .unorderedList {
-    margin-bottom: -2px;
-    margin-top: -2px;
+  margin-bottom: -2px;
+  margin-top: -2px;
 }
 
 #footerLeft {
-    float: left;
-    text-align: center;
+  float: left;
+  text-align: center;
 }
 #footerRight {
-    float: right;
-    text-align: center;
+  float: right;
+  text-align: center;
 }
 
 .footerLabel {
-    color: darkgreen;
-    font-size: 18pt;
+  color: darkgreen;
+  font-size: 18pt;
 }
 .footerValue {
-    color: white;
-    font-size: 18pt;
+  color: white;
+  font-size: 18pt;
 }
 
 .siteTitle {
-    margin-top: 15px;
-    margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 
-    font-family: "Palatino";
-    font-style: italic;
-    font-size: 36pt;
-    color: black;
-    text-align: center;
+  font-family: "Palatino";
+  font-style: italic;
+  font-size: 36pt;
+  color: black;
+  text-align: center;
 }
 
 #swccMap {
-/*    display: inline-block;*/
-/*    float: right;*/
-/*    margin-top: -193px;*/
-/*    margin-bottom: -150px;*/
-/*    border-style: dotted;
-    border-color: red;
-    border-size: 1px;*/
-/*    position: fixed;
-    left: 800px;
-    top: 35px;
+/*  display: inline-block;*/
+/*  float: right;*/
+/*  margin-top: -193px;*/
+/*  margin-bottom: -150px;*/
+/*  border-style: dotted;
+  border-color: red;
+  border-size: 1px;*/
+/*  position: fixed;
+  left: 800px;
+  top: 35px;
 */
-    height: 153px;
-    width: 300px;
+  height: 153px;
+  width: 300px;
 }
 
 img.external {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
 }
 
-/*    font-family: "Arial"; */
-/*    font-family: "Helvetica"; */
-/*    font-family: "Times New Roman";*/
+/*  font-family: "Arial"; */
+/*  font-family: "Helvetica"; */
+/*  font-family: "Times New Roman";*/
 
 /* the 'home' page loads devContent with the following two DIVs */
 #divWelcome {
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
-    padding: 5px;
-    margin: 5px 5px 25px 5px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  padding: 5px;
+  margin: 5px 5px 25px 5px;
 }
 
 #divComingSoon {
-    border-style: solid;
-    border-color: green;
-    border-width: 1px;
-    padding: 5px;
-    margin: 5px 5px 25px 5px;
+  border-style: solid;
+  border-color: green;
+  border-width: 1px;
+  padding: 5px;
+  margin: 5px 5px 25px 5px;
 }
 
 /* these two styles are used for positioning within divWelcome */
 .welcomeLeft {
-    padding: 2px;
-    width: 100%;
+  padding: 2px;
+  width: 100%;
 }
 
 .welcomeRight {
-    text-align: right;
-    vertical-align: top;
-    padding: 2px;
-    width: 100px;
+  text-align: right;
+  vertical-align: top;
+  padding: 2px;
+  width: 100px;
 }
 
 /* styles the info text below the map image */
 .mapInfo {
-    font-size: 9pt;
-    display: inline-block;
-    margin-top: 1px;
-    margin-right: 13px;
+  font-size: 9pt;
+  display: inline-block;
+  margin-top: 1px;
+  margin-right: 13px;
 }
 
 /* primary layout mechanism - two columns */
 .colLeft {
-    text-align: left;
-    vertical-align: top;
-    padding: 2px;
-    min-width: 160px;
-    max-width: 160px;
+  text-align: left;
+  vertical-align: top;
+  padding: 2px;
+  min-width: 160px;
+  max-width: 160px;
 }
 
 .colRight {
-    text-align: left;
-    vertical-align: top;
-    padding: 2px;
-    width: 90%;
+  text-align: left;
+  vertical-align: top;
+  padding: 2px;
+  width: 90%;
 
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
 }
 
 .colSoon {
-    text-align: left;
-    vertical-align: top;
-    padding: 20px;
-    width: 50%;
+  text-align: left;
+  vertical-align: top;
+  padding: 20px;
+  width: 50%;
 }
 
 .sectionHeading {
-    font-size: 18pt;
-    color: blue;
-    font-weight: bold;
-    background-color: #CCFFCC;
-    /*background-color: #FFCCFF;*/
-    text-align: center;
-    min-width: 790px;
-    margin-top: -25px;
-    margin-bottom: 2px;
+  font-size: 18pt;
+  color: blue;
+  font-weight: bold;
+  background-color: #CCFFCC;
+  /*background-color: #FFCCFF;*/
+  text-align: center;
+  min-width: 790px;
+  margin-top: -25px;
+  margin-bottom: 2px;
 }
 
 
@@ -398,198 +398,198 @@ h4 {
 }
 
 #contentFrame {
-    border-style: none;
-    height: 800px;
-    width: 100%;
+  border-style: none;
+  height: 800px;
+  width: 100%;
 }
 
 #games {
-    height: 700px;
-    width: 800px;
+  height: 700px;
+  width: 800px;
 }
 
 #clubcam {
-    height: 526px;
-    width: 700px;
+  height: 526px;
+  width: 700px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* text colors */
 .black {
-    color: black;
+  color: black;
 }
 
 .blue {
-    color: blue;
+  color: blue;
 }
 
 .green {
-    color: #006600;
+  color: #006600;
 }
 
 .lightGreen {
-    color: #00B050;
+  color: #00B050;
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 .purple {
-    color: #6633CC;
+  color: #6633CC;
 }
 
 .clubChampionship {
-    color: coral;
+  color: coral;
 }
 .waukeshaMemorial {
-    color: black;
+  color: black;
 }
 .action {
-    color: teal;
+  color: teal;
 }
 .speed {
-    color: darkgreen;
+  color: darkgreen;
 }
 .earlySpring {
-    color: firebrick;
+  color: firebrick;
 }
 .lateSpring {
-    color: coral;
+  color: coral;
 }
 .earlySummer {
-    color: navy;
+  color: navy;
 }
 .summer {
-    color: indigo;
+  color: indigo;
 }
 .earlyFall {
-    color: violet;
+  color: violet;
 }
 .fall {
-    color: firebrick;
+  color: firebrick;
 }
 .lateFall {
-    color: coral;
+  color: coral;
 }
 .earlyWinter {
-    color: chocolate;
+  color: chocolate;
 }
 .winter {
-    color: firebrick;
+  color: firebrick;
 }
 .lateWinter {
-    color: navy;
+  color: navy;
 }
 .closed {
-    color: red;
+  color: red;
 }
 
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .author {
-    font-size: 8pt;
+  font-size: 8pt;
 }
 
 /* background colors */
 .backgroundWhite {
-    background-color: white;
+  background-color: white;
 }
 
 table.noborders {
-    border-style: none;
+  border-style: none;
 }
 
 table.borders {
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-	margin-left: auto;
-	margin-right: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table.borders th, table.borders td {
-	border-collapse: collapse; 
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-	font-family: 'times new roman';
-    margin: 0;
+  border-collapse: collapse; 
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  font-family: 'times new roman';
+  margin: 0;
 }
 
 table.waukMemorial {
-	align: center;
-	margin-left: 102px;
-    width: 80%;
+  align: center;
+  margin-left: 102px;
+  width: 80%;
 }
 
 table.waukMemorial th, table.waukMemorial td {
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  text-align: center;
 }
 
 table.champs {
-	align: center;
-    width: 100%;
+  align: center;
+  width: 100%;
 }
 table.champs th, table.champs td {
-    text-align: left;
+  text-align: left;
 }
 
 table.wccPast {
-	/* align: center; */
-	margin-left: 140px;
-    width: 80%;
+  /* align: center; */
+  margin-left: 140px;
+  width: 80%;
 }
 table.wccPast th, table.wccPast td {
-    text-align: left;
+  text-align: left;
 }
 
 table.wccPast td.year {
-    font-size: 16pt;
-    text-align: left;
+  font-size: 16pt;
+  text-align: left;
 }
 
 #divSchedule, .dvSchedule {
-    margin: auto;
-    max-width: 900px;
-    min-width: 900px;
-    text-align: center;
-    padding: 15px;
+  margin: auto;
+  max-width: 900px;
+  min-width: 900px;
+  text-align: center;
+  padding: 15px;
 }
 
 #eaglesPhoto {
-    max-height: 294px;
-    min-height: 294px;
-    max-width: 605px;
-    min-width: 605px;    
+  max-height: 294px;
+  min-height: 294px;
+  max-width: 605px;
+  min-width: 605px;  
 }
 
 #gmap {
-    max-height: 325px;
-    min-height: 325px;
-    max-width: 430px;
-    min-width: 430px;    
+  max-height: 325px;
+  min-height: 325px;
+  max-width: 430px;
+  min-width: 430px;  
 }
 
 .caption {
-    color: white;
-    font-size: 11pt;
-    margin-top: 3px;
+  color: white;
+  font-size: 11pt;
+  margin-top: 3px;
 }
 
 .borders {
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 .center {
@@ -601,128 +601,128 @@ table.wccPast td.year {
 ** CSS used by our blog site.
  */
 .wccCenter {
-    text-align: center;
+  text-align: center;
 }
 .wccBorders {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 .wccNoborders {
-    border: none;
+  border: none;
 }
 .wccPairings {
-    border: 0;
-    border-collapse: collapse;
-    margin-top: 5px;
-    width: 600px;"
+  border: 0;
+  border-collapse: collapse;
+  margin-top: 5px;
+  width: 600px;"
 }
 table.wccPairings tr {
-/*    height: 21px;*/
+/*  height: 21px;*/
 }
 table.wccPairings td {
-    color: black;
-    border: 1px solid black;
-    font-family: Calibri, sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    font-style: normal;
-/*    height: 21px;*/
-    padding: 1px 1px 1px 4px;
-    text-decoration: none;
-    vertical-align: bottom;
-    white-space: nowrap;
+  color: black;
+  border: 1px solid black;
+  font-family: Calibri, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  font-style: normal;
+/*  height: 21px;*/
+  padding: 1px 1px 1px 4px;
+  text-decoration: none;
+  vertical-align: bottom;
+  white-space: nowrap;
 }
 table.wccPairings td.center {
-    text-align: center;
+  text-align: center;
 }
 table.wccPairings th {
-    background-color: #ccbb99;
-    border: 1px solid black;
+  background-color: #ccbb99;
+  border: 1px solid black;
 }
 .wccPostHeader {
-    color: #cc3300;
-	font-size: 14pt;
-	margin-bottom: 5px;
-	margin-top: -13px;
+  color: #cc3300;
+  font-size: 14pt;
+  margin-bottom: 5px;
+  margin-top: -13px;
 }
 .wccSection {
-    color: black;
-    font-weight: bold;
-    margin-left: 3px;
+  color: black;
+  font-weight: bold;
+  margin-left: 3px;
 }
 .wccCrosstable {
-    border: 0;
-    border-collapse: collapse;
-    margin-top: 5px;
-    width: 700px;"
+  border: 0;
+  border-collapse: collapse;
+  margin-top: 5px;
+  width: 700px;"
 }
 table.wccCrosstable tr {
-    height: 25px;
+  height: 25px;
 }
 table.wccCrosstable td {
-    color: black;
-    border: 1px solid black;
-    font-family: Calibri, sans-serif;
-    font-size: 12pt;
-    font-weight: 400;
-    font-style: normal;
-    padding: 2px 2px 2px 4px;
-    text-decoration: none;
-    vertical-align: bottom;
-    white-space: nowrap;
+  color: black;
+  border: 1px solid black;
+  font-family: Calibri, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2px 2px 2px 4px;
+  text-decoration: none;
+  vertical-align: bottom;
+  white-space: nowrap;
 }
 table.wccCrosstable th {
-    background-color: #ccbb99;
-    border: 1px solid black;
+  background-color: #ccbb99;
+  border: 1px solid black;
 }
 
 /* text colors */
 .wccGrey {
-    color: #777777;
+  color: #777777;
 }
 .wccKhaki {
-    color: #c0a154;
+  color: #c0a154;
 }
 .wccRed {
-    color: #cc3300;
+  color: #cc3300;
 }
 .wccLightBlack {
-    color: #333333;
+  color: #333333;
 }
 .wccTan {
-    color: #ccbb99;
+  color: #ccbb99;
 }
 .wccFirebrick {
-    color: #993322;
+  color: #993322;
 }
 .wccBlack {
-    color: #000000;
+  color: #000000;
 }
 .wccWhite {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* background colors */
 .wccGreyBG {
-    background-color: #777777;
+  background-color: #777777;
 }
 .wccKhakiBG {
-    background-color: #c0a154;
+  background-color: #c0a154;
 }
 .wccRedBG {
-    background-color: #cc3300;
+  background-color: #cc3300;
 }
 .wccLightBlackBG {
-    background-color: #333333;
+  background-color: #333333;
 }
 .wccTanBG {
-    background-color: #ccbb99;
+  background-color: #ccbb99;
 }
 .wccFirebrickBG {
-    background-color: #993322;
+  background-color: #993322;
 }
 .wccBlackBG {
-    background-color: #000000;
+  background-color: #000000;
 }
 .wccWhiteBG {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
