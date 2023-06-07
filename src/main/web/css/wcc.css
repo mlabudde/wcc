@@ -588,6 +588,28 @@ table.wccPast td.year {
 /*
 ** CSS used by our blog site.
  */
+
+/* Schedule colors and styling. */
+.wccWinter { color: Navy; }
+.wccLateWinter { color: DarkSlateGrey; }
+.wccClubChamp { color: Green; }
+.wccClubSpeedChamp { color: Firebrick; }
+.wccSpring { color: coral; }
+.wccEarlySummer { color: Teal; }
+.wccSummer { color: DarkGreen; }
+.wccLateSummer { color: DarkMagenta; }
+.wccHotWeather { color: DarkGoldenrod; }
+.wccEarlyFall { color: MediumBlue; }
+.wccFall { color: DarkOrange; }
+.wccEarlyWinter { color: Indigo; }
+.wccSpecial { color: Firebrick; }
+
+.startTime {
+  color: #525252;
+  font-size: 10pt;
+  /*margin-top: 3px;*/
+}
+
 .wccCenter {
   text-align: center;
 }
