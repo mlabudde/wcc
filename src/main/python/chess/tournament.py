@@ -1,16 +1,15 @@
 import sys
 import reader
-from utils import String
+from ..utils import String
 
-inputFilename = "../../resources/EarlySummer-uscf.html"
-sectionName = "Section 1"
 
-if len(sys.argv) > 1:
-    inputFilename = sys.argv[1]
-if len(sys.argv) > 2:
-    sectionName = sys.argv[2]
+def getInputFilename():
+    if len(sys.argv) >= 3:
+        return sys.argv[2]
+    return "../../resources/LateSpring-Open.txt"
 
-with open(inputFilename) as fin:
+
+with open(getInputFilename()) as fin:
     lines = []
     for line in fin:
         lines.append(line)

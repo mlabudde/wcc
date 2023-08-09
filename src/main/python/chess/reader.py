@@ -1,5 +1,5 @@
 from urllib.request import urlopen
-# from ..utils import anchor
+from ..utils import anchor
 
 BASE_URL = 'http://www.uschess.org/msa/XtblMain.php'
 
@@ -61,8 +61,8 @@ class Reader:
 
     @classmethod
     def createSection(cls, link):
-        name = utils.anchor.getText(link)
-        href = utils.anchor.getHref(link)
+        name = anchor.getText(link)
+        href = anchor.getHref(link)
         parts = href.split(".")
         last = len(parts) - 1
         sn = parts[last]

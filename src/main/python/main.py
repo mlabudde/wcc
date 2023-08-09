@@ -1,31 +1,23 @@
 import sys
 from chess.reader import Reader as reader
 from chess import player
-from utils.String import printPageClose
-from utils.String import printPageHeader
-from utils.String import printTableClose
-from utils.String import printTableHeader
-
-inputFilename = '../../resources/LateSpring-Open.txt'
-numRounds = 4
+from utils import String
 
 
 def getInputFilename():
-    global inputFilename
     if len(sys.argv) >= 3:
-        inputFilename = sys.argv[2]
-    return inputFilename
+        return sys.argv[2]
+    return "../../resources/LateSpring-Open.txt"
 
 
 def processFile():
-    global inputFilename
-    global numRounds
-
     inputFilename = getInputFilename()
+    numRounds = 4
+
     if len(sys.argv) >= 4:
         numRounds = int(sys.argv[3])
 
-    printTableHeader(numRounds)
+    String.printTableHeader(numRounds)
     with open(inputFilename) as fin:
         for line in fin:
             elements = splitFixedLine(line.strip(), numRounds)
@@ -34,7 +26,7 @@ def processFile():
 
     print("</tbody>")
     print("</table>")
-    printPageClose()
+    String.printPageClose()
     return
 
 
@@ -47,8 +39,6 @@ def processWeb():
 
 
 def processWebFile():
-    global inputFilename
-
     inputFilename = getInputFilename()
     html = ""
     with open(inputFilename) as fin:
@@ -59,13 +49,13 @@ def processWebFile():
 
 def processWebContent(html:str):
     sections = reader.getSectionsFromHtml(html)
-    printPageHeader()
+    String.printPageHeader()
     for section in sections:
         print(section.getNameHtml())
-        printTableHeader(section.getRoundCount())
+        String.printTableHeader(section.getRoundCount())
         print(section.toHtml())
-        printTableClose()
-    printPageClose()
+        String.printTableClose()
+    String.printPageClose()
     return
 
 

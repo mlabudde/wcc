@@ -4,13 +4,9 @@ from ..utils.String import printPageClose
 from ..utils.String import printTableHeader
 
 inputFilename = '../resources/EarlySummer-Reserve.txt'
-numRounds = (4 + 1)  # the total points is in the last 'round'
 
 if len(sys.argv) > 1:
     inputFilename = sys.argv[1]
-if len(sys.argv) > 2:
-    numRounds = 1 + int(sys.argv[2])
-
 
 # main script starts here
 with open(inputFilename) as fin:
