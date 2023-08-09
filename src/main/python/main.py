@@ -1,31 +1,84 @@
 import sys
-from player import Player
-inputFilename = '../resources/LateSpring-Open.txt'
-numRounds = (4 + 1)  # the total points is in the last 'round'
+from chess.reader import Reader as reader
+from chess import player
+from utils.String import printPageClose
+from utils.String import printPageHeader
+from utils.String import printTableClose
+from utils.String import printTableHeader
 
-if len(sys.argv) > 1:
-    inputFilename = sys.argv[1]
-if len(sys.argv) > 2:
-    numRounds = 1 + int(sys.argv[2])
+inputFilename = '../../resources/LateSpring-Open.txt'
+numRounds = 4
+
+
+def getInputFilename():
+    global inputFilename
+    if len(sys.argv) >= 3:
+        inputFilename = sys.argv[2]
+    return inputFilename
+
+
+def processFile():
+    global inputFilename
+    global numRounds
+
+    inputFilename = getInputFilename()
+    if len(sys.argv) >= 4:
+        numRounds = int(sys.argv[3])
+
+    printTableHeader(numRounds)
+    with open(inputFilename) as fin:
+        for line in fin:
+            elements = splitFixedLine(line.strip(), numRounds)
+            player = createPlayer(elements, numRounds)
+            player.printHtml()
+
+    print("</tbody>")
+    print("</table>")
+    printPageClose()
+    return
+
+
+def processWeb():
+    tournamentId = ""
+    if len(sys.argv) >= 3:
+        tournamentId = sys.argv[2]
+    html = reader.getHtml(tournamentId, "0")
+    return processWebContent(html)
+
+
+def processWebFile():
+    global inputFilename
+
+    inputFilename = getInputFilename()
+    html = ""
+    with open(inputFilename) as fin:
+        for line in fin:
+            html += line
+    return processWebContent(html)
+
+
+def processWebContent(html:str):
+    sections = reader.getSectionsFromHtml(html)
+    printPageHeader()
+    for section in sections:
+        print(section.getNameHtml())
+        printTableHeader(section.getRoundCount())
+        print(section.toHtml())
+        printTableClose()
+    printPageClose()
+    return
 
 
 def createPlayer(attributes, rounds):
-    aPlayer = Player()
+    aPlayer = player.Player()
     aPlayer.parse(attributes, rounds)
     return aPlayer
 
 
-def splitLine(line):
-    elements = list()
-    if (line):
-        elements = list(filter(None, line.split(" ")))
-    return elements
-
 #          1         2         3         4         5         6         7
-#012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
-#30289677    1 KLINKNER, PATRICK WI  927/24  921*   W---7 L---5 W---3 W---2 W---2 3.0
+# 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+# 30289677    1 KLINKNER, PATRICK WI  927/24  921*   W---7 L---5 W---3 W---2 W---2 3.0
 #
-
 def splitFixedLine(line, aNumRounds):
     elements = list()
     if (line):
@@ -43,42 +96,20 @@ def splitFixedLine(line, aNumRounds):
 
     return elements
 
-def printTableHeader():
-    print("<html><head>")
-    print("<link rel='stylesheet' type='text/css' href='http://www.waukeshachessclub.com/css/wcc.css' />")
-    print("</head>")
-    print("<body style='background-color:white; color:black; font-size:12pt;'>")
-    print("<table class='wccCrosstable'>")
-    print("<thead>")
-    print("<tr>")
-    print("\t<th>No.</th>")
-    print("\t<th>Player Name</th>")
-    print("\t<th>State</th>")
-    print("\t<th>USCF ID</th>")
-    print("\t<th>Pre</th>")
-    print("\t<th>Post</th>")
+#
+# Possible values for argv[1] are:
+#   file, web, webfile
+#
+arg1 = None
 
-    for i in range(numRounds - 1):
-        print("\t<th>R " + str(i + 1) + "</th>")
-    print("\t<th>Total</th>")
-    print("</tr>")
-    print("</thead>")
-    print("<tbody>")
-
-
-def printPageClose():
-    print("</body>")
-    print("</html>")
-
-
-# main script starts here
-with open(inputFilename) as fin:
-    printTableHeader()
-    for line in fin:
-        elements = splitFixedLine(line.strip(), numRounds)
-        player = createPlayer(elements, numRounds)
-        player.printHtml()
-
-    print("</tbody>")
-    print("</table>")
-    printPageClose()
+if len(sys.argv) > 1:
+    arg1 = sys.argv[1]
+if "file" == arg1:
+    processFile()
+elif "web" == arg1:
+    processWeb()
+elif "webfile" == arg1:
+    processWebFile()
+else:
+    print("arg1 must be one of: 'file', 'web', or 'webfile'")
+    sys.exit(1)
