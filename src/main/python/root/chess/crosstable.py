@@ -1,7 +1,6 @@
 import sys
-from player import Player
-from ..utils.String import printPageClose
-from ..utils.String import printTableHeader
+from root.chess.player import Player
+from root.utils import String
 
 inputFilename = '../resources/EarlySummer-Reserve.txt'
 
@@ -36,7 +35,7 @@ with open(inputFilename) as fin:
         index = index + 1
 
     # now let's print out the crosstable
-    printTableHeader(numRounds)
+    String.printTableHeader(numRounds)
     for player in players:
         player.printHtml()
-    printPageClose()
+    String.printPageClose()

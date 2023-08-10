@@ -1,5 +1,7 @@
 from urllib.request import urlopen
-from ..utils import anchor
+from root.chess.player import Player
+from root.chess.section import Section
+from root.utils import anchor
 
 BASE_URL = 'http://www.uschess.org/msa/XtblMain.php'
 
@@ -66,7 +68,7 @@ class Reader:
         parts = href.split(".")
         last = len(parts) - 1
         sn = parts[last]
-        section = cls.createSection(name, "Section " + sn, href)
+        section = Section.createSection(name, "Section " + sn, href)
         return section
 
     @classmethod
@@ -76,7 +78,7 @@ class Reader:
             if line.startswith("<a href="):
                 l1 = lines[i]
                 l2 = lines[i + 1]
-                player = player.createPlayer(l1, l2)
+                player = Player.createPlayer(l1, l2)
                 section.addPlayer(player)
                 i = i + 2
             else:

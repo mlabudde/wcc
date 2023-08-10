@@ -1,5 +1,5 @@
-from ..utils import anchor
-from ..utils import String
+from root.utils import anchor
+from root.utils import String
 
 
 class Player:
