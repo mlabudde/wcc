@@ -72,3 +72,14 @@
 	- try to populate this with a few games
 	- investigate what tools/sites others use to publish games to the web
 - Other thoughts?
+
+
+[Mardown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+
+### Project Ideas
+---
+1. parse USCF tournament results emailed to TD and convert to HTML (wcc)
+2. parse USCF tournament crosstable (by fetching it from the USCF website) and convert to HTML (wcc)
+3. parse pairings and convert to HTML (wcc)
+4. generate pairings from crosstable
+5. What functionality is in WinTD? Can we bring that to a website?
