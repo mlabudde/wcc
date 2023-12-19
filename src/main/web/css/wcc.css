@@ -37,6 +37,7 @@ body {
 
 .tableLinks {
   font-size: 18pt;
+  margin: 0 auto;
   padding-left: 25px;
 }
 .tableLinks tr {
@@ -78,8 +79,8 @@ body {
 .meetingNotes {
   color: white;
   font-size: 12pt;
-  padding-left: 48px;
-  text-align: left;
+  /*padding-left: 48px;*/
+  text-align: center;
 }
 
 #divMeetingNotes {
