@@ -110,15 +110,13 @@ def processWebContent(html: str):
 def processMSAEvents():
     # as we determine how we want some events to appear, we can add the updates here...
     event_name_overrides = {
-        "EVENT NAME MISSING": "add meaningful name here"
+        "Event Name Missing": "add meaningful name here"
     }
     color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
-    year_count = -1
+    current_color = -1
     events = reader.getEventHistory()
     current_year = 0
-    ### write page header
     String.printPriorEventPageHeader()
-    # open event table
     String.printPriorEventTableHeader()
     for event in events:
         out_name = event["name"]
@@ -129,14 +127,11 @@ def processMSAEvents():
         if event["date"].year != current_year:
             current_year = event["date"].year
             new_year = current_year
-            year_count += 1
-        #print(event["date"].strftime("%m/%d/%Y") + " - " + event["link"] + " - " + out_name)
-        # write this event html name/link
-        String.printPriorEventRow(new_year, out_name, event["link"], color_cycle[year_count % len(color_cycle)])
+            current_color = (current_color+1) % len(color_cycle)
+        # print(event["date"].strftime("%m/%d/%Y") + " - " + event["link"] + " - " + out_name)
+        String.printPriorEventRow(new_year, out_name, event["link"], color_cycle[current_color])
 
-    # close event table
     String.printTableClose()
-    ### write page footer as needed
     String.printDivClose()
     String.printPageClose()
 
