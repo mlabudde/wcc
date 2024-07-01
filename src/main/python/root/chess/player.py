@@ -115,3 +115,24 @@ class Player:
         buffer += ("\t<td>" + self.total + "</td>\n")
         buffer += "</tr>\n"
         return buffer
+
+    def printXtblHtml(self, elements, nbrRounds):
+        buffer = ""
+        buffer += ("<tr>\n")
+        buffer += ("\t<td>" + elements[0] + "</td>\n")
+        buffer += ("\t<td>" + elements[1] + "</td>\n")
+        buffer += ("\t<td>" + elements[2] + "</td>\n")
+        for r in range(nbrRounds):
+            buffer += ("\t<td>" + elements[3+r] + "</td>\n")
+        buffer += ("\t<td>" + elements[3+nbrRounds] + "</td>\n")
+        buffer += "</tr>\n"
+        return buffer
+
+    def printGamesHtml(self, elements):
+        buffer = ""
+        buffer += ("<tr>\n")
+        buffer += ("\t<td>" + elements[0] + "</td>\n")
+        buffer += ("\t<td>" + elements[1] + "</td>\n")
+        buffer += ("\t<td>" + elements[2] + "</td>\n")
+        buffer += "</tr>\n"
+        return buffer

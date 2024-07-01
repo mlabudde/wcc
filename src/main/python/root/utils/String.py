@@ -43,6 +43,37 @@ def printTableHeader(numRounds):
     print("</thead>")
     print("<tbody>")
 
+# for WinTD Text Formatting
+def printCrossTableHeader(numRounds):
+    print("<table class='wccCrosstable'>")
+    print("<thead>")
+    print("<tr>")
+    print("\t<th>No.</th>")
+    print("\t<th>Player Name</th>")
+    print("\t<th>Rating</th>")
+
+    for i in range(numRounds):
+        print("\t<th>R" + str(i + 1) + "</th>")
+    print("\t<th>Total</th>")
+    print("</tr>")
+    print("</thead>")
+    print("<tbody>")
+
+# for WinTD Text Formatting
+def printGamesTableHeader():
+    print("<table class='wccCrosstable'>")
+    print("<thead>")
+    print("<tr>")
+    print("\t<th>No.</th>")
+    print("\t<th>White</th>")
+    print("\t<th>Black</th>")
+    print("</tr>")
+    print("</thead>")
+    print("<tbody>")
+
+# for WinTD Text Formatting
+def printBlankLine():
+    print("<tr><td></td></tr>")
 
 def printPageClose():
     print("</body>")
