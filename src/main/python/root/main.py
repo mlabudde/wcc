@@ -29,6 +29,7 @@ def processFile():
     String.printPageClose()
     return
 
+
 def processWinTDFile():
     inputFilename = getInputFilename()
     numRounds = 4
@@ -54,6 +55,7 @@ def processWinTDFile():
     String.printPageClose()
     return
 
+
 def processGamesFile():
     inputFilename = getInputFilename()
     numRounds = 4
@@ -76,7 +78,6 @@ def processGamesFile():
     return
 
 
-
 def processWeb():
     tournamentId = ""
     if len(sys.argv) >= 3:
@@ -94,7 +95,7 @@ def processWebFile():
     return processWebContent(html)
 
 
-def processWebContent(html:str):
+def processWebContent(html: str):
     sections = reader.getSectionsFromHtml(html)
     String.printPageHeader()
     for section in sections:
@@ -104,6 +105,40 @@ def processWebContent(html:str):
         String.printTableClose()
     String.printPageClose()
     return
+
+
+def processMSAEvents():
+    # as we determine how we want some events to appear, we can add the updates here...
+    event_name_overrides = {
+        "EVENT NAME MISSING": "add meaningful name here"
+    }
+    color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
+    year_count = -1
+    events = reader.getEventHistory()
+    current_year = 0
+    ### write page header
+    String.printPriorEventPageHeader()
+    # open event table
+    String.printPriorEventTableHeader()
+    for event in events:
+        out_name = event["name"]
+        if out_name in event_name_overrides.keys():
+            out_name = event_name_overrides[out_name]
+
+        new_year = 0
+        if event["date"].year != current_year:
+            current_year = event["date"].year
+            new_year = current_year
+            year_count += 1
+        #print(event["date"].strftime("%m/%d/%Y") + " - " + event["link"] + " - " + out_name)
+        # write this event html name/link
+        String.printPriorEventRow(new_year, out_name, event["link"], color_cycle[year_count % len(color_cycle)])
+
+    # close event table
+    String.printTableClose()
+    ### write page footer as needed
+    String.printDivClose()
+    String.printPageClose()
 
 
 def createPlayer(attributes, rounds):
@@ -133,6 +168,7 @@ def splitFixedLine(line, aNumRounds):
 
     return elements
 
+
 #           1         2         3         4         5         6         7         8
 # 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
 #    1.    Waller, Matt (1) .............  WI     2058 W10   W6    W2    -N-     3.0
@@ -144,12 +180,13 @@ def splitWinTDXtblLine(line, aNumRounds):
         elements.append(line[9:38].strip())
         elements.append(line[48:52].strip())
 
-        for i in range(aNumRounds+1):
+        for i in range(aNumRounds + 1):
             start = 53 + (6 * i)
             end = start + 6
             elements.append(line[start:end].strip())
 
     return elements
+
 
 #           1         2         3         4         5         6         7         8
 # 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
@@ -183,6 +220,9 @@ elif "winTD" == arg1:
     processWinTDFile()
 elif "pairings" == arg1:
     processGamesFile()
+elif "clubEvents" == arg1:
+    processMSAEvents()
 else:
-    print("arg1 must be one of: 'file', 'web', 'webfile', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
+    print(
+        "arg1 must be one of: 'file', 'web', 'webfile', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
     sys.exit(1)

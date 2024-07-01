@@ -1,9 +1,13 @@
+from datetime import datetime
 from urllib.request import urlopen
 from root.chess.player import Player
 from root.chess.section import Section
 from root.utils import anchor
 
+from lxml import html
+
 BASE_URL = 'http://www.uschess.org/msa/XtblMain.php'
+BASE_AFFILIATE_URL = "https://www.uschess.org/msa/AffDtlTnmtHst.php?A5008948"
 
 
 class Reader:
@@ -85,3 +89,33 @@ class Reader:
                 break
             i = i + 1
         return
+
+    @classmethod
+    def getEventHistory(cls, start_date=datetime.now(), end_date=datetime(day=1, month=1, year=1950)):
+        out_set = []
+        page = 1
+        done = False
+        while not done:
+            url = BASE_AFFILIATE_URL + "." + str(page)
+            connection = urlopen(url)
+            raw = connection.read()
+            event_html = raw.decode("utf-8")
+            tree = html.fromstring(event_html)
+            events = tree.xpath('//tr[ ./td/a[contains(@href,"XtblMain")]]')
+            # events = tree.xpath("//body/table/tbody/tr/td/center/table/tbody/tr/table")
+            if len(events) > 0:
+                for event in events:
+                    parts = event.xpath("./td")[0].text.split('-')
+                    date = datetime(month=int(parts[1]), day=int(parts[2]), year=int(parts[0]))
+                    if start_date >= date >= end_date:
+                        link = event.xpath("./td/a")[0].attrib["href"].split("?")[1]
+                        out_set.append({"date": date,
+                                        "link": BASE_URL + "?" + link,
+                                        "name": event.xpath("./td/a")[0].text})
+                    done = (date <= end_date)
+            else:
+                done = True
+
+            page = page + 1
+
+        return out_set
