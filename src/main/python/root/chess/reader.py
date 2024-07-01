@@ -108,9 +108,10 @@ class Reader:
                     parts = event.xpath("./td")[0].text.split('-')
                     date = datetime(month=int(parts[1]), day=int(parts[2]), year=int(parts[0]))
                     if start_date >= date >= end_date:
-                        link = event.xpath("./td/a")[0].attrib["href"].split("?")[1]
+                        event_id = event.xpath("./td/a")[0].attrib["href"].split("?")[1]
                         out_set.append({"date": date,
-                                        "link": BASE_URL + "?" + link,
+                                        "link": BASE_URL + "?" + event_id,
+                                        "event_id": event_id,
                                         "name": event.xpath("./td/a")[0].text.
                                        title().replace("Wcc", "WCC").replace("Swcc", "SWCC").replace(" Cc ", " CC ")
                                         })

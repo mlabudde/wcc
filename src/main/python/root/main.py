@@ -1,3 +1,4 @@
+import json
 import sys
 from root.chess.player import Player as player
 from root.chess.reader import Reader as reader
@@ -109,9 +110,8 @@ def processWebContent(html: str):
 
 def processMSAEvents():
     # as we determine how we want some events to appear, we can add the updates here...
-    event_name_overrides = {
-        "Event Name Missing": "add meaningful name here"
-    }
+    f = open('data/event_names.json')
+    event_name_overrides = json.load(f)
     color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
     current_color = -1
     events = reader.getEventHistory()
@@ -120,8 +120,8 @@ def processMSAEvents():
     String.printPriorEventTableHeader()
     for event in events:
         out_name = event["name"]
-        if out_name in event_name_overrides.keys():
-            out_name = event_name_overrides[out_name]
+        if event["event_id"] in event_name_overrides.keys():
+            out_name = event_name_overrides[event["event_id"]]
 
         new_year = 0
         if event["date"].year != current_year:
