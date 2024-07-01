@@ -111,7 +111,9 @@ class Reader:
                         link = event.xpath("./td/a")[0].attrib["href"].split("?")[1]
                         out_set.append({"date": date,
                                         "link": BASE_URL + "?" + link,
-                                        "name": event.xpath("./td/a")[0].text})
+                                        "name": event.xpath("./td/a")[0].text.
+                                       title().replace("Wcc", "WCC").replace("Swcc", "SWCC").replace(" Cc ", " CC ")
+                                        })
                     done = (date <= end_date)
             else:
                 done = True

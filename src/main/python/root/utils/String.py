@@ -112,11 +112,16 @@ def printPriorEventTableHeader():
 
 
 def printPriorEventRow(new_year, name, link, color):
-    if new_year > 0:
+    aggregate_from_year = 1991
+
+    if new_year > 0 and new_year >= aggregate_from_year:
         print("<tr>	<td></td> <td></td> </tr>")
         print("<tr><td colspan=\"2\"><hr width=\"100%\" /></td></tr>\n")
         print("<tr>\n")
-        print("<td class=\"year\">"+str(new_year)+"</td>")
+        if new_year > aggregate_from_year:
+            print("<td class=\"year\">"+str(new_year)+"</td>")
+        else:
+            print("<td class=\"year\">" + str(new_year) + " (and earlier)</td>")
     else:
         print("<tr>\n")
         print("<td></td>")
