@@ -47,7 +47,7 @@ def processWinTDFile():
                 print(player().printXtblHtml(elements, numRounds))
                 players = players + 1
             else:
-                if players > 0:
+                if players > 0 and False:
                     String.printBlankLine()
                     String.printBlankLine()
 
