@@ -45,6 +45,16 @@ body {
   vertical-align: top;
 }
 
+.tableUpcoming {
+  font-size: 18pt;
+  margin: 0 auto;
+  padding-left: 25px;
+  /*width: 75%*/
+}
+.tableUpcoming td {
+  padding: 14px;
+}
+
 #divLinks .tableLinks {
   text-align: left;
 }
