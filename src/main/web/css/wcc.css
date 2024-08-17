@@ -57,6 +57,15 @@ body {
   padding-bottom: 0px;
   padding-left: 14px;
 }
+.negativeTop {
+  margin-top: -10px;
+}
+.futureKing {
+  text-align: center;
+}
+.futureKing a {
+  color:  #e59866;
+}
 
 #divLinks .tableLinks {
   text-align: left;
