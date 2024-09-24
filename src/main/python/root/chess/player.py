@@ -3,6 +3,16 @@ from root.utils import String
 
 
 class Player:
+    normDisp = dict({
+        'N:4': '1200',
+        'N:3': '1400',
+        'N:2': '1600',
+        'N:1': '1800',
+        'N:CM': '2000',
+        'N:LM': '2200',
+        'N:SM': '2400',
+        '': ''
+    })
 
     def __init__(self):
         self.id = ""
@@ -12,6 +22,7 @@ class Player:
         self.ratePre = ""
         self.ratePost = ""
         self.rounds = list()
+        self.norm = ""
         self.total = ""
 
     @classmethod
@@ -56,6 +67,11 @@ class Player:
         thePlayer.ratePre = pre.strip()
         thePlayer.ratePost = post.strip()
         # TODO: the colors for each round!
+        items = line.split("|")
+        thePlayer.norm = cls.normDisp[items[2].strip()];
+        for i in range(len(thePlayer.rounds)):
+            if (items[3 + i].strip() != ''):
+                thePlayer.rounds[i] = thePlayer.rounds[i] + "/" + items[3 + i].strip()
         return thePlayer
 
     def parse(self, elements, numRounds):
@@ -110,6 +126,7 @@ class Player:
         buffer += ("\t<td>" + self.id + "</td>\n")
         buffer += ("\t<td>" + self.ratePre + "</td>\n")
         buffer += ("\t<td>" + self.ratePost + "</td>\n")
+        buffer += ("\t<td>" + self.norm + "</td>\n")
         for r in self.rounds:
             buffer += ("\t<td>" + r + "</td>\n")
         buffer += ("\t<td>" + self.total + "</td>\n")
@@ -123,8 +140,8 @@ class Player:
         buffer += ("\t<td>" + elements[1] + "</td>\n")
         buffer += ("\t<td>" + elements[2] + "</td>\n")
         for r in range(nbrRounds):
-            buffer += ("\t<td>" + elements[3+r] + "</td>\n")
-        buffer += ("\t<td>" + elements[3+nbrRounds] + "</td>\n")
+            buffer += ("\t<td>" + elements[3 + r] + "</td>\n")
+        buffer += ("\t<td>" + elements[3 + nbrRounds] + "</td>\n")
         buffer += "</tr>\n"
         return buffer
 
