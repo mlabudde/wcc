@@ -45,6 +45,28 @@ body {
   vertical-align: top;
 }
 
+.tableUpcoming {
+  font-size: 18pt;
+  margin: 0 auto;
+  padding-left: 25px;
+  /*width: 75%*/
+}
+.tableUpcoming td {
+  padding-top: 0px;
+  padding-right: 14px;
+  padding-bottom: 0px;
+  padding-left: 14px;
+}
+.negativeTop {
+  margin-top: -10px;
+}
+.futureKing {
+  text-align: center;
+}
+.futureKing a {
+  color:  #e59866;
+}
+
 #divLinks .tableLinks {
   text-align: left;
 }
