@@ -1,5 +1,6 @@
 import sys
 import root.chess.reader
+from root.chess import reader
 from root.utils import String
 
 

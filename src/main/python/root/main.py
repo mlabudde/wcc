@@ -53,7 +53,6 @@ def processWinTDFile():
 
     print("</tbody>")
     print("</table>")
-    String.printPageClose()
     return
 
 
@@ -75,7 +74,6 @@ def processGamesFile():
 
     print("</tbody>")
     print("</table>")
-    String.printPageClose()
     return
 
 
@@ -175,10 +173,20 @@ def splitWinTDXtblLine(line, aNumRounds):
         elements.append(line[9:38].strip())
         elements.append(line[48:52].strip())
 
+        last_good = -1
+        last_good_tag = ""
         for i in range(aNumRounds + 1):
             start = 53 + (6 * i)
             end = start + 6
+            this_tag = line[start:end].strip()
+            if len(this_tag) > 0:
+                last_good = i
+                last_good_tag = this_tag
             elements.append(line[start:end].strip())
+        if last_good != aNumRounds:
+            elements[last_good+3] = ""
+            elements[aNumRounds+3] = last_good_tag
+
 
     return elements
 
@@ -192,7 +200,7 @@ def splitGamesLine(line):
     if (line):
         elements.append(line[3:7].strip())
         elements.append(line[14:47].strip())
-        elements.append(line[53:80].strip())
+        elements.append(line[53:90].strip())
 
     return elements
 

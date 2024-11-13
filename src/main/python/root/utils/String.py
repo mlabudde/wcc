@@ -35,6 +35,7 @@ def printTableHeader(numRounds):
     print("\t<th>USCF ID</th>")
     print("\t<th>Pre</th>")
     print("\t<th>Post</th>")
+    print("\t<th>Norm</th>")
 
     for i in range(numRounds):
         print("\t<th>R" + str(i + 1) + "</th>")
