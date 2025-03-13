@@ -6,13 +6,13 @@
         <!-- yes, this comment is here on purpose -->
     </script>
     <script type='text/javascript' language='javascript'>
-        function toggleMeetingNotes() {
-            if ($("#btnotes").text() === "view") {
-                $("#btnotes").html("hide");
+        function toggleMeetingNotes(tID) {
+            if ($("#btnotes"+tID).text() === "view") {
+                $("#btnotes"+tID).html("hide");
             } else {
-                $("#btnotes").html("view");
+                $("#btnotes"+tID).html("view");
             }
-            $("#divMeetingNotes").toggle();
+            $("#divMeetingNotes"+tID).toggle();
         }
     </script>
     <title>Waukesha Chess Club</title>
@@ -41,20 +41,34 @@
         <div id="pageTitle"><span>WCC BOARD MEMBERS</span><br/></div>
         <div id="divLinks">
             <table class="tableLinks">
-                <tr><td>PRESIDENT</td><td>Jim Nickell</td></tr>
-                <tr><td>VICE-PRESIDENT</td><td>John De Mastri</td></tr>
-                <tr><td>SECRETARY</td><td>Aaron Krause</td></tr>
-                <tr><td>TREASURER<br/><span style="font-size:13pt">(and CLUB GRILLMEISTER)</span></td><td>Kevin Klandrud</td></tr>
+                <tr><td>PRESIDENT EMERITUS</td><td>Jim Nickell</td></tr>
+                <tr><td>PRESIDENT</td><td>John De Mastri</td></tr>
+                <tr><td>VICE-PRESIDENT</td><td>Jim Coons</td></tr>
+                <tr><td>SECRETARY</td><td>Nick Sloan</td></tr>
+                <tr><td>TREASURER <span style="font-size:13pt">(and CLUB GRILLMEISTER)</span></td><td>Kevin Klandrud</td></tr>
+                <tr><td>MEMBER AT LARGE<br/></td><td>Aaron Krause</td></tr>
+                <tr><td>MEMBER AT LARGE<br/></td><td>Evan Seghers</td></tr>
                 <tr><td colspan='2'><hr/></td></tr>
-                <tr><td colspan='2'>Board Meeting Minutes/Notes</td></tr>
-                <tr><td colspan='2' class="meetingNotes">May 17, 2020 <button id="btnotes" onclick="toggleMeetingNotes();">view</button></td></tr>
+                <tr><td colspan='2' align="center">Board Meeting Minutes/Notes</td></tr>
+                <tr><td colspan='2' class="meetingNotes">March 12 2025 <button id="btnotes-2025-03" onclick="toggleMeetingNotes('-2025-03');">hide</button>
+                    <div id="divMeetingNotes-2025-03">
+                        <iframe id="iframeMeetingNotes-2025-03" src="downloads/2025-03-12%20Board%20Meeting.pdf"></iframe>
+                    </div>
+                    <script>toggleMeetingNotes('-2025-03');</script>
+                </td></tr>
+                <tr><td colspan='2' class="meetingNotes">May 17, 2020 <button id="btnotes-2020-05" onclick="toggleMeetingNotes('-2020-05');">hide</button>
+                    <div id="divMeetingNotes-2020-05">
+                        <iframe id="iframeMeetingNotes-2020-05" src="downloads/WCC_Board_Meeting_Notes_5-17-2020.pdf"></iframe>
+                    </div>
+                    <script>toggleMeetingNotes('-2020-05');</script>
+                </td></tr>
             </table>
 <!--            <p class="meetingNotes">-->
-<!--                May 17, 2020 <button id="btnotes" onclick="toggleMeetingNotes();">view</button>-->
+<!--                March 12, 2025 <button id="btnotes-2025-03" onclick="toggleMeetingNotes('-2025-03');">view</button>-->
 <!--            </p>-->
-            <div id="divMeetingNotes">
-                <iframe id="iframeMeetingNotes" src="downloads/WCC_Board_Meeting_Notes_5-17-2020.pdf"></iframe>
-            </div>
+<!--            <p class="meetingNotes">-->
+<!--                May 17, 2020 <button id="btnotes-2020-05" onclick="toggleMeetingNotes('-2020-05');">view</button>-->
+<!--            </p>-->
         </div>
     </div>
 
