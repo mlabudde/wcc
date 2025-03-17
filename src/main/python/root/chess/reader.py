@@ -1,3 +1,4 @@
+import urllib
 from datetime import datetime
 from urllib.request import urlopen
 from root.chess.player import Player
@@ -97,7 +98,8 @@ class Reader:
         done = False
         while not done:
             url = BASE_AFFILIATE_URL + "." + str(page)
-            connection = urlopen(url)
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            connection = urlopen(req)
             raw = connection.read()
             event_html = raw.decode("utf-8")
             tree = html.fromstring(event_html)

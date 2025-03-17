@@ -227,5 +227,5 @@ elif "clubEvents" == arg1:
     processMSAEvents()
 else:
     print(
-        "arg1 must be one of: 'file', 'web', 'webfile', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
+        "arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
     sys.exit(1)
