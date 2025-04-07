@@ -19,23 +19,13 @@
 
 <body>
 <div id="main-container">
-
-    <div id="divHeader">
-        <span class="wccTitle">WAUKESHA CHESS CLUB</span>
-        <div id="divMenu">
-            <hr class="menuLine menuLineTop"/>
-            <span class="wccMenuItemFirst"><a class="wccMenuLink" href="index.html">Home</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="schedule.html">Schedule</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="club_champions.html">Club Champions</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="waukmem.html">Waukesha Memorial</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="boardmembers.html">WCC Board</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="past_tournaments.html">Past Tournaments</a></span>
-            <!-- <span class="wccMenuItem"><a class="wccMenuLink" href="games.html">Games</a></span> -->
-            <span class="wccMenuItem"><a class="wccMenuLink" href="links.html">Links</a></span>
-            <span class="wccMenuImage"><a class="wccMenuLink" href="http://waukeshachessclub.blogspot.com/" target="_blank"><img class="wccMenuLinkImage" src="images/blogger-logo.png" alt="Blog" height="17" width="17"/></a></span>
-            <hr class="menuLine menuLineBottom"/>
-        </div>
-    </div>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+    <div id="header"></div>
 
     <div id="divContent">
 <!--        <table id="tblCovid" border="0" frame="below">-->
@@ -46,10 +36,23 @@
 <!--            </tr>-->
 <!--        </table>-->
 
-        <table id="tblCovid" border="0" frame="below">
+        <table id="tblCovid" border="3" frame="below">
             <tr>
                 <td>
                     <h1>The Waukesha Chess Club is open!</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Come on out on Wednesdays and join us.</h3>
+                    <p><span class="covidPrecautions">
+                        A new event starts this coming Wed, 4/9 - The Early Spring Swiss - a regular old 4 round G/100d5 swiss in two sections.
+                        Check the blog or let one of the TDs know if you want to join, or just get more information</span></p>
+                    <p><span class="covidPrecautions">
+                        We just completed our 2025 Club Blitz Event on 4/2 - Congratulations to ??? (have to get the details from Jim and Kevin...)!</span></p>
+                    <p><span class="covidPrecautions">
+                        We just completed our 2025 Club Championship on 3/26 - Congratulations to Evan Seghers!</span></p>
+			<p></p>
                 </td>
             </tr>
             <tr>
@@ -72,7 +75,7 @@
             </tr>
         </table>
 
-    <table id="homeTopTable" border="0" frame="below">
+    <table id="homeTopTable" border="3" frame="below">
     <tr style="color:#CCCC99; vertical-align:top">
     <td align="center" width="30%">
 		<u>ADDRESS</u>
@@ -81,14 +84,14 @@
         <br/>709 N Grandview Blvd
         <br/>Waukesha, WI 53188
     </td>
-    <td align="center" width="30%">
+    <td align="center" width="40%">
 		<u>DATE & TIME</u>
         <br/>Wednesday nights
         <br/>Doors Open at 6:00pm
         <br/>Games begin at 7:00pm
     </td>
-    <td align="left" width="40%">
-        <u>MEMBERSHIP</u>
+    <td align="left" width="30%">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>MEMBERSHIP</u>
         <div>
         <b>Annual dues</b>
 		<ul class="unorderedList">
@@ -108,9 +111,9 @@
     </td></tr>
     </table>
 
-    <table  id="homeMidTable" border="0" frame="below">
+    <table  id="homeMidTable" border="3" frame="below">
     <tr style="color:#CCCC99; vertical-align:top">
-        <td align="center"><img id="eaglesPhoto" src="images/eagles-post.jpg" style="min-height: 326px;">
+        <td align="center"><img id="eaglesPhoto" src="images/eagles-post.jpg" style="min-height: 328px;">
             <div class="caption">Use this entrance for club activities.</div>
         </td>
         <td align="center">
@@ -123,17 +126,19 @@
     </tr>
     </table>
     </div>
-    <div id="divFooter">
-        <div id="footerLeft">
-            <span class="footerLabel">2024 Club Champion</span><br/>
-            <span class="footerValue">Evan Seghers</span>
+    <div id="divBottom">
+        <div id="bottomLeft">
+            <span class="bottomLabel">2024 Club Champion</span><br/>
+            <span class="bottomValue">Evan Seghers</span>
         </div>
-        <div id="footerRight">
-            <span class="footerLabel">2025 Waukesha Memorial Champion</span><br/>
-            <span class="footerValue">Evan Seghers & Ojas Sahoo</span>
+        <div id="bottomRight">
+            <span class="bottomLabel">2025 Waukesha Memorial Champion</span><br/>
+            <span class="bottomValue">Evan Seghers & Ojas Sahoo</span>
         </div>
     </div>
 
+
 </div>
+   <div id="footer"></div>
 </body>
 </html>

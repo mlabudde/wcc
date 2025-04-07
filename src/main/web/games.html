@@ -10,40 +10,42 @@
 
 <body>
 <div id="main-container">
-    <div id="divHeader">
-        <span class="wccTitle">WAUKESHA CHESS CLUB</span>
-        <div id="divMenu">
-            <hr class="menuLine menuLineTop"/>
-            <span class="wccMenuItemFirst"><a class="wccMenuLink" href="index.html">Home</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="schedule.html">Schedule</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="club_champions.html">Club Champions</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="waukmem.html">Waukesha Memorial</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="boardmembers.html">WCC Board</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="past_tournaments.html">Past Tournaments</a></span>
-            <!-- <span class="wccMenuItem"><a class="wccMenuLink" href="games.html">Games</a></span> -->
-            <span class="wccMenuItem"><a class="wccMenuLink" href="links.html">Links</a></span>
-            <span class="wccMenuImage"><a class="wccMenuLink" href="http://waukeshachessclub.blogspot.com/" target="_blank"><img class="wccMenuLinkImage" src="images/blogger-logo.png" alt="Blog" height="17" width="17"/></a></span>
-            <hr class="menuLine menuLineBottom"/>
-        </div>
-    </div>
-
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+    <div id="header"></div>
     <div id="divContent">
         <div id="pageTitle"><span>GAMES</span><br/></div>
 		<table border="2" width="100%">
+		<tr><td colspan="6">As mentioned on the blog, we'd like to start collecting interesting (or other) games from club play.<br>
+        Since we haven't gotten much response for that - I'm going to post a few game collections for books and various chessable courses - if people want to use them, great!<br>
+            I will periodically keep these up to date, as I actually find time to study...  if you want anything specific, lmk at chess@demastri.com<br>
+            I will post as CBH files (or CBH2) - if you want PGNs, let me know.<br>
+        The copyright rule is that you should own some version of the text to use the annotations and commentary, but the game scores themselves
+        are public domain...</td></tr>
 		<tr><td colspan="2">PLAYERS</td><td>DATE</td><td>TOURNAMENT</td><td>RESULT</td><td>NOTATION</td></tr>
 		<tr><td colspan="2">Jane Doe (W) vs. John Smith (B)</td><td>January 7th 2019</td><td>Early Winter Swiss</td><td>1-0</td>
 		<td>
 			<a class="wccGameLink" href="games/001_Doe_v_Smith.pgn">PGN</a>
 		</td></tr>
 		</table>
+
+		<table border="2" width="100%">
+		<tr><td colspan="2">Collection Name</td><td>Game Count</td><td>Format</td><td>Author</td><td>Update Date</td></tr>
+            <tr><td colspan="2">Reassess Your Chess</td><td>200</td><td>CBH</td><td>Silman</td><td>4-Apr-26</td></tr>
+		</table>
     </div>
 
-    <div id="divFooter">
-        <div id="footerLeft">
+    <div id="divBottom">
+        <div id="bottomLeft">
         </div>
-        <div id="footerRight">
+        <div id="bottomRight">
         </div>
     </div>
 </div>
+   <div id="footer"></div>
 </body>
 </html>

@@ -10,23 +10,13 @@
 
 <body>
 <div id="main-container">
-
-    <div id="divHeader">
-        <span class="wccTitle">WAUKESHA CHESS CLUB</span>
-        <div id="divMenu">
-            <hr class="menuLine menuLineTop"/>
-            <span class="wccMenuItemFirst"><a class="wccMenuLink" href="index.html">Home</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="schedule.html">Schedule</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="club_champions.html">Club Champions</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="waukmem.html">Waukesha Memorial</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="boardmembers.html">WCC Board</a></span>
-            <span class="wccMenuItem"><a class="wccMenuLink" href="past_tournaments.html">Past Tournaments</a></span>
-            <!-- <span class="wccMenuItem"><a class="wccMenuLink" href="games.html">Games</a></span> -->
-            <span class="wccMenuItem"><a class="wccMenuLink" href="links.html">Links</a></span>
-            <span class="wccMenuImage"><a class="wccMenuLink" href="http://waukeshachessclub.blogspot.com/" target="_blank"><img class="wccMenuLinkImage" src="images/blogger-logo.png" alt="Blog" height="17" width="17"/></a></span>
-            <hr class="menuLine menuLineBottom"/>
-        </div>
-    </div>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+        <div id="header"></div>
 
     <div id="divContent">
         <div id="divSchedule" class="backgroundWhite">
@@ -183,13 +173,13 @@
         </div>
     </div>
 
-    <div id="divFooter">
-        <div id="footerLeft">
+    <div id="divBottom">
+        <div id="bottomLeft">
         </div>
-        <div id="footerRight">
+        <div id="bottomRight">
         </div>
     </div>
-
 </div>
+    <div id="footer"></div>
 </body>
 </html>
