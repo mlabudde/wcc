@@ -86,24 +86,14 @@ def printPriorEventPageHeader():
     \n\
 <body>  \n\
 <div id=\"main-container\">  \n\
-    <div id=\"divHeader\">  \n\
-        <span class=\"wccTitle\">WAUKESHA CHESS CLUB</span>  \n\
-        <div id=\"divMenu\">  \n\
-            <hr class=\"menuLine menuLineTop\"/>  \n\
-            <span class=\"wccMenuItemFirst\"><a class=\"wccMenuLink\" href=\"index.html\">Home</a></span>  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"schedule.html\">Schedule</a></span>  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"club_champions.html\">Club Champions</a></span>  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"waukmem.html\">Waukesha Memorial</a></span>  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"boardmembers.html\">WCC Board</a></span>  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"past_tournaments.html\">Past Tournaments</a></span>  \n\
-            <!-- <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"games.html\">Games</a></span> -->  \n\
-            <span class=\"wccMenuItem\"><a class=\"wccMenuLink\" href=\"links.html\">Links</a></span>  \n\
-            <span class=\"wccMenuImage\"><a class=\"wccMenuLink\" href=\"http://waukeshachessclub.blogspot.com/\" target=\"_blank\"><img class=\"wccMenuLinkImage\" src=\"images/blogger-logo.png\" alt=\"Blog\" height=\"17\" width=\"17\"/></a></span>  \n\
-            <hr class=\"menuLine menuLineBottom\"/>  \n\
-        </div>  \n\
-    </div>  \n\
-    \n\
-    <div id=\"divContent\">  \n\
+<script>  \n\
+$(function(){  \n\
+  $(\"#header\").load(\"header.html\");  \n\
+  $(\"#footer\").load(\"footer.html\");  \n\
+});  \n\
+</script>  \n\
+    <div id=\"header\"></div>  \n\
+        <div id=\"divContent\"> \n\
         <div id=\"pageTitle\"><span>PAST TOURNAMENTS</span><br/></div>\n")
 
 
@@ -134,6 +124,8 @@ def printBlankLine():
     print("<tr><td></td></tr>")
 
 def printPageClose():
+    print("</div>")
+    print("<div id=\"footer\"></div>")
     print("</body>")
     print("</html>")
 
@@ -143,6 +135,5 @@ def printDivClose():
 
 
 def printTableClose():
-    print("</tbody>")
     print("</table>")
     print("<br/>")
