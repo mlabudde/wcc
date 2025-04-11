@@ -10,247 +10,481 @@
 
 <body>
 <div id="main-container">
-<script>
-$(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
-</script>
-        <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <div id="header"></div>
 
 
     <div id="divContent">
         <div id="pageTitle"><span>WAUKESHA MEMORIAL</span><br/></div>
-		<div id="divSubtitle">
-			See you in 2026 for the <i>next</i> Waukesha Memorial!<br/>
-			<a class="wccLink" target="_blank" href="downloads/2025_Waukesha_Memorial.pdf">Click here for the 2025 Flyer</a>
-		</div>
+        <div id="divSubtitle">
+            See you in 2026 for the <i>next</i> Waukesha Memorial!<br/>
+            <a class="wccLink" target="_blank" href="downloads/2025_Waukesha_Memorial.pdf">Click here for the 2025
+                Flyer</a>
+        </div>
 
-<table class="waukMemorial">
-	<tr><th width="15%">Year</th><th width="70%">Winner(s)</th><th width="15%">Crosstable</th></tr>
+        <table class="waukMemorial" hidden>
+            <tr>
+                <th width="15%">Year</th>
+                <th width="70%">Winner(s) - linked to USCF event result where available</th>
+                <th width="15%">Crosstable</th>
+            </tr>
 
-	<tr>
-		<td>2025</td>
-		<td>Evan Seghers & Ojas Sahoo</td>
-		<td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202502152052.1">results</a></td>
-	</tr>
-	<tr>
-		<td>2024</td>
-		<td>Christopher Atkeson &amp; Evan Seghers</td>
-		<td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202402245462.1">results</a></td>
-	</tr>
-	<tr>
-		<td>2023</td>
-		<td>Daniel J. Phipps</td>
-		<td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202302257462.1">results</a></td>
-	</tr>
-	<tr>
-		<td>2022</td>
-		<td>John Zapata Hincapie <br/> Daniel J. Phipps <br/> Abhinav Reddy Padala</td>
-		<td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202202266922">results</a></td>
-	</tr>
-	<tr>
-		<td>2020</td>
-		<td>Chip Kraft</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?202002298482.0">results</a></td>
-	</tr>
-	<tr>
-		<td>2019</td>
-		<td>Anupama Shashikala Rajendra<br/>Susanna G Ulrich<br/>David McNeil<br/>Robert Lee Muprhy</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201903090422.0">results</a></td>
-	</tr>
-	<tr>
-		<td>2018</td>
-		<td>Anupama Shashikala Rajendra</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201803102582">results</a></td>
-	</tr>
-	<tr>
-		<td>2017</td>
-		<td>Anupama Shashikala Rajendra</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201703119742">results</a></td>
-	</tr>
-	<tr>
-		<td>2016</td>
-		<td>Anupama Shashikala Rajendra<br/>Avinash Shashikala Rajendra</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201603128592">results</a></td>
-	</tr>
-	<tr>
-		<td>2015</td>
-		<td>Alex Betaneli<br/>Brady R. Harder<br/>Avinash Shashikala Rajendra</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201503287632">results</a></td>
-	</tr>
-	<tr>
-		<td>2014</td>
-		<td>Richard R. Martin III<br/>Rachel J. Ulrich</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201403291222">results</a></td>
-	</tr>
-	<tr>
-		<td>2013</td>
-		<td>Jesse M Allen<br/>Jon P. Breider<br/>Wade Christensen<br/>Aaron Jing<br/>Aaron P. Krause<br/>Tinglin Shi</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201303307972">results</a></td>
-	</tr>
-	<tr>
-		<td>2012</td>
-		<td>Aaron Jing</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313602">results</a><br/>
-		     <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313492">RBO results</a></td>
-	</tr>
-	<tr>
-		<td>2011</td>
-		<td>David Jin<br/>Aaron Jing<br/>AwonderLiang<br/>Robert Lee Murphy<br/>Bill Williams</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201103269791">results</a></td>
-	</tr>
-	<tr>
-		<td>2010</td>
-		<td>Jeff Cooper<br/>David Jin</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274731">results</a><br/>
-             <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274411">RBO results</a></td>
-	</tr>
+            <tr>
+                <td>2025</td>
+                <td>Evan Seghers & Ojas Sahoo</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202502152052.1">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>Christopher Atkeson &amp; Evan Seghers</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202402245462.1">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Daniel J. Phipps</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202302257462.1">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>John Zapata Hincapie <br/> Daniel J. Phipps <br/> Abhinav Reddy Padala</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202202266922">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>Chip Kraft</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?202002298482.0">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Anupama Shashikala Rajendra<br/>Susanna G Ulrich<br/>David McNeil<br/>Robert Lee Muprhy</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201903090422.0">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Anupama Shashikala Rajendra</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201803102582">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>Anupama Shashikala Rajendra</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201703119742">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Anupama Shashikala Rajendra<br/>Avinash Shashikala Rajendra</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201603128592">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>Alex Betaneli<br/>Brady R. Harder<br/>Avinash Shashikala Rajendra</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201503287632">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>Richard R. Martin III<br/>Rachel J. Ulrich</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201403291222">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>Jesse M Allen<br/>Jon P. Breider<br/>Wade Christensen<br/>Aaron Jing<br/>Aaron P. Krause<br/>Tinglin
+                    Shi
+                </td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201303307972">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Aaron Jing</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313602">results</a><br/>
+                    <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313492">RBO
+                        results</a></td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>David Jin<br/>Aaron Jing<br/>AwonderLiang<br/>Robert Lee Murphy<br/>Bill Williams</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201103269791">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>Jeff Cooper<br/>David Jin</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274731">results</a><br/>
+                    <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274411">RBO
+                        results</a></td>
+            </tr>
 
-	<tr>
-		<td>2009</td>
-		<td>Bob Bruch</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200902280491">results</a></td>
-	</tr>
-	<tr>
-		<td>2008</td>
-		<td>Matthew William Waller<br/>David R Cardenas<br/>Jacob D. Kohlenberg</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200803221331">results</a></td>
-	</tr>
-	<tr>
-		<td>2007</td>
-		<td>Paul Royal Fricano</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200703106691">results</a></td>
-	</tr>
-	<tr>
-		<td>2006</td>
-		<td>Paul Royal Fricano</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200603183791">results</a></td>
-	</tr>
-	<tr>
-		<td>2005</td>
-		<td>Ashish Vaja</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200503265111">results</a></td>
-	</tr>
-	<tr>
-		<td>2004</td>
-		<td>Neil Gleason</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200403200400">results</a></td>
-	</tr>
-	<tr>
-		<td>2003</td>
-		<td>Bill Williams</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200302150120">results</a></td>
-	</tr>
-	<tr>
-		<td>2002</td>
-		<td>Alexander Betaneli</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200202027630">results</a></td>
-	</tr>
-	<tr>
-		<td>2001</td>
-		<td>Bill Williams</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200102176000">results</a></td>
-	</tr>
-	<tr>
-		<td>2000</td>
-		<td>John Wagner<br/>Bill Williams</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200002123700">results</a></td>
-	</tr>
+            <tr>
+                <td>2009</td>
+                <td>Bob Bruch</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200902280491">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>Matthew William Waller<br/>David R Cardenas<br/>Jacob D. Kohlenberg</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200803221331">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200703106691">Paul Royal Fricano</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>Paul Royal Fricano</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200603183791">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>Ashish Vaja</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200503265111">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>Neil Gleason</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200403200400">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>Bill Williams</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200302150120">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>Alexander Betaneli</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200202027630">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2001</td>
+                <td>Bill Williams</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200102176000">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>John Wagner<br/>Bill Williams</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200002123700">results</a>
+                </td>
+            </tr>
 
-	<tr>
-		<td>1999</td>
-		<td>Clark McCutchin</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199901236280">results</a></td>
-	</tr>
-	<tr>
-		<td>1998</td>
-		<td>Clark McCutchin</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199801173530">results</a></td>
-	</tr>
-	<tr>
-		<td>1997</td>
-		<td>Clark McCutchin</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199702158190">results</a></td>
-	</tr>
-	<tr>
-		<td>1996</td>
-		<td>King P. Christian</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199603092600">results</a></td>
-	</tr>
-	<tr>
-		<td>1995</td>
-		<td>George Ljaschenko<br/>Guy Hoffman<br/>Clark McCutchin<br/>Chuck Jester</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199502188100">results</a></td>
-	</tr>
+            <tr>
+                <td>1999</td>
+                <td>Clark McCutchin</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199901236280">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1998</td>
+                <td>Clark McCutchin</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199801173530">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>Clark McCutchin</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199702158190">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1996</td>
+                <td>King P. Christian</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199603092600">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1995</td>
+                <td>George Ljaschenko<br/>Guy Hoffman<br/>Clark McCutchin<br/>Chuck Jester</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199502188100">results</a>
+                </td>
+            </tr>
 
-	<tr>
-		<td>1994</td>
-		<td>Jeff Cooper<br/>Bill Williams</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199403191780">results</a></td>
-	</tr>
-	<tr>
-		<td>1993</td>
-		<td>Ksenija Kokonovic</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199302206350">results</a></td>
-	</tr>
-	<tr>
-		<td>1992</td>
-		<td>Tom Leonard<br/>Jeff Cooper</td>
-		<td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199202220270">results</a></td>
-	</tr>
-	<tr>
-		<td>1991</td>
-		<td>Mike La Budde<br/>Guy Hoffman</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1990</td>
-		<td>Tom Moore<br/>Wallace Gordon</td>
-		<td>n/a</td>
-	</tr>
+            <tr>
+                <td>1994</td>
+                <td>Jeff Cooper<br/>Bill Williams</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199403191780">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>Ksenija Kokonovic</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199302206350">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1992</td>
+                <td>Tom Leonard<br/>Jeff Cooper</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199202220270">results</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1991</td>
+                <td>Mike La Budde<br/>Guy Hoffman</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1990</td>
+                <td>Tom Moore<br/>Wallace Gordon</td>
+                <td>n/a</td>
+            </tr>
 
-	<tr>
-		<td>1989</td>
-		<td>Tom Moore</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1988</td>
-		<td>George Ljaschenko</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1987</td>
-		<td>Dale Sharp</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1986</td>
-		<td>Bill Willimas<br/>Peter Webster</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1985</td>
-		<td>Bill Willimas</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1984</td>
-		<td>Robert Both</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1983</td>
-		<td>Bill Williams<br/>Ethan Allen</td>
-		<td>n/a</td>
-	</tr>
-	<tr>
-		<td>1982</td>
-		<td>Bill Elger</td>
-		<td>n/a</td>
-	</tr>
-</table>
+            <tr>
+                <td>1989</td>
+                <td>Tom Moore</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1988</td>
+                <td>George Ljaschenko</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1987</td>
+                <td>Dale Sharp</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1986</td>
+                <td>Bill Willimas<br/>Peter Webster</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1985</td>
+                <td>Bill Willimas</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Robert Both</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1983</td>
+                <td>Bill Williams<br/>Ethan Allen</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>1982</td>
+                <td>Bill Elger</td>
+                <td>n/a</td>
+            </tr>
+        </table>
+
+
+        <table class="champs">
+            <tr style="text-align: center;">
+                <td colspan="6">Winners are linked to USCF event crosstable if available<br/></td>
+            </tr>
+        </table>
+        <table class="champs">
+            <tr class="text-align: center;">
+                <th colspan="2">1980s</th>
+                <th colspan="2">2000s</th>
+                <th colspan="2">2020s</th>
+            </tr>
+
+            <tr>
+                <td width="5%"></td>
+                <td width="25%"></td>
+                <td width="5%">2000</td>
+                <td width="25%"><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200002123700">John Wagner &amp;<br/>Bill Williams</a></td>
+                <td width="5%">2020</td>
+                <td width="25%"><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?202002298482.0">Chip Kraft</a>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td><td></td>
+                <td>2001</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200102176000">Bill Williams</a></td>
+                <td>2021</td>
+                <td>&ndash; not held &ndash;</td>
+            <tr>
+                <td>1982</td>
+                <td>Bill Elger</td>
+                <td>2002</td>
+            <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200202027630">Alexander Betaneli</a></td>
+                <td>2022</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202202266922">
+                    John Zapata Hincapie,<br/>Daniel J. Phipps, &amp; <br/> Abhinav Reddy Padala</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1983</td>
+                <td>Bill Williams &amp; <br/>Ethan Allen</td>
+                <td>2003</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200302150120">Bill Williams</a></td>
+                <td>2023</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202302257462.1">Daniel J. Phipps</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Robert Both</td>
+                <td>2004</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200403200400">Neil Gleason</a></td>
+                <td>2024</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202402245462.1">Christopher Atkeson &amp; <br/> Evan Seghers</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1985</td>
+                <td>Bill Williams</td>
+                <td>2005</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200503265111">Ashish Vaja</a></td>
+                <td>2025</td>
+                <td><a class="wccLink" target="_blank" href="https://www.uschess.org/msa/XtblMain.php?202502152052.1">Evan Seghers & <br/>Ojas Sahoo</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1986</td>
+                <td>Bill Williams &amp;<br/>Peter Webster</td>
+                <td>2006</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200603183791">Paul Royal Fricano</a></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1987</td>
+                <td>Dale Sharp</td>
+                <td>2007</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200703106691">Paul Royal Fricano</a></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1988</td>
+                <td>George Ljaschenko</td>
+                <td>2008</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200803221331">Matthew William Waller,<br/>David R Cardenas, &amp;<br/>Jacob D. Kohlenberg</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1989</td>
+                <td>Tom Moore</td>
+                <td>2009</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?200902280491">Bob Bruch</a>
+                <td></td><td></td>
+            </tr>
+
+         </table>
+       <table class="champs">
+
+            <tr class="text-align: center;">
+                <th colspan="2">1990s</th>
+                <th colspan="2">2010s</th>
+                <th colspan="2"></th>
+            </tr>
+
+            <tr>
+                <td width="5%">1990</td>
+                <td width="25%">Tom Moore &amp;<br/>Wallace Gordon</td>
+                <td width="5%">2010</td>
+                <td width="25%"><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274731">Jeff Cooper &amp; <br/>David Jin</a><br/>
+                    <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201003274411">(RBO results)</a></td>
+                <td width="5%"></td>
+                <td width="25%"></td>
+            </tr>
+            <tr>
+                <td>1991</td>
+                <td>Mike La Budde &amp;<br/>Guy Hoffman</td>
+                <td>2011</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201103269791">
+                    David Jin, <br/>Aaron Jing, <br/>Awonder Liang, <br/>Robert Lee Murphy, &amp;<br/>Bill Williams</a></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1992</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199202220270">Tom Leonard &amp;<br/>Jeff Cooper</a>
+                <td>2012</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313602">Aaron Jing</a><br/>
+                    <a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201203313492">(RBO
+                        results)</a></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199302206350">Ksenija Kokanovic</a>
+                <td>2013</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201303307972">
+                    Jesse M Allen,<br/>Jon P. Breider,<br/>Wade Christensen,<br/>Aaron Jing,<br/>Aaron P. Krause, &amp;<br/>Tinglin
+                    Shi</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1994</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199403191780">Jeff Cooper &amp;<br/>Bill Williams</a></td>
+                <td>2014</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201403291222">Richard R. Martin III &amp;<br/>Rachel J. Ulrich</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1995</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199502188100">George Ljaschenko, <br/>Guy Hoffman, <br/>Clark McCutchin, &amp;<br/>Chuck Jester</a></td>
+                <td>2015</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201503287632">Alex Betaneli,<br/>Brady R. Harder, &amp;<br/>Avinash Shashikala Rajendra</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1996</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199603092600">King P. Christian</a></td>
+                <td>2016</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201603128592">Anupama Shashikala Rajendra <br/>&amp;Avinash Shashikala Rajendra</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199702158190">Clark McCutchin</a></td>
+                <td>2017</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201703119742">Anupama Shashikala Rajendra</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1998</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199801173530">Clark McCutchin</a></td>
+                <td>2018</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201803102582">Anupama Shashikala Rajendra</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?199901236280">Clark McCutchin</a></td>
+                <td>2019</td>
+                <td><a class="wccLink" target="_blank" href="http://www.uschess.org/msa/XtblMain.php?201903090422.0">
+                    Anupama Shashikala Rajendra<br/>Susanna G Ulrich, <br/>David McNeil, &amp;<br/>Robert Lee Muprhy</a>
+                </td>
+                <td></td><td></td>
+            </tr>
+
+
+        </table>
+
 
     </div>
 
@@ -261,6 +495,6 @@ $(function(){
         </div>
     </div>
 </div>
-    <div id="footer"></div>
+<div id="footer"></div>
 </body>
 </html>

@@ -1,317 +1,350 @@
 /* Waukesha Chess Club Style Definitions */
+html * {
+    font-family: Arial;
+}
+
 body {
-  background-color: #1E1A53;
-  color: white;
-  font-size: 32pt;
-  text-align: center;
+    background-color: #1E1A53;
+    color: white;
+    font-size: 32pt;
+    text-align: center;
 }
 
 #main-container {
-  margin: auto;
-  max-width: 1042px;
-  min-width: 1024px;
+    margin: auto;
+    max-width: 1042px;
+    min-width: 1024px;
 }
 
 /* the first of the three main DIVs */
 #divHeader {
-  margin-top: 12px;
-  text-align: center;
-  width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
 }
 
 #divMenu {
-  min-width: 1024px;
+    min-width: 1024px;
 }
 
 /* the second of the three main DIVs */
 #divContent {
-  min-width: 1024px;
-  text-align: center;
+    min-width: 1024px;
+    text-align: center;
 }
 
 #divLinks {
-  max-width: 1024px;
-  min-width: 1024px;
-  text-align: left;
+    max-width: 1024px;
+    min-width: 1024px;
+    text-align: center;
 }
 
 .tableLinks {
-  font-size: 18pt;
-  margin: 0 auto;
-  padding-left: 25px;
+    font-size: 14pt;
+    margin: 0 auto;
+    padding-left: 25px;
 }
+
 .tableLinks tr {
-  line-height: 42px;
-  vertical-align: top;
+    line-height: 24px;
+    vertical-align: top;
+}
+.tableLinks td {
+    text-align: center;
 }
 
 .tableUpcoming {
-  font-size: 18pt;
-  margin: 0 auto;
-  padding-left: 25px;
-  width: 75%
+    font-size: 14pt;
+    margin: 0 auto;
+    padding-left: 25px;
+    width: 75%
 }
+
 .tableUpcoming td {
-  padding-top: 0px;
-  padding-right: 14px;
-  padding-bottom: 0px;
-  padding-left: 14px;
-  text-align: left;
-  white-space:nowrap;
-  /*width:237px;*/
-  /*vertical-align:top;">*/
+    padding-top: 0px;
+    padding-right: 14px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+    text-align: left;
+    white-space: nowrap;
+    /*width:237px;*/
+    /*vertical-align:top;">*/
 }
+
 .negativeTop {
-  margin-top: -10px;
+    margin-top: -10px;
 }
+
 .futureKing {
-  text-align: center;
+    text-align: center;
 }
+
 .futureKing a {
-  color:  #e59866;
+    color: #e59866;
 }
 
 #divLinks .tableLinks {
-  text-align: left;
+    text-align: left;
 }
 
 .content {
-  max-width: 1024px;
-  min-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+    max-width: 1024px;
+    min-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* the third of the three main DIVs */
 #divBottom {
-  margin: 15px 5px 5px 5px;
+    margin: 15px 5px 5px 5px;
 }
 
 #pageTitle {
-  color: darkgreen;
-  font-size: 32pt;
-  margin: auto;
-  margin-bottom: 20px;
+    color: #FFFFCC;
+    /* color: darkgreen; */
+    font-size: 32pt;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .pgTitle {
-  color: darkgreen;
-  font-size: 32pt;
-  margin: auto;
-  margin-bottom: 10px;
+    color: #FFFFCC;
+    /* color: darkgreen; */
+    font-size: 32pt;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .meetingNotes {
-  color: white;
-  font-size: 12pt;
-  /*padding-left: 48px;*/
-  text-align: center;
+    color: white;
+    font-size: 12pt;
+    /*padding-left: 48px;*/
+    text-align: center;
 }
 
 #divMeetingNotes {
-  display: none;
-  margin-top: 25px;
-  min-height: 33%;
-  min-width: 90%;
+    display: none;
+    margin-top: 25px;
+    min-height: 33%;
+    min-width: 90%;
 }
 
 #iframeMeetingNotes {
-  height: 98%;
-  width: 98%;
+    height: 98%;
+    width: 98%;
 }
 
 .onlineNotice {
-  color: black;
-  font-size: 12pt;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-style: groove;
-  border-color: black;
-  border-width: 1px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+    color: black;
+    font-size: 12pt;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #divSubtitle {
-  color: #FFFFCC;
-  font-size: 18pt;
-  margin: auto;
-  margin-bottom: 20px;
+    color: #FFFFCC;
+    font-size: 18pt;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.subtitle {
+    color: #FFFFCC;
+    font-size: 18pt;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 #tblCovid {
-  background-color: white;
-  color: darkred;
-  font-size: 11.5pt;
-  margin: 0 auto 0 auto;
-  padding: 5px 5px 5px 5px;
+    background-color: white;
+    color: darkred;
+    font-size: 11.5pt;
+    margin: 0 auto 0 auto;
+    padding: 5px 5px 5px 5px;
+    font-family: "Arial"; /* "Times New Roman"; */
+    border-collapse: collapse;
 }
 
 #homeTopTable, #homeMidTable, #tblCovid {
-  width: 100%;
-  max-width: 850px;
-  margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 0 auto;
 }
 
 #tblCovid h1 {
-  margin-bottom: 3px;
+    margin-bottom: 3px;
+    text-align: center;
 }
 
 #tblCovid h3 {
-  color: black;
-  margin-bottom: -6px;
+    color: black;
+    margin-bottom: -6px;
+    text-align: center;
+}
+
+#tblCovid td {
+    padding: 7px;
 }
 
 span.covidPrecautions {
-  color: black;
-  font-size: 11pt;
+    color: black;
+    font-size: 11pt;
 }
- 
+
 li.normal {
-  color: black;
-  font-size: 11pt;
+    color: black;
+    font-size: 11pt;
 }
- 
+
 .menuLine {
-  width: 98%;
-  size: 2px;
-  color: white;
-  padding: 0;
+    width: 98%;
+    size: 2px;
+    color: white;
+    padding: 0;
 }
 
 .menuLineTop {
-  margin-top: 5px;
-  margin-bottom: -20px;
+    margin-top: 5px;
+    margin-bottom: -20px;
 }
 
 .menuLineBottom {
-  margin-top: -3px;
-  margin-bottom: 15px;
+    margin-top: -3px;
+    margin-bottom: 15px;
 }
 
 .wccTitle {
-  font-size: 48pt;
-  font-family: "stencil";
+    font-size: 48pt;
+    font-family: "stencil";
 }
 
 .wccFooter {
-  color: darkgrey;
-  font-size: 8pt;
-  font-family: "Arial";
-  text-align: center;
-  clear: both;
+    color: darkgrey;
+    font-size: 8pt;
+    font-family: "Arial";
+    text-align: center;
+    clear: both;
 }
 
 .wccMenuItem {
-  margin: 0 12px 0 12px;
-  padding: 0;
+    margin: 0 6px 0 6px;
+    padding: 0;
 }
 
 .wccMenuImage {
-  margin: 0 0 0 0 ;
-  padding: 0;
+    margin: 0 0 0 0;
+    padding: 0;
 }
+
 .wccMenuLinkImage {
-  margin-bottom: -3px;
+    margin-bottom: -3px;
 }
 
 .wccMenuItemFirst {
-  margin: 0 20px 0 2px;
-  padding: 0;
+    margin: 0 20px 0 2px;
+    padding: 0;
 }
 
 .wccMenuItemLast {
-  margin: 0 2px 0 20px;
-  padding: 0;
+    margin: 0 2px 0 20px;
+    padding: 0;
 }
 
 /* style used on all links */
 .wccLink {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
+
 .wccLink a:visited {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
 .wccGameLink {
-  color: white;
-  /*text-decoration: none;*/
-  font-size: 12pt;
+    color: white;
+    /*text-decoration: none;*/
+    font-size: 12pt;
 }
 
 .wccMenuLink {
-  color: white;
-  text-decoration: none;
-  font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
 }
 
 .wccExternalLink {
-  color: white;
-  text-decoration: underline;
-  font-size: 32pt;
-  font-family: "stencil";
+    color: white;
+    text-decoration: underline;
+    font-size: 32pt;
+    font-family: "stencil";
 }
 
 .left {
-  text-align: left;
+    text-align: left;
 }
 
 .floatLeft {
-  float: left;
-  text-align: left;
+    float: left;
+    text-align: left;
 }
+
 .floatRight {
-  float: right;
-  text-align: left;
+    float: right;
+    text-align: left;
 }
 
 .unorderedList {
-  margin-bottom: -2px;
-  margin-top: -2px;
+    margin-bottom: -2px;
+    margin-top: -2px;
 }
 
 #bottomLeft {
-  float: left;
-  text-align: center;
+    float: left;
+    text-align: center;
 }
+
 #bottomRight {
-  float: right;
-  text-align: center;
+    float: right;
+    text-align: center;
 }
 
 .bottomLabel {
-  color: darkgreen;
-  font-size: 18pt;
+    color: darkgreen;
+    font-size: 18pt;
 }
+
 .bottomValue {
-  color: white;
-  font-size: 18pt;
+    color: white;
+    font-size: 18pt;
 }
 
 .siteTitle {
-  margin-top: 15px;
-  margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 
-  font-family: "Palatino";
-  font-style: italic;
-  font-size: 36pt;
-  color: black;
-  text-align: center;
+    font-family: "Palatino";
+    font-style: italic;
+    font-size: 36pt;
+    color: black;
+    text-align: center;
 }
 
 #swccMap {
-  height: 153px;
-  width: 300px;
+    height: 153px;
+    width: 300px;
 }
 
 img.external {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
 }
 
 /*  font-family: "Arial"; */
@@ -320,284 +353,318 @@ img.external {
 
 /* the 'home' page loads devContent with the following two DIVs */
 #divWelcome {
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
-  padding: 5px;
-  margin: 5px 5px 25px 5px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px 5px 25px 5px;
 }
 
 #divComingSoon {
-  border-style: solid;
-  border-color: green;
-  border-width: 1px;
-  padding: 5px;
-  margin: 5px 5px 25px 5px;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px 5px 25px 5px;
 }
 
 /* these two styles are used for positioning within divWelcome */
 .welcomeLeft {
-  padding: 2px;
-  width: 100%;
+    padding: 2px;
+    width: 100%;
 }
 
 .welcomeRight {
-  text-align: right;
-  vertical-align: top;
-  padding: 2px;
-  width: 100px;
+    text-align: right;
+    vertical-align: top;
+    padding: 2px;
+    width: 100px;
 }
 
 /* styles the info text below the map image */
 .mapInfo {
-  font-size: 9pt;
-  display: inline-block;
-  margin-top: 1px;
-  margin-right: 13px;
+    font-size: 9pt;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 13px;
 }
 
 /* primary layout mechanism - two columns */
 .colLeft {
-  text-align: left;
-  vertical-align: top;
-  padding: 2px;
-  min-width: 160px;
-  max-width: 160px;
+    text-align: left;
+    vertical-align: top;
+    padding: 2px;
+    min-width: 160px;
+    max-width: 160px;
 }
 
 .colRight {
-  text-align: left;
-  vertical-align: top;
-  padding: 2px;
-  width: 90%;
+    text-align: left;
+    vertical-align: top;
+    padding: 2px;
+    width: 90%;
 
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 .colSoon {
-  text-align: left;
-  vertical-align: top;
-  padding: 20px;
-  width: 50%;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+    width: 50%;
 }
 
 .sectionHeading {
-  font-size: 18pt;
-  color: blue;
-  font-weight: bold;
-  background-color: #CCFFCC;
-  /*background-color: #FFCCFF;*/
-  text-align: center;
-  min-width: 790px;
-  margin-top: -25px;
-  margin-bottom: 2px;
+    font-size: 18pt;
+    color: blue;
+    font-weight: bold;
+    background-color: #CCFFCC;
+    /*background-color: #FFCCFF;*/
+    text-align: center;
+    min-width: 790px;
+    margin-top: -25px;
+    margin-bottom: 2px;
 }
 
 /* styles the section headers within the menu */
 h4 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 #contentFrame {
-  border-style: none;
-  height: 800px;
-  width: 100%;
+    border-style: none;
+    height: 800px;
+    width: 100%;
 }
 
 #games {
-  height: 700px;
-  width: 800px;
+    height: 700px;
+    width: 800px;
 }
 
 #clubcam {
-  height: 526px;
-  width: 700px;
+    height: 526px;
+    width: 700px;
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* text colors */
 .black {
-  color: black;
+    color: black;
 }
 
 .blue {
-  color: blue;
+    color: blue;
 }
 
 .green {
-  color: #006600;
+    color: #006600;
 }
 
 .lightGreen {
-  color: #00B050;
+    color: #00B050;
 }
 
 .red {
-  color: red;
+    color: red;
 }
 
 .purple {
-  color: #6633CC;
+    color: #6633CC;
 }
 
 .clubChampionship {
-  color: coral;
+    color: coral;
 }
+
 .waukeshaMemorial {
-  color: black;
+    color: black;
 }
+
 .action {
-  color: teal;
+    color: teal;
 }
+
 .speed {
-  color: darkgreen;
+    color: darkgreen;
 }
+
 .earlySpring {
-  color: firebrick;
+    color: firebrick;
 }
+
 .lateSpring {
-  color: coral;
+    color: coral;
 }
+
 .earlySummer {
-  color: navy;
+    color: navy;
 }
+
 .summer {
-  color: indigo;
+    color: indigo;
 }
+
 .earlyFall {
-  color: violet;
+    color: violet;
 }
+
 .fall {
-  color: firebrick;
+    color: firebrick;
 }
+
 .lateFall {
-  color: coral;
+    color: coral;
 }
+
 .earlyWinter {
-  color: chocolate;
+    color: chocolate;
 }
+
 .winter {
-  color: firebrick;
+    color: firebrick;
 }
+
 .lateWinter {
-  color: navy;
+    color: navy;
 }
+
 .closed {
-  color: red;
+    color: red;
 }
 
 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .author {
-  font-size: 8pt;
+    font-size: 8pt;
 }
 
 /* background colors */
 .backgroundWhite {
-  background-color: white;
+    background-color: white;
+}
+
+.backgroundLightAzure {
+    background-color: azure;
 }
 
 table.noborders {
-  border-style: none;
+    border-style: none;
 }
 
 table.borders {
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  margin-left: auto;
-  margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table.borders th, table.borders td {
-  border-collapse: collapse; 
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  font-family: "Times New Roman";
-  margin: 0;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    font-family: "Arial"; /* "Times New Roman"; */
+    margin: 0;
 }
 
 table.waukMemorial {
-  margin-left: 102px;
-  width: 80%;
+    margin-left: 102px;
+    width: 80%;
 }
 
 table.waukMemorial th, table.waukMemorial td {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  text-align: center;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    text-align: center;
+    font-family: "Arial"; /* "Times New Roman"; */
 }
 
 table.champs {
-  width: 100%;
-  max-width: 825px;
-  margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 825px;
+    margin: 0 auto 0 auto;
+    border-collapse: collapse;
 }
-table.champs th, table.champs td {
-  text-align: left;
+
+table.champs th {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+table.champs td {
+    text-align: center;
+    border-bottom: 1px solid darkslategray;
+    padding: 3px;
+}
+table.champs {
+    border-top: 1px solid;
+    border-bottom: 1px solid white;
 }
 
 table.wccPast {
-  margin-left: 140px;
-  width: 80%;
+    margin-left: 140px;
+    width: 80%;
 }
+
 table.wccPast th, table.wccPast td {
-  text-align: left;
+    text-align: left;
 }
 
 table.wccPast td.year {
-  font-size: 16pt;
-  text-align: left;
+    font-size: 16pt;
+    text-align: left;
 }
 
 #divSchedule, .dvSchedule {
-  margin: auto;
-  max-width: 900px;
-  min-width: 900px;
-  text-align: center;
-  padding: 15px;
+    margin: auto;
+    max-width: 900px;
+    min-width: 900px;
+    text-align: center;
+    padding: 15px;
 }
 
 #eaglesPhoto {
-  max-height: 294px;
-  min-height: 294px;
-  max-width: 605px;
-  min-width: 605px;  
+    max-height: 294px;
+    min-height: 294px;
+    max-width: 605px;
+    min-width: 605px;
 }
 
 #gmap {
-  max-height: 325px;
-  min-height: 325px;
-  max-width: 430px;
-  min-width: 430px;  
+    max-height: 325px;
+    min-height: 325px;
+    max-width: 430px;
+    min-width: 430px;
 }
 
 .caption {
-  color: white;
-  font-size: 11pt;
-  margin-top: 3px;
+    color: white;
+    font-size: 11pt;
+    margin-top: 3px;
 }
 
 .borders {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-collapse: collapse;
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
@@ -605,147 +672,215 @@ table.wccPast td.year {
  */
 
 /* Schedule colors and styling. */
-.wccWinter { color: Navy; }
-.wccLateWinter { color: DarkSlateGrey; }
-.wccClubChamp { color: Green; }
-.wccClubSpeedChamp { color: Firebrick; }
-.wccSpring { color: coral; }
-.wccEarlySummer { color: Teal; }
-.wccSummer { color: DarkGreen; }
-.wccLateSummer { color: DarkMagenta; }
-.wccHotWeather { color: DarkGoldenrod; }
-.wccEarlyFall { color: MediumBlue; }
-.wccFall { color: DarkOrange; }
-.wccEarlyWinter { color: Indigo; }
-.wccSpecial { color: Firebrick; }
+.wccWinter {
+    color: Navy;
+}
+
+.wccLateWinter {
+    color: DarkSlateGrey;
+}
+
+.wccClubChamp {
+    color: Green;
+}
+
+.wccClubSpeedChamp {
+    color: Firebrick;
+}
+
+.wccSpring {
+    color: coral;
+}
+
+.wccEarlySummer {
+    color: Teal;
+}
+
+.wccSummer {
+    color: DarkGreen;
+}
+
+.wccLateSummer {
+    color: DarkMagenta;
+}
+
+.wccHotWeather {
+    color: DarkGoldenrod;
+}
+
+.wccEarlyFall {
+    color: MediumBlue;
+}
+
+.wccFall {
+    color: DarkOrange;
+}
+
+.wccEarlyWinter {
+    color: Indigo;
+}
+
+.wccSpecial {
+    color: Firebrick;
+}
 
 .startTime {
-  color: #525252;
-  font-size: 10pt;
+    color: #525252;
+    font-size: 10pt;
 }
 
 .wccCenter {
-  text-align: center;
+    text-align: center;
 }
+
 .wccBorders {
-  border: 1px solid black;
+    border: 1px solid black;
 }
+
 .wccNoborders {
-  border: none;
+    border: none;
 }
+
 .wccPairings {
-  border: 0;
-  border-collapse: collapse;
-  margin-top: 5px;
-  width: 600px;"
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 5px;
+    width: 600px;
+"
 }
+
 table.wccPairings tr {
-/*  height: 21px;*/
+    /*  height: 21px;*/
 }
+
 table.wccPairings td {
-  color: black;
-  border: 1px solid black;
-  font-family: Calibri, sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-  font-style: normal;
-  padding: 1px 1px 1px 4px;
-  text-decoration: none;
-  vertical-align: bottom;
-  white-space: nowrap;
+    color: black;
+    border: 1px solid black;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1px 1px 1px 4px;
+    text-decoration: none;
+    vertical-align: bottom;
+    white-space: nowrap;
 }
+
 table.wccPairings td.center {
-  text-align: center;
+    text-align: center;
 }
+
 table.wccPairings th {
-  background-color: #ccbb99;
-  border: 1px solid black;
+    background-color: #ccbb99;
+    border: 1px solid black;
 }
+
 .wccPostHeader {
-  color: #cc3300;
-  font-size: 14pt;
-  margin-bottom: 5px;
-  margin-top: -13px;
+    color: #cc3300;
+    font-size: 14pt;
+    margin-bottom: 5px;
+    margin-top: -13px;
 }
+
 .wccSection {
-  color: black;
-  font-weight: bold;
-  margin-left: 3px;
+    color: black;
+    font-weight: bold;
+    margin-left: 3px;
 }
+
 .wccCrosstable {
-  border: 0;
-  border-collapse: collapse;
-  margin-top: 5px;
-  width: 700px;"
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 5px;
+    width: 700px;
+"
 }
+
 table.wccCrosstable tr {
-  height: 25px;
+    height: 25px;
 }
+
 table.wccCrosstable td {
-  color: black;
-  border: 1px solid black;
-  font-family: Calibri, sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-  font-style: normal;
-  padding: 2px 2px 2px 4px;
-  text-decoration: none;
-  vertical-align: bottom;
-  white-space: nowrap;
+    color: black;
+    border: 1px solid black;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2px 2px 2px 4px;
+    text-decoration: none;
+    vertical-align: bottom;
+    white-space: nowrap;
 }
+
 table.wccCrosstable th {
-  background-color: #ccbb99;
-  border: 1px solid black;
+    background-color: #ccbb99;
+    border: 1px solid black;
 }
 
 /* text colors */
 .wccGrey {
-  color: #777777;
+    color: #777777;
 }
+
 .wccKhaki {
-  color: #c0a154;
+    color: #c0a154;
 }
+
 .wccRed {
-  color: #cc3300;
+    color: #cc3300;
 }
+
 .wccLightBlack {
-  color: #333333;
+    color: #333333;
 }
+
 .wccTan {
-  color: #ccbb99;
+    color: #ccbb99;
 }
+
 .wccFirebrick {
-  color: #993322;
+    color: #993322;
 }
+
 .wccBlack {
-  color: #000000;
+    color: #000000;
 }
+
 .wccWhite {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* background colors */
 .wccGreyBG {
-  background-color: #777777;
+    background-color: #777777;
 }
+
 .wccKhakiBG {
-  background-color: #c0a154;
+    background-color: #c0a154;
 }
+
 .wccRedBG {
-  background-color: #cc3300;
+    background-color: #cc3300;
 }
+
 .wccLightBlackBG {
-  background-color: #333333;
+    background-color: #333333;
 }
+
 .wccTanBG {
-  background-color: #ccbb99;
+    background-color: #ccbb99;
 }
+
 .wccFirebrickBG {
-  background-color: #993322;
+    background-color: #993322;
 }
+
 .wccBlackBG {
-  background-color: #000000;
+    background-color: #000000;
 }
+
 .wccWhiteBG {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
+
