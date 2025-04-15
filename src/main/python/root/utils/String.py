@@ -44,6 +44,7 @@ def printTableHeader(numRounds):
     print("</thead>")
     print("<tbody>")
 
+
 # for WinTD Text Formatting
 def printCrossTableHeader(numRounds):
     print("<table class='wccCrosstable'>")
@@ -74,7 +75,7 @@ def printGamesTableHeader():
     print("<tbody>")
 
 
-def printPriorEventPageHeader():
+def printPageHeader(title, subtitle):
     print("<html><head> \n\
     <meta http-equiv=Content-Type content=\"text/html\" charset=\"utf-8\"> \n\
     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/wcc.css\"/>  \n\
@@ -94,12 +95,16 @@ $(function(){  \n\
 </script>  \n\
     <div id=\"header\"></div>  \n\
         <div id=\"divContent\"> \n\
-        <div id=\"pageTitle\"><span>PAST TOURNAMENTS</span><br/></div>\n")
+        <div id=\"pageTitle\"> \n\
+        <span>" + title + "</br></span> \n\
+        <span id=\"divSubtitle\">" + subtitle + "</span></div>\n")
 
 
-def printPriorEventTableHeader():
-    print("<table class='wccPast' width=\"90%\">\n" +
-          "<tr><th class =\"thPast\">Year</th><th class=\"thPast\">Tournament</th></tr>\n")
+def printEventTableHeader(headerList):
+    print("<table class='wccPast' width=\"90%\">\n<tr>")
+    for hdr in headerList:
+        print("<th style=\"width: " + str(int(80 / len(headerList))) + "%\" class =\"thPast\">" + hdr + "</th>\n")
+    print("</tr>")
 
 
 def printPriorEventRow(new_year, name, link, color):
@@ -110,18 +115,41 @@ def printPriorEventRow(new_year, name, link, color):
         print("<tr><td colspan=\"2\"><hr width=\"100%\" /></td></tr>\n")
         print("<tr>\n")
         if new_year > aggregate_from_year:
-            print("<td class=\"year\">"+str(new_year)+"</td>")
+            print("<td class=\"year\">" + str(new_year) + "</td>")
         else:
             print("<td class=\"year\">" + str(new_year) + " (and earlier)</td>")
     else:
         print("<tr>\n")
         print("<td></td>")
-    print("<td><a target=\"_blank\" href=\""+link+"\" style=\"color:"+color+"\">"+name+"</a></br></td>\n")
+    print("<td><a target=\"_blank\" href=\"" + link + "\" style=\"color:" + color + "\">" + name + "</a></br></td>\n")
     print("</tr>\n")
+
+
+def printWinnersRow(new_year, name1, link1, name2, link2, color):
+    if new_year > 0:
+        print("<tr>	<td></td> <td></td> </tr>")
+        print("<tr><td colspan=\"3\"><hr width=\"100%\" /></td></tr>\n")
+        print("<tr>\n")
+        print("<td class=\"year\">" + str(new_year) + "</td>")
+    else:
+        print("<tr>\n")
+        print("<td></td>")
+    if link1 == "":
+        print("<td style=\"color:" + color + "\">" + name1 + "</br></td>\n")
+    else:
+        print("<td><a target=\"_blank\" href=\"" + link1 + "\" style=\"color:" + color + "\">" + name1 + "</a></br></td>\n")
+    if link2 == "":
+        print("<td style=\"color:" + color + "\">" + name2 + "</br></td>\n")
+    else:
+        print("<td><a target=\"_blank\" href=\"" + link2 + "\" style=\"color:" + color + "\">" + name2 + "</a></br></td>\n")
+
+    print("</tr>\n")
+
 
 # for WinTD Text Formatting
 def printBlankLine():
     print("<tr><td></td></tr>")
+
 
 def printPageClose():
     print("</div>")

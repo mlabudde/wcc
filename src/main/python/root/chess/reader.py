@@ -1,3 +1,4 @@
+import json
 import urllib
 from datetime import datetime
 from urllib.request import urlopen
@@ -21,7 +22,8 @@ class Reader:
     @classmethod
     def getHtml(cls, tournamentId: str, section: str):
         url = BASE_URL + "?" + tournamentId + ("" if section is None else ("." + section))
-        connection = urlopen(url)
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        connection = urlopen(req)
         raw = connection.read()
         return raw.decode("utf-8")
 
@@ -34,6 +36,9 @@ class Reader:
     def getSectionsFromLines(cls, lines):
         links = cls.getSectionLinks(lines)
         sections = cls.getSectionsFromLinks(links)
+
+        if len(sections) == 0:
+            sections.append(cls.createSection("<a href=XtblMain.php?202503267692.1><b>Section 1</b></a>"))
 
         for section in sections:
             search = "<b>" + section.getUscfName()
@@ -80,14 +85,15 @@ class Reader:
     def getSectionImpl(cls, section, lines, i):
         while i < len(lines):
             line = lines[i].strip()
+            if line.startswith("Num  | USCF ID"):  # ran over section...
+                return
+
             if line.startswith("<a href="):
                 l1 = lines[i]
                 l2 = lines[i + 1]
                 player = Player.createPlayer(l1, l2)
                 section.addPlayer(player)
-                i = i + 2
-            else:
-                break
+                i = i + 1
             i = i + 1
         return
 
@@ -122,5 +128,68 @@ class Reader:
                 done = True
 
             page = page + 1
+
+        return out_set
+
+    @classmethod
+    def getEventWinners(cls, eventID):
+        section = cls.getSectionsFromHtml(cls.getHtml(eventID, ""))
+        winScore = -1
+        outName = ""
+
+        if len(section) < 1:
+            return ""
+        players = section[0].players
+
+        for p in players:
+            if winScore == -1:
+                winScore = float(p.total)
+            thisScore =  float(p.total)
+            if thisScore == winScore:
+                outName = outName + p.name + ",<br/> "
+        return outName[:-7]
+
+    @classmethod
+    def getWinners(cls, start_date=datetime.now(), end_date=datetime(day=1, month=1, year=1950)):
+
+        f = open('data/Winners.json')
+        winners = json.load(f)
+
+        # return 1 record/year with year, ccLink, ccWinner(s), memLink, memWinner(s) that can be directly printed as html
+        #for each year from now year to 1950
+        #   for the mem link and cc link
+        #       get the 1st section and retreive the winner(s) names
+        #       package link and names for return
+
+        out_set = []
+        for year in range(datetime.now().year,1950,-1):
+            memRef = [w for w in winners["memorial"] if w["eventYear"] == str(year)]
+            ccRef = [w for w in winners["clubChp"] if w["eventYear"] == str(year)]
+
+            if memRef == [] and ccRef == []:
+                return out_set
+            memWinner = ""
+            memLink = ""
+            if memRef != []:
+                if memRef[0]["eventID"] == "x":
+                    memWinner = memRef[0]["winner"]
+                else:
+                    memWinner = cls.getEventWinners(memRef[0]["eventID"])
+                    memLink = BASE_URL + "?" + memRef[0]["eventID"] + ".1"
+            ccWinner = ""
+            ccLink = ""
+            if ccRef != []:
+                if ccRef[0]["eventID"] == "x":
+                    ccWinner = ccRef[0]["winner"]
+                else:
+                    ccWinner = cls.getEventWinners(ccRef[0]["eventID"])
+                    ccLink = BASE_URL + "?" + ccRef[0]["eventID"] + ".1"
+
+            out_set.append({"year": year,
+                            "memLink": memLink,
+                            "memWinner": memWinner,
+                            "ccLink": ccLink,
+                            "ccWinner": ccWinner
+                            })
 
         return out_set

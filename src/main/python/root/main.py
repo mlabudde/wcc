@@ -107,15 +107,23 @@ def processWebContent(html: str):
 
 
 def processMSAEvents():
+
+    # should actually divert this output to past_tournaments.html
+
     # as we determine how we want some events to appear, we can add the updates here...
     f = open('data/event_names.json')
     event_name_overrides = json.load(f)
+
+    fOut = open('../../web/past_tournaments.html', 'w')
+    refOut = sys.stdout
+    sys.stdout = fOut
+
     color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
     current_color = -1
     events = reader.getEventHistory()
     current_year = 0
-    String.printPriorEventPageHeader()
-    String.printPriorEventTableHeader()
+    String.printPageHeader("Past Tournaments", "- results linked to events -")
+    String.printEventTableHeader(["Year", "Tournament"])
     for event in events:
         out_name = event["name"]
         if event["event_id"] in event_name_overrides.keys():
@@ -132,6 +140,38 @@ def processMSAEvents():
     String.printTableClose()
     String.printDivClose()
     String.printPageClose()
+    sys.stdout = refOut
+
+
+def generateWinnersPage():
+    # should actually divert this output to champions.html
+
+    # as we determine how we want some events to appear, we can add the updates here...
+    f = open('data/event_names.json')
+    event_name_overrides = json.load(f)
+
+    fOut = open('../../web/champions.html', 'w')
+    refOut = sys.stdout
+    sys.stdout = fOut
+
+    color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
+    current_color = -1
+    winnersByYear = reader.getWinners() # this should be updated - not all affiliate, but by ids in winners.json
+    current_year = 0
+    String.printPageHeader("Past Champions", "- honoring our club history -")
+    String.printEventTableHeader(["Year", "Club Champion", "Waukesha Memorial Champion"])
+
+    for winner in winnersByYear:
+        ccWinner = winner["ccWinner"]
+        memWinner = winner["memWinner"]
+        year = winner["year"]
+        current_color = (current_color+1) % len(color_cycle)
+        String.printWinnersRow(year, ccWinner, winner["ccLink"], memWinner, winner["memLink"], color_cycle[current_color])
+
+    String.printTableClose()
+    String.printDivClose()
+    String.printPageClose()
+    sys.stdout = refOut
 
 
 def createPlayer(attributes, rounds):
@@ -225,7 +265,9 @@ elif "pairings" == arg1:
     processGamesFile()
 elif "clubEvents" == arg1:
     processMSAEvents()
+elif "winnersPage" == arg1:
+    generateWinnersPage()
 else:
     print(
-        "arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
+        "arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winnersPage', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
     sys.exit(1)

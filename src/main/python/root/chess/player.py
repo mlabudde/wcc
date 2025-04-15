@@ -11,6 +11,9 @@ class Player:
         'N:CM': '2000',
         'N:LM': '2200',
         'N:SM': '2400',
+        'N:C': '2000',
+        'N:M': '2200',
+        'N:S': '2400',
         '': ''
     })
 
@@ -61,9 +64,14 @@ class Player:
         thePlayer.state = line[0:2]
         thePlayer.id = line[5:13]
         rating = line[19:35]
-        pos = rating.index("->")
-        pre = rating[0:pos]
-        post = rating[pos + 2:]
+        if "->" not in rating:
+            rating = "->"
+            pre = "0"
+            post = "0"
+        else:
+            pos = rating.index("->")
+            pre = rating[0:pos]
+            post = rating[pos + 2:]
         thePlayer.ratePre = pre.strip()
         thePlayer.ratePost = post.strip()
         # TODO: the colors for each round!

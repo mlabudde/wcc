@@ -8,6 +8,7 @@ body {
     color: white;
     font-size: 32pt;
     text-align: center;
+
 }
 
 #main-container {
@@ -31,6 +32,13 @@ body {
 #divContent {
     min-width: 1024px;
     text-align: center;
+
+    background-image: url('../images/WaukeshaChessClub-Black-Transparent.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 800px;
+    background-position: 50% 150px;
+    background-blend-mode: darken;
 }
 
 #divLinks {
@@ -38,6 +46,21 @@ body {
     min-width: 1024px;
     text-align: center;
 }
+
+.menuImage {
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: -15px;
+}
+
+.tableBackImage {
+    background-color: White;
+    background-image: url('../images/WaukeshaChessClub-Purple-Transparent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
 
 .tableLinks {
     font-size: 14pt;
@@ -49,6 +72,7 @@ body {
     line-height: 24px;
     vertical-align: top;
 }
+
 .tableLinks td {
     text-align: center;
 }
@@ -154,6 +178,7 @@ body {
     margin: auto;
     margin-bottom: 20px;
 }
+
 .subtitle {
     color: #FFFFCC;
     font-size: 18pt;
@@ -603,11 +628,13 @@ table.champs th {
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
+
 table.champs td {
     text-align: center;
     border-bottom: 1px solid darkslategray;
     padding: 3px;
 }
+
 table.champs {
     border-top: 1px solid;
     border-bottom: 1px solid white;
