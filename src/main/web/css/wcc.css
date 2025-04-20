@@ -178,7 +178,6 @@ body {
     background-size: 400px;
 }
 
-
 .tableLinks {
     font-size: 14pt;
     margin: 0 auto;
@@ -357,6 +356,11 @@ li.normal {
     margin-bottom: 15px;
 }
 
+.wccBold {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
 .wccTitle {
     font-size: 48pt;
     font-family: "stencil";
@@ -416,6 +420,13 @@ li.normal {
     text-decoration: underline;
     font-size: 32pt;
     font-family: "stencil";
+}
+
+.wccSchedule {
+    font-weight: normal;
+    padding: 4px;
+    text-align: left;
+    vertical-align: top;
 }
 
 .left {
