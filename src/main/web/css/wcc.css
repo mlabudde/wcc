@@ -14,7 +14,8 @@ body {
  @media (prefers-color-scheme: dark) {
     /* Dark mode styles here */
     body {
-        background-color: #1E1A53;
+/*        background-color: #1E1A53;*/
+        background-color: black;
         color: white;
     }
 
@@ -62,6 +63,11 @@ body {
     .caption {
         color: white;
     }
+	
+	.wccColor1 { color: #FFFF00;} /* yellow */
+	.wccColor2 { color: #00FF00;} /* green */
+	.wccColor3 { color: #00FFFF;} /* cyan */
+	.wccColor4 { color: #FF00FF;} /* magenta */	
  }
 
  /* ==============================================
@@ -118,6 +124,11 @@ body {
     .caption {
         color: black;
     }
+
+	.wccColor1 { color: #000000;} /* black */
+	.wccColor2 { color: #003300;} /* kashmir green */
+	.wccColor3 { color: #000033;} /* midnight blue */
+	.wccColor4 { color: #330000;} /* umber */	
  }
 
 #main-container {
