@@ -155,8 +155,16 @@ body {
     text-align: center;
 }
 
+.logoImage {
+    max-width: 70px;
+    max-height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    margin-bottom: -15px;
+}
+
 .menuImage {
-    background-image: url('../images/WaukeshaChessClub-Black-Transparent.png');
+/*    background-image: url('../images/WaukeshaChessClub-Black-Transparent.png');*/
     max-width: 70px;
     max-height: 70px;
     min-width: 70px;

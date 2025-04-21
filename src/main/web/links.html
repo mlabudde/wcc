@@ -10,13 +10,21 @@
 
 <body>
 <div id="main-container">
-<script>
-$(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
-</script>
-    <div id="header"></div>
+    <script>
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        $(function () {
+			if (isDarkMode) {
+	            $("#title").load("headerw.html");
+			} else {
+	            $("#title").load("headerb.html");
+			}
+            $("#menu").load("menu.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <div id="title"></div>
+    <div id="menu"></div>
 
     <div id="divContent">
         <div class="pgTitle"><span>USEFUL LINKS</span><br/></div>

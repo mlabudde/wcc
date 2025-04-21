@@ -11,12 +11,20 @@
 <body>
 <div id="main-container">
     <script>
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         $(function () {
-            $("#header").load("header.html");
+			if (isDarkMode) {
+	            $("#title").load("headerw.html");
+			} else {
+	            $("#title").load("headerb.html");
+			}
+            $("#menu").load("menu.html");
             $("#footer").load("footer.html");
         });
     </script>
-    <div id="header"></div>
+    <div id="title"></div>
+    <div id="menu"></div>
+
     <div id="divContent">
         <div id="pageTitle">
             <span>Past Tournaments</br></span>

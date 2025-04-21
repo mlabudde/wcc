@@ -22,13 +22,20 @@
 <body>
 <div id="main-container">
     <script>
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         $(function () {
-            $("#header").load("header.html");
+			if (isDarkMode) {
+	            $("#title").load("headerw.html");
+			} else {
+	            $("#title").load("headerb.html");
+			}
+            $("#menu").load("menu.html");
             $("#footer").load("footer.html");
         });
     </script>
-    <div id="header"></div>
 
+    <div id="title"></div>
+    <div id="menu"></div>
     <div id="divContent">
         <!--        <table id="tblCovid" border="0" frame="below">-->
         <!--            <tr>-->
@@ -192,8 +199,6 @@ We recently completed our 2025 Club Championship on 3/26 - Congratulations to Ev
             <span class="bottomValue">Evan Seghers & Ojas Sahoo</span>
         </div>
     </div>
-
-
 </div>
 <div id="footer"></div>
 </body>
