@@ -318,6 +318,7 @@ body {
     font-size: 18pt;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #tblCovid {
@@ -331,6 +332,7 @@ body {
 }
 
 #homeTopTable, #homeMidTable, #tblCovid {
+    font-size: 12pt;
     width: 100%;
     max-width: 850px;
     margin: 0 auto 0 auto;
@@ -441,7 +443,8 @@ li.normal {
     font-family: "stencil";
 }
 
-.wccSchedule {
+.wccPast, .wccSchedule, .wccTable {
+    font-size: 12pt;
     font-weight: normal;
     padding: 4px;
     text-align: left;
@@ -773,6 +776,7 @@ table.champs td {
 }
 
 table.wccPast {
+    font-size: 12pt;
     margin-left: 140px;
     width: 80%;
 }
