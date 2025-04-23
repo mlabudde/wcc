@@ -1,4 +1,4 @@
-from root.chess.player import Player
+from chess.player import Player
 
 
 class Section:

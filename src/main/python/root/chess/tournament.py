@@ -1,7 +1,7 @@
 import sys
-import root.chess.reader
-from root.chess import reader
-from root.utils import String
+import chess.reader
+from chess import reader
+from utils import String
 
 
 def getInputFilename():

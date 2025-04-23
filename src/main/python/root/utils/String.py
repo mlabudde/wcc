@@ -76,29 +76,37 @@ def printGamesTableHeader():
 
 
 def printPageHeader(title, subtitle):
-    print("<html><head> \n\
+    print("<! DOCTYPE html> \n\
+    <html><head> \n\
     <meta http-equiv=Content-Type content=\"text/html\" charset=\"utf-8\"> \n\
     <link rel=\"stylesheet\" type=\"text/css\" href=\"css/wcc.css\"/>  \n\
-    <script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'> \n\
+    <script type=\"text/javascript\" language=\"javascript\" src=\"js/jquery-3.4.1.min.js\"> \n\
         <!-- yes, this comment is here on purpose -->  \n\
     </script>  \n\
     <title>Waukesha Chess Club</title>  \n\
-</head>  \n\
-    \n\
-<body>  \n\
-<div id=\"main-container\">  \n\
-<script>  \n\
-$(function(){  \n\
-  $(\"#header\").load(\"header.html\");  \n\
-  $(\"#footer\").load(\"footer.html\");  \n\
-});  \n\
-</script>  \n\
-    <div id=\"header\"></div>  \n\
-        <div id=\"divContent\"> \n\
-        <div id=\"pageTitle\"> \n\
-        <span>" + title + "</br></span> \n\
-        <span id=\"divSubtitle\">" + subtitle + "</span></div>\n")
-
+    </head>  \n\
+        \n\
+    <body>  \n\
+    <div id=\"main-container\"> \n\
+    <script> \n\
+        const isDarkMode = window.matchMedia(\"(prefers-color-scheme: dark)\").matches; \n\
+        $(function() { \n\
+            if (isDarkMode) \n\
+            { \n\
+                $(\"#title\").load(\"headerw.html\"); \n\
+            } else { \n\
+              $(\"#title\").load(\"headerb.html\"); \n\
+            } \n\
+            $(\"#menu\").load(\"menu.html\"); \n\
+            $(\"#footer\").load(\"footer.html\"); \n\
+        }); \n\
+    </script> \n\
+    <div id=\"title\"> </div> \n\
+    <div id=\"menu\"></div> \n\
+    <div id=\"divContent\"> \n\
+    <div id=\"pageTitle\"> \n\
+    <span>" + title + "</br></span> \n\
+    <span id=\"divSubtitle\">" + subtitle + "</span></div>\n")
 
 def printEventTableHeader(headerList):
     print("<table class='wccPast' width=\"90%\">\n<tr>")
@@ -125,7 +133,7 @@ def printPriorEventRow(new_year, name, link, color):
     print("</tr>\n")
 
 
-def printWinnersRow(new_year, name1, link1, name2, link2, color):
+def printWinnersRow(new_year, name1, link1, name2, link2, color, className):
     if new_year > 0:
         print("<tr>	<td></td> <td></td> </tr>")
         print("<tr><td colspan=\"3\"><hr width=\"100%\" /></td></tr>\n")
@@ -135,14 +143,14 @@ def printWinnersRow(new_year, name1, link1, name2, link2, color):
         print("<tr>\n")
         print("<td></td>")
     if link1 == "":
-        print("<td style=\"color:" + color + "\">" + name1 + "</br></td>\n")
+        print("<td class='" + className + "'>" + name1 + "</br></td>\n")
     else:
-        print("<td><a target=\"_blank\" href=\"" + link1 + "\" style=\"color:" + color + "\">" + name1 + "</a></br></td>\n")
+        print(
+            "<td class='" + className + "'><a class='" + className + "' target=\"_blank\" href=\"" + link1 + "\">" + name1 + "</a></br></td>\n")
     if link2 == "":
-        print("<td style=\"color:" + color + "\">" + name2 + "</br></td>\n")
+        print("<td class='" + className + "'>" + name2 + "</br></td>\n")
     else:
-        print("<td><a target=\"_blank\" href=\"" + link2 + "\" style=\"color:" + color + "\">" + name2 + "</a></br></td>\n")
-
+        print("<td class='" + className + "'><a class='" + className + "' target=\"_blank\" href=\"" + link2 + "\">" + name2 + "</a></br></td>\n")
     print("</tr>\n")
 
 

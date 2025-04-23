@@ -1,6 +1,6 @@
 import sys
-from root.chess.player import Player
-from root.utils import String
+from chess.player import Player
+from utils import String
 
 inputFilename = '../resources/EarlySummer-Reserve.txt'
 

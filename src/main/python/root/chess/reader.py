@@ -2,9 +2,9 @@ import json
 import urllib
 from datetime import datetime
 from urllib.request import urlopen
-from root.chess.player import Player
-from root.chess.section import Section
-from root.utils import anchor
+from chess.player import Player
+from chess.section import Section
+from utils import anchor
 
 from lxml import html
 

@@ -64,10 +64,16 @@ body {
         color: white;
     }
 	
-	.wccColor1 { color: #FFFF00;} /* yellow */
-	.wccColor2 { color: #00FF00;} /* green */
-	.wccColor3 { color: #00FFFF;} /* cyan */
-	.wccColor4 { color: #FF00FF;} /* magenta */	
+	table.wccPast td.wccColor1 { color: #FFFF00;} /* yellow */
+	table.wccPast td.wccColor2 { color: #00FF00;} /* green */
+	table.wccPast td.wccColor3 { color: #00FFFF;} /* cyan */
+	table.wccPast td.wccColor4 { color: #FF00FF;} /* magenta */
+
+   	a.wccColor1 { color: #FFFF00;} /* black */
+   	a.wccColor2 { color: #00FF00;} /* black */
+   	a.wccColor3 { color: #00FFFF;} /* black */
+   	a.wccColor4 { color: #FF00FF;} /* black */
+
  }
 
  /* ==============================================
@@ -125,10 +131,25 @@ body {
         color: black;
     }
 
-	.wccColor1 { color: #000000;} /* black */
-	.wccColor2 { color: #003300;} /* kashmir green */
-	.wccColor3 { color: #000033;} /* midnight blue */
-	.wccColor4 { color: #330000;} /* umber */	
+	/*table.wccPast td.wccColor1 { color: #000000;} !* black *!*/
+	/*table.wccPast td.wccColor2 { color: #003300;} !* kashmir green *!*/
+	/*table.wccPast td.wccColor3 { color: #000033;} !* midnight blue *!*/
+	/*table.wccPast td.wccColor4 { color: #330000;} !* umber *!*/
+
+	/*a.wccColor1 { color: #000000;} !* black *!*/
+	/*a.wccColor2 { color: #003300;} !* kashmir green *!*/
+	/*a.wccColor3 { color: #000033;} !* midnight blue *!*/
+	/*a.wccColor4 { color: #330000;} !* umber *!*/
+
+   	table.wccPast td.wccColor1 { color: black;} /* black */
+	table.wccPast td.wccColor2 { color: darkgreen;} /* kashmir green */
+	table.wccPast td.wccColor3 { color: darkblue;} /* midnight blue */
+	table.wccPast td.wccColor4 { color: darkred;} /* umber */
+
+	a.wccColor1 { color: #000000;} /* black */
+	a.wccColor2 { color: darkgreen;} /* kashmir green */
+	a.wccColor3 { color: darkblue;} /* midnight blue */
+	a.wccColor4 { color: darkred;} /* umber */
  }
 
 #main-container {

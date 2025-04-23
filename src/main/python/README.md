@@ -6,15 +6,20 @@ Instructions for running the python script to generate the HTML for a tournament
 
 2. run the script like this:
  
-   cd {PROJECT_ROOT}/src/main/python
+   cd {PROJECT_ROOT}/src/main/python/root
    export PYTHONPATH=.
-   python3 root/main.py web 123456
+   python3 main.py web 123456
    (use the actual tournament id instead of 123456)
 
    or, better still, run the script and redirect the output to a file:
-   python3 root/main.py web 123456 > LateSummer.html
+   python3 main.py web 123456 > LateSummer.html
 
 3. you can copy the majority of the html into the WCC blog as a post (you don't need 
    the \<html> tags or the \<head> section).
    you can also view the resulting page in your browser (to see if all looks well) 
 
+4. to generate the champions.html page do this: 
+
+   cd {PROJECT_ROOT}/src/main/python/root
+   export PYTHONPATH=.
+   python3 main.py winnersPage

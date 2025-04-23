@@ -1,8 +1,8 @@
 import json
 import sys
-from root.chess.player import Player as player
-from root.chess.reader import Reader as reader
-from root.utils import String
+from chess.player import Player as player
+from chess.reader import Reader as reader
+from utils import String
 
 
 def getInputFilename():
@@ -154,6 +154,7 @@ def generateWinnersPage():
     refOut = sys.stdout
     sys.stdout = fOut
 
+    class_cycle = ["wccColor1", "wccColor2", "wccColor3", "wccColor4", "wccColor1", "wccColor3"]
     color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
     current_color = -1
     winnersByYear = reader.getWinners() # this should be updated - not all affiliate, but by ids in winners.json
@@ -166,7 +167,7 @@ def generateWinnersPage():
         memWinner = winner["memWinner"]
         year = winner["year"]
         current_color = (current_color+1) % len(color_cycle)
-        String.printWinnersRow(year, ccWinner, winner["ccLink"], memWinner, winner["memLink"], color_cycle[current_color])
+        String.printWinnersRow(year, ccWinner, winner["ccLink"], memWinner, winner["memLink"], color_cycle[current_color], class_cycle[current_color])
 
     String.printTableClose()
     String.printDivClose()
