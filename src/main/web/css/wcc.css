@@ -63,16 +63,21 @@ body {
     .caption {
         color: white;
     }
-	
-	table.wccPast td.wccColor1 { color: #FFFF00;} /* yellow */
-	table.wccPast td.wccColor2 { color: #00FF00;} /* green */
-	table.wccPast td.wccColor3 { color: #00FFFF;} /* cyan */
-	table.wccPast td.wccColor4 { color: #FF00FF;} /* magenta */
 
-   	a.wccColor1 { color: #FFFF00;} /* black */
-   	a.wccColor2 { color: #00FF00;} /* black */
-   	a.wccColor3 { color: #00FFFF;} /* black */
-   	a.wccColor4 { color: #FF00FF;} /* black */
+    /* dark mode colors for schedule and past tournaments */
+	table.wccPast td.wccColor1 { color: #FFFF00;} /* yellow */
+	table.wccPast td.wccColor2 { color: #FF00FF;} /* magenta */
+	table.wccPast td.wccColor3 { color: #00FF00;} /* green */
+	table.wccPast td.wccColor4 { color: #FF0000;} /* red */
+	table.wccPast td.wccColor5 { color: #00FFFF;} /* cyan */
+	table.wccPast td.wccColor6 { color: #FF4500;} /* burnt orange */
+
+   	a.wccColor1 { color: #FFFF00;} /* yellow */
+   	a.wccColor2 { color: #FF00FF;} /* magenta */
+   	a.wccColor3 { color: #00FF00;} /* green */
+   	a.wccColor4 { color: #FF0000;} /* red */
+   	a.wccColor5 { color: #00FFFF;} /* cyan */
+   	a.wccColor6 { color: #FF4500;} /* burnt orange */
 
  }
 
@@ -131,25 +136,23 @@ body {
         color: black;
     }
 
-	/*table.wccPast td.wccColor1 { color: #000000;} !* black *!*/
-	/*table.wccPast td.wccColor2 { color: #003300;} !* kashmir green *!*/
-	/*table.wccPast td.wccColor3 { color: #000033;} !* midnight blue *!*/
-	/*table.wccPast td.wccColor4 { color: #330000;} !* umber *!*/
-
-	/*a.wccColor1 { color: #000000;} !* black *!*/
-	/*a.wccColor2 { color: #003300;} !* kashmir green *!*/
-	/*a.wccColor3 { color: #000033;} !* midnight blue *!*/
-	/*a.wccColor4 { color: #330000;} !* umber *!*/
-
+    /* light mode colors for schedule and past tournaments */
    	table.wccPast td.wccColor1 { color: black;} /* black */
-	table.wccPast td.wccColor2 { color: darkgreen;} /* kashmir green */
-	table.wccPast td.wccColor3 { color: darkblue;} /* midnight blue */
-	table.wccPast td.wccColor4 { color: darkred;} /* umber */
+	table.wccPast td.wccColor2 { color: darkgreen;} /* dark green */
+	table.wccPast td.wccColor3 { color: darkblue;} /* dark blue */
+	table.wccPast td.wccColor4 { color: darkred;} /* dark red */
+	table.wccPast td.wccColor5 { color: #003333;} /* Peruvian turquoise */
+	table.wccPast td.wccColor6 { color: #330033;} /* Deep purple */
 
 	a.wccColor1 { color: #000000;} /* black */
-	a.wccColor2 { color: darkgreen;} /* kashmir green */
-	a.wccColor3 { color: darkblue;} /* midnight blue */
-	a.wccColor4 { color: darkred;} /* umber */
+	a.wccColor2 { color: darkgreen;} /* dark green */
+	a.wccColor3 { color: darkblue;} /* dark blue */
+	a.wccColor4 { color: darkred;} /* dark red */
+	a.wccColor5 { color: #003333;} /* Peruvian turquoise */
+	a.wccColor6 { color: #330033;} /* Deep purple */
+
+/*# Excellent:*/
+/*# Raw umber (#333300) text on a white background.*/
  }
 
 #main-container {

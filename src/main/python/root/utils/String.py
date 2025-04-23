@@ -115,9 +115,8 @@ def printEventTableHeader(headerList):
     print("</tr>")
 
 
-def printPriorEventRow(new_year, name, link, color):
+def printPriorEventRow(new_year, name, link, className):
     aggregate_from_year = 1991
-
     if new_year > 0 and new_year >= aggregate_from_year:
         print("<tr>	<td></td> <td></td> </tr>")
         print("<tr><td colspan=\"2\"><hr width=\"100%\" /></td></tr>\n")
@@ -129,11 +128,11 @@ def printPriorEventRow(new_year, name, link, color):
     else:
         print("<tr>\n")
         print("<td></td>")
-    print("<td><a target=\"_blank\" href=\"" + link + "\" style=\"color:" + color + "\">" + name + "</a></br></td>\n")
+    print("<td class='" + className + "'><a class='" + className + "' target=\"_blank\" href=\"" + link + "\" >" + name + "</a></br></td>\n")
     print("</tr>\n")
 
 
-def printWinnersRow(new_year, name1, link1, name2, link2, color, className):
+def printWinnersRow(new_year, name1, link1, name2, link2, className):
     if new_year > 0:
         print("<tr>	<td></td> <td></td> </tr>")
         print("<tr><td colspan=\"3\"><hr width=\"100%\" /></td></tr>\n")

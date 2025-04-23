@@ -4,6 +4,8 @@ from chess.player import Player as player
 from chess.reader import Reader as reader
 from utils import String
 
+class_cycle = ["wccColor1", "wccColor2", "wccColor3", "wccColor4", "wccColor5", "wccColor6"]
+# color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
 
 def getInputFilename():
     if len(sys.argv) >= 3:
@@ -118,8 +120,7 @@ def processMSAEvents():
     refOut = sys.stdout
     sys.stdout = fOut
 
-    color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
-    current_color = -1
+    classIndex = -1
     events = reader.getEventHistory()
     current_year = 0
     String.printPageHeader("Past Tournaments", "- results linked to events -")
@@ -133,9 +134,10 @@ def processMSAEvents():
         if event["date"].year != current_year:
             current_year = event["date"].year
             new_year = current_year
-            current_color = (current_color+1) % len(color_cycle)
+
+        classIndex = (classIndex+1) % len(class_cycle)
         # print(event["date"].strftime("%m/%d/%Y") + " - " + event["link"] + " - " + out_name)
-        String.printPriorEventRow(new_year, out_name, event["link"], color_cycle[current_color])
+        String.printPriorEventRow(new_year, out_name, event["link"], class_cycle[classIndex])
 
     String.printTableClose()
     String.printDivClose()
@@ -154,9 +156,7 @@ def generateWinnersPage():
     refOut = sys.stdout
     sys.stdout = fOut
 
-    class_cycle = ["wccColor1", "wccColor2", "wccColor3", "wccColor4", "wccColor1", "wccColor3"]
-    color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
-    current_color = -1
+    classIndex = -1
     winnersByYear = reader.getWinners() # this should be updated - not all affiliate, but by ids in winners.json
     current_year = 0
     String.printPageHeader("Past Champions", "- honoring our club history -")
@@ -166,8 +166,8 @@ def generateWinnersPage():
         ccWinner = winner["ccWinner"]
         memWinner = winner["memWinner"]
         year = winner["year"]
-        current_color = (current_color+1) % len(color_cycle)
-        String.printWinnersRow(year, ccWinner, winner["ccLink"], memWinner, winner["memLink"], color_cycle[current_color], class_cycle[current_color])
+        classIndex = (classIndex+1) % len(class_cycle)
+        String.printWinnersRow(year, ccWinner, winner["ccLink"], memWinner, winner["memLink"], class_cycle[classIndex])
 
     String.printTableClose()
     String.printDivClose()
@@ -242,18 +242,16 @@ def splitGamesLine(line):
         elements.append(line[3:7].strip())
         elements.append(line[14:47].strip())
         elements.append(line[53:90].strip())
-
     return elements
-
 
 #
 # Possible values for argv[1] are:
-#   file, web, webfile
+#   file, web, webfile, winTD, pairings, clubEvents, winnersPage
 #
 arg1 = None
-
 if len(sys.argv) > 1:
     arg1 = sys.argv[1]
+
 if "file" == arg1:
     processFile()
 elif "web" == arg1:
@@ -269,6 +267,5 @@ elif "clubEvents" == arg1:
 elif "winnersPage" == arg1:
     generateWinnersPage()
 else:
-    print(
-        "arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winnersPage', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
+    print("arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winnersPage', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
     sys.exit(1)

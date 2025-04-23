@@ -23,3 +23,12 @@ Instructions for running the python script to generate the HTML for a tournament
    cd {PROJECT_ROOT}/src/main/python/root
    export PYTHONPATH=.
    python3 main.py winnersPage
+
+#Possible values for argv[1] are:
+* file
+* web
+* webfile
+* winTD
+* pairings
+* clubEvents
+* winnersPage
