@@ -65,12 +65,12 @@ body {
     }
 
     /* dark mode colors for schedule and past tournaments */
-	table.wccPast td.wccColor1 { color: #FFFF00;} /* yellow */
-	table.wccPast td.wccColor2 { color: #FF00FF;} /* magenta */
-	table.wccPast td.wccColor3 { color: #00FF00;} /* green */
-	table.wccPast td.wccColor4 { color: #FF0000;} /* red */
-	table.wccPast td.wccColor5 { color: #00FFFF;} /* cyan */
-	table.wccPast td.wccColor6 { color: #FF4500;} /* burnt orange */
+	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: #FFFF00;} /* yellow */
+	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: #FF00FF;} /* magenta */
+	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: #00FF00;} /* green */
+	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: #FF0000;} /* red */
+	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: #00FFFF;} /* cyan */
+	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: #FF4500;} /* burnt orange */
 
    	a.wccColor1 { color: #FFFF00;} /* yellow */
    	a.wccColor2 { color: #FF00FF;} /* magenta */
@@ -137,12 +137,12 @@ body {
     }
 
     /* light mode colors for schedule and past tournaments */
-   	table.wccPast td.wccColor1 { color: black;} /* black */
-	table.wccPast td.wccColor2 { color: darkgreen;} /* dark green */
-	table.wccPast td.wccColor3 { color: darkblue;} /* dark blue */
-	table.wccPast td.wccColor4 { color: darkred;} /* dark red */
-	table.wccPast td.wccColor5 { color: #003333;} /* Peruvian turquoise */
-	table.wccPast td.wccColor6 { color: #330033;} /* Deep purple */
+   	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: black;} /* black */
+	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: darkgreen;} /* dark green */
+	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: darkblue;} /* dark blue */
+	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: darkred;} /* dark red */
+	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: #003333;} /* Peruvian turquoise */
+	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: #330033;} /* Deep purple */
 
 	a.wccColor1 { color: #000000;} /* black */
 	a.wccColor2 { color: darkgreen;} /* dark green */
