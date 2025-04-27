@@ -65,19 +65,19 @@ body {
     }
 
     /* dark mode colors for schedule and past tournaments */
-	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: white;} 
-	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: red;} 
-	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: yellow;} 
-	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: lime;} 
-	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: aqua;} 
-	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: fuchsia;} 
+	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: red;}
+	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: yellow;}
+	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: lime;}
+	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: aqua;}
+	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: fuchsia;}
+	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: white;}
 
-   	a.wccColor1 { color: white;} 
-   	a.wccColor2 { color: red;} 
-   	a.wccColor3 { color: yellow;} 
-   	a.wccColor4 { color: lime;} 
-   	a.wccColor5 { color: aqua;} 
-   	a.wccColor6 { color: fuchsia;}
+   	a.wccColor1 { color: red;}
+   	a.wccColor2 { color: yellow;}
+   	a.wccColor3 { color: lime;}
+   	a.wccColor4 { color: aqua;}
+   	a.wccColor5 { color: fuchsia;}
+   	a.wccColor6 { color: white;}
  }
 
  /* ==============================================
@@ -136,19 +136,19 @@ body {
     }
 
     /* light mode colors for schedule and past tournaments */
-   	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: black;}
-	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: darkred;}
-	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: darkorange;}
-	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: green;}
-	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: darkblue;}
-	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: darkviolet;}
+	table.wccPast td.wccColor1, table.wccSchedule td.wccColor1 { color: darkred;}
+	table.wccPast td.wccColor2, table.wccSchedule td.wccColor2 { color: darkorange;}
+	table.wccPast td.wccColor3, table.wccSchedule td.wccColor3 { color: green;}
+	table.wccPast td.wccColor4, table.wccSchedule td.wccColor4 { color: darkblue;}
+	table.wccPast td.wccColor5, table.wccSchedule td.wccColor5 { color: darkviolet;}
+   	table.wccPast td.wccColor6, table.wccSchedule td.wccColor6 { color: black;}
 
-	a.wccColor1 { color: black;}
-	a.wccColor2 { color: darkred;} 
-	a.wccColor3 { color: darkorange;} 
-	a.wccColor4 { color: green;} 
-	a.wccColor5 { color: darkblue;} 
-	a.wccColor6 { color: darkviolet;} 
+	a.wccColor1 { color: darkred;}
+	a.wccColor2 { color: darkorange;}
+	a.wccColor3 { color: green;}
+	a.wccColor4 { color: darkblue;}
+	a.wccColor5 { color: darkviolet;}
+	a.wccColor6 { color: black;}
  }
 
 #main-container {
