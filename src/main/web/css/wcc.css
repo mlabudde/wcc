@@ -404,7 +404,8 @@ li.normal {
 
 .wccTitle {
     font-size: 48pt;
-    font-family: "stencil";
+    font-family: "stencil", "serif";
+    /*font-weight: bold;*/
 }
 
 .wccFooter {
