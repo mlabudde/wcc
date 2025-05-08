@@ -723,6 +723,38 @@ h4 {
     color: red;
 }
 
+ /* more text colors */
+.wccGrey {
+    color: #777777;
+}
+
+.wccKhaki {
+    color: #c0a154;
+}
+
+.wccRed {
+    color: #cc3300;
+}
+
+.wccLightBlack {
+    color: #333333;
+}
+
+.wccTan {
+    color: #ccbb99;
+}
+
+.wccFirebrick {
+    color: #993322;
+}
+
+.wccBlack {
+    color: #000000;
+}
+
+.wccWhite {
+    color: #ffffff;
+}
 
 .underline {
     text-decoration: underline;
