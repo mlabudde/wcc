@@ -25,8 +25,53 @@ class Player:
         self.ratePre = ""
         self.ratePost = ""
         self.rounds = list()
+        self.rdScore = list()
+        self.rdTotal = list()
         self.norm = ""
         self.total = ""
+
+    #           1         2         3         4         5         6         7         8
+    # 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+    #    1.    Waller, Matt (1) .............  WI     2058 W10   W6    W2    -N-     3.0
+    #
+    @classmethod
+    def createPlayerFromWinTDXtbl(cls, line, aNumRounds):
+        aPlayer = Player()
+        if line:
+            _ = line[0:9].strip()  # row nbr
+            aPlayer.name = line[9:38].strip()  # name
+            aPlayer.ratePre = line[48:52].strip()  # rating
+
+            last_good = -1
+            last_good_tag = ""
+            for i in range(aNumRounds + 1):
+                start = 53 + (6 * i)
+                end = start + 6
+                this_tag = line[start:end].strip()
+                if len(this_tag) > 0:
+                    last_good = i
+                    last_good_tag = this_tag
+                aPlayer.rounds.append(this_tag)  # round detail
+            if last_good != aNumRounds:                     # this means did not get a "total" where we expected (3 rds instead of 4, etc)
+                aPlayer.rounds[last_good] = ""              # so clear the total in the wrong spot
+                #ements[aNumRounds + 3] = last_good_tag    # and put it in the right spot
+
+            aPlayer.calculateRoundScores()
+
+        return aPlayer
+
+    @classmethod
+    def createPlayerFromTSV(self, lineParts):
+        aPlayer = Player()
+        aPlayer.name = lineParts[1]
+        aPlayer.id = lineParts[2]
+        aPlayer.ratePre = lineParts[3]
+        aPlayer.total = 0
+        for rd in lineParts[4:]:
+            aPlayer.rounds.append(rd)
+        aPlayer.calculateRoundScores()
+        return aPlayer
+
 
     @classmethod
     def createPlayer(cls, line1, line2):
@@ -81,6 +126,21 @@ class Player:
             if (items[3 + i].strip() != ''):
                 thePlayer.rounds[i] = thePlayer.rounds[i] + "/" + items[3 + i].strip()
         return thePlayer
+
+    def calculateRoundScores(self):
+        self.rdScore = []
+        self.rdTotal = []
+        curTotal = 0
+        for rd in self.rounds:
+            if rd[0] == "W" or rd == "BYE":
+                self.rdScore.append(1.0)
+                curTotal += 1.0
+            elif rd[0] == "D" or rd == "H":
+                self.rdScore.append(0.5)
+                curTotal += 0.5
+            else:
+                self.rdScore.append(0.0)
+            self.rdTotal.append(curTotal)
 
     def parse(self, elements, numRounds):
         length = len(elements)
@@ -141,18 +201,20 @@ class Player:
         buffer += "</tr>\n"
         return buffer
 
-    def printXtblHtml(self, elements, nbrRounds):
+    def printXtblHtml(self, rowNbr, nbrRounds, scrRound):
         buffer = ""
         buffer += ("<tr>\n")
-        buffer += ("\t<td>" + elements[0] + "</td>\n")
-        buffer += ("\t<td>" + elements[1] + "</td>\n")
-        buffer += ("\t<td>" + elements[2] + "</td>\n")
+        buffer += ("\t<td>" + str(rowNbr) + "</td>\n")
+        buffer += ("\t<td>" + self.name + "</td>\n")
+        buffer += ("\t<td>" + self.ratePre  + "</td>\n")
         for r in range(nbrRounds):
-            buffer += ("\t<td>" + elements[3 + r] + "</td>\n")
-        buffer += ("\t<td>" + elements[3 + nbrRounds] + "</td>\n")
+            result = "" if r>=len(self.rounds) else self.rounds[r]
+            buffer += ("\t<td>" + result + "</td>\n")
+        buffer += ("\t<td>" + str(self.rdTotal[scrRound-1]) + "</td>\n")
         buffer += "</tr>\n"
         return buffer
 
+    @classmethod
     def printGamesHtml(self, elements):
         buffer = ""
         buffer += ("<tr>\n")

@@ -1,8 +1,9 @@
 import json
 import sys
-from chess.player import Player as player
-from chess.reader import Reader as reader
-from utils import String
+
+from root.chess.player import Player as player
+from root.chess.reader import Reader as reader
+from root.utils import String
 
 class_cycle = ["wccColor1", "wccColor2", "wccColor3", "wccColor4", "wccColor5", "wccColor6"]
 # color_cycle = ["#CCFFCC", "#CCFFFF", "#FFCCCC", "#FFCCFF", "#CCCCFF", "#FFFFCC"]
@@ -45,9 +46,9 @@ def processWinTDFile():
         players = 0
         for line in fin:
             if len(line) > 5 and line[4] == '.' and line[2] != 'N':
-                elements = splitWinTDXtblLine(line, numRounds)
-                print(player().printXtblHtml(elements, numRounds))
                 players = players + 1
+                thisPlayer = player.createPlayerFromWinTDXtbl(line, numRounds)
+                print(thisPlayer.printXtblHtml(players, numRounds, numRounds))
             else:
                 if players > 0 and False:
                     String.printBlankLine()
@@ -71,7 +72,7 @@ def processGamesFile():
         for line in fin:
             if len(line) > 7 and line[6] == '.':
                 elements = splitGamesLine(line)
-                print(player().printGamesHtml(elements))
+                print(player.printGamesHtml(elements))
                 players = players + 1
 
     print("</tbody>")
@@ -109,7 +110,6 @@ def processWebContent(html: str):
 
 
 def processMSAEvents():
-
     # should actually divert this output to past_tournaments.html
 
     # as we determine how we want some events to appear, we can add the updates here...
@@ -176,9 +176,7 @@ def generateWinnersPage():
 
 
 def createPlayer(attributes, rounds):
-    aPlayer = player.Player()
-    aPlayer.parse(attributes, rounds)
-    return aPlayer
+    return player().parse(attributes, rounds)
 
 
 #          1         2         3         4         5         6         7
@@ -203,33 +201,6 @@ def splitFixedLine(line, aNumRounds):
     return elements
 
 
-#           1         2         3         4         5         6         7         8
-# 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
-#    1.    Waller, Matt (1) .............  WI     2058 W10   W6    W2    -N-     3.0
-#
-def splitWinTDXtblLine(line, aNumRounds):
-    elements = list()
-    if (line):
-        elements.append(line[0:9].strip())
-        elements.append(line[9:38].strip())
-        elements.append(line[48:52].strip())
-
-        last_good = -1
-        last_good_tag = ""
-        for i in range(aNumRounds + 1):
-            start = 53 + (6 * i)
-            end = start + 6
-            this_tag = line[start:end].strip()
-            if len(this_tag) > 0:
-                last_good = i
-                last_good_tag = this_tag
-            elements.append(line[start:end].strip())
-        if last_good != aNumRounds:
-            elements[last_good+3] = ""
-            elements[aNumRounds+3] = last_good_tag
-
-
-    return elements
 
 
 #           1         2         3         4         5         6         7         8
@@ -242,30 +213,69 @@ def splitGamesLine(line):
         elements.append(line[3:7].strip())
         elements.append(line[14:47].strip())
         elements.append(line[53:90].strip())
+
     return elements
 
-#
-# Possible values for argv[1] are:
-#   file, web, webfile, winTD, pairings, clubEvents, winnersPage
-#
-arg1 = None
-if len(sys.argv) > 1:
-    arg1 = sys.argv[1]
+def processTSV():
+    processTSVXtbl('data/xtbl-open.tsv')
+    processTSVXtbl('data/xtbl-reserve.tsv')
+    processTSVPairing('data/pair-open.tsv')
+    processTSVPairing('data/pair-reserve.tsv')
 
-if "file" == arg1:
-    processFile()
-elif "web" == arg1:
-    processWeb()
-elif "webfile" == arg1:
-    processWebFile()
-elif "winTD" == arg1:
-    processWinTDFile()
-elif "pairings" == arg1:
-    processGamesFile()
-elif "clubEvents" == arg1:
-    processMSAEvents()
-elif "winnersPage" == arg1:
-    generateWinnersPage()
-else:
-    print("arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winnersPage', 'winTD', or 'pairings' (last 2 take winTD text output from a file)")
-    sys.exit(1)
+def processTSVXtbl(fn):
+    f = open(fn)
+    xtbl = f.readlines()
+    players = []
+    for line in xtbl[1:]:
+        players.append(player.createPlayerFromTSV(line.strip().split('\t')))
+    String.printCrossTableHeader(4)
+    for i in range(len(players)):
+        print(players[i].printXtblHtml(i+1,4,1))
+    print("</tbody>")
+    print("</table>")
+
+def processTSVPairing(fn):
+    f = open(fn)
+    xtbl = f.readlines()
+    players = []
+    String.printGamesTableHeader()
+    for i in range(len(xtbl[2:])):
+        elts = xtbl[2+i].strip().split('\t')
+        print(player.printGamesHtml([elts[0],elts[1],elts[3]]))
+    print("</tbody>")
+    print("</table>")
+
+
+def main():
+    #
+    # Possible values for argv[1] are:
+    #   file, web, webfile
+    #
+    arg1 = None
+
+    if len(sys.argv) > 1:
+        arg1 = sys.argv[1]
+    if "file" == arg1:
+        processFile()
+    elif "web" == arg1:
+        processWeb()
+    elif "webfile" == arg1:
+        processWebFile()
+    elif "winTD" == arg1:
+        processWinTDFile()
+    elif "pairings" == arg1:
+        processGamesFile()
+    elif "clubEvents" == arg1:
+        processMSAEvents()
+    elif "winnersPage" == arg1:
+        generateWinnersPage()
+    elif "fromTSV" == arg1:
+        processTSV()
+    else:
+        print(
+            "arg1 must be one of: 'file', 'web', 'webfile', 'clubEvents', 'winnersPage', 'fromTSV', 'winTD' or 'pairings' (last 3 take text output from a file - needs manual preprocessing)")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
