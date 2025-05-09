@@ -351,11 +351,63 @@ body {
     border-collapse: collapse;
 }
 
-#homeTopTable, #homeMidTable, #tblCovid {
+#homeMainTable {
     font-size: 12pt;
     width: 100%;
-    max-width: 850px;
     margin: 0 auto 0 auto;
+}
+#homeMainTable td.hmtLeft {
+    margin: 0 auto 0 auto;
+    min-width: 700px;
+    vertical-align: top;
+    width: 70%;
+}
+#homeMainTable td.hmtRight {
+    margin: 0 auto 0 auto;
+    min-width: 320px;
+    vertical-align: top;
+    width: 30%;
+}
+.verticalText{
+    max-width: 5px;
+    width: 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+#tblHomeLeft {
+    font-size: 12pt;
+    text-align: left;
+    width: 100%;
+}
+#homeTopTable, #tblCovid {
+    font-size: 12pt;
+    margin: 0 auto 0 auto;
+    max-width: 850px;
+    text-align: left;
+    width: 100%;
+}
+#homeMidTable {
+    font-size: 12pt;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: 100%;
+}
+#homeMidTable td {
+    vertical-align: top;
+    width: 50%;
+}
+#homeMidTable td.tdLeft {
+    padding-left: 2px;
+    padding-right: 20px;
+}
+
+#homeTopTable td.padding {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-align: left;
 }
 
 #tblCovid h1 {
@@ -373,6 +425,9 @@ body {
 }
 
 span.covidPrecautions {
+    font-size: 11pt;
+}
+span.defaultFont {
     font-size: 11pt;
 }
 
@@ -487,8 +542,9 @@ li.normal {
 }
 
 .unorderedList {
-    margin-bottom: -2px;
-    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+    margin-top: 0px;
 }
 
 #bottomLeft {
