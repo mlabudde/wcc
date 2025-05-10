@@ -380,6 +380,21 @@ body {
     text-align: left;
     width: 100%;
 }
+#tblHomeLeft td {
+    margin-top: -10px;
+    margin-bottom: -8px;
+    padding-right: 30px;
+}
+#tblHomeLeft td h1 {
+    margin-top: -6px;
+    text-align: center;
+}
+#tblHomeLeft td h3 {
+    margin-top: -6px;
+    margin-bottom: -4px;
+    text-align: center;
+}
+
 #homeTopTable, #tblCovid {
     font-size: 12pt;
     margin: 0 auto 0 auto;
@@ -389,7 +404,7 @@ body {
 }
 #homeMidTable {
     font-size: 12pt;
-    margin: 0 auto 0 auto;
+    margin: -12px auto 0 auto;
     text-align: left;
     width: 100%;
 }
