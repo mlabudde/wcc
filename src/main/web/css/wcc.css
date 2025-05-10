@@ -574,10 +574,13 @@ li.normal {
 
 .bottomLabel {
     color: darkgreen;
+    display: block;
     font-size: 18pt;
+    margin-bottom: 3px;
 }
 
 .bottomValue {
+    display: block;
     font-size: 18pt;
 }
 
