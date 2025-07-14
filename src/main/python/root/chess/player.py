@@ -39,7 +39,7 @@ class Player:
         aPlayer = Player()
         if line:
             _ = line[0:9].strip()  # row nbr
-            aPlayer.name = line[9:38].strip()  # name
+            aPlayer.name = line[9:38].strip(". ")  # name
             aPlayer.ratePre = line[48:52].strip()  # rating
 
             last_good = -1
@@ -132,10 +132,10 @@ class Player:
         self.rdTotal = []
         curTotal = 0
         for rd in self.rounds:
-            if rd[0] == "W" or rd == "BYE":
+            if len(rd) > 0 and (rd[0] == "W" or rd == "BYE" or rd == "-B-"):
                 self.rdScore.append(1.0)
                 curTotal += 1.0
-            elif rd[0] == "D" or rd == "H":
+            elif len(rd) > 0 and (rd[0] == "D" or rd == "H" or rd == "-H-"):
                 self.rdScore.append(0.5)
                 curTotal += 0.5
             else:

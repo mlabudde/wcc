@@ -13,6 +13,33 @@ def getInputFilename():
         return sys.argv[2]
     return "../../resources/LateSpring-Open.txt"
 
+def splitFullPostUpdateFile():
+    outLineSet = []
+    thisLineSet = []
+
+    inputFilename = getInputFilename()
+    with open(inputFilename) as fin:
+        for line in fin:
+            if len(line) > 1 and line[0] != " " and thisLineSet != []: # start of a new set
+                outLineSet.append(thisLineSet)
+                thisLineSet = [line]
+            else:
+                thisLineSet.append(line)
+    if thisLineSet != []: # start of a new set
+        outLineSet.append(thisLineSet)
+    return outLineSet
+
+def fullUpdatePost():
+    # print("Split file")
+    [openXtbl, openPair, reserveXtbl, reservePair] = splitFullPostUpdateFile()
+    print("</br><b>Open Section Crosstable</b></br>")
+    processWinTDFile(openXtbl)
+    print("</br><b>Open Section Pairings</b></br>")
+    processGamesFile(openPair)
+    print("</br><b>Reserve Section Crosstable</b></br>")
+    processWinTDFile(reserveXtbl)
+    print("</br><b>Reserve Section Pairings</b></br>")
+    processGamesFile(reservePair)
 
 def processFile():
     inputFilename = getInputFilename()
@@ -34,46 +61,52 @@ def processFile():
     return
 
 
-def processWinTDFile():
-    inputFilename = getInputFilename()
+def processWinTDFile(inLines = None):
+    if inLines is None:
+        inputFilename = getInputFilename()
+        with open(inputFilename) as fin:
+            inLines = fin.readlines()
+
     numRounds = 4
 
     if len(sys.argv) >= 4:
         numRounds = int(sys.argv[3])
 
     String.printCrossTableHeader(numRounds)
-    with open(inputFilename) as fin:
-        players = 0
-        for line in fin:
-            if len(line) > 5 and line[4] == '.' and line[2] != 'N':
-                players = players + 1
-                thisPlayer = player.createPlayerFromWinTDXtbl(line, numRounds)
-                print(thisPlayer.printXtblHtml(players, numRounds, numRounds))
-            else:
-                if players > 0 and False:
-                    String.printBlankLine()
-                    String.printBlankLine()
+
+    players = 0
+    for line in inLines:
+        if len(line) > 5 and line[4] == '.' and line[2] != 'N':
+            players = players + 1
+            thisPlayer = player.createPlayerFromWinTDXtbl(line, numRounds)
+            print(thisPlayer.printXtblHtml(players, numRounds, numRounds))
+        else:
+            if players > 0 and False:
+                String.printBlankLine()
+                String.printBlankLine()
 
     print("</tbody>")
     print("</table>")
     return
 
 
-def processGamesFile():
-    inputFilename = getInputFilename()
-    numRounds = 4
+def processGamesFile(inLines = None):
+    if inLines is None:
+        inputFilename = getInputFilename()
+        with open(inputFilename) as fin:
+            inLines = fin.readlines()
 
     if len(sys.argv) >= 4:
         numRounds = int(sys.argv[3])
 
     String.printGamesTableHeader()
-    with open(inputFilename) as fin:
-        players = 0
-        for line in fin:
-            if len(line) > 7 and line[6] == '.':
-                elements = splitGamesLine(line)
-                print(player.printGamesHtml(elements))
-                players = players + 1
+
+    players = 0
+    for line in inLines:
+        if len(line) > 7 and line[6] == '.':
+            elements = splitGamesLine(line)
+            print(player.printGamesHtml(elements))
+            players = players + 1
 
     print("</tbody>")
     print("</table>")
@@ -265,6 +298,8 @@ def main():
         processWinTDFile()
     elif "pairings" == arg1:
         processGamesFile()
+    elif "updatePost" == arg1:
+        fullUpdatePost()
     elif "clubEvents" == arg1:
         processMSAEvents()
     elif "winnersPage" == arg1:
