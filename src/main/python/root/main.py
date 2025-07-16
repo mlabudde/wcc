@@ -103,10 +103,12 @@ def processGamesFile(inLines = None):
 
     players = 0
     for line in inLines:
+        elements = splitGamesLine(line)
         if len(line) > 7 and line[6] == '.':
-            elements = splitGamesLine(line)
             print(player.printGamesHtml(elements))
             players = players + 1
+        elif line.find("Please Wait") >= 0:
+            print(player.printByeHtml(elements))
 
     print("</tbody>")
     print("</table>")

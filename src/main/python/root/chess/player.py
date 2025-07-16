@@ -223,3 +223,13 @@ class Player:
         buffer += ("\t<td>" + elements[2] + "</td>\n")
         buffer += "</tr>\n"
         return buffer
+
+    @classmethod
+    def printByeHtml(self, elements):
+        buffer = ""
+        buffer += ("<tr>\n")
+        buffer += ("\t<td>" + "</td>\n")
+        buffer += ("\t<td>" + elements[1] + "</td>\n")
+        buffer += ("\t<td>" + "Please Wait" + "</td>\n")
+        buffer += "</tr>\n"
+        return buffer
